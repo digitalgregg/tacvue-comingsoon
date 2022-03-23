@@ -1,0 +1,68 @@
+@font-face {
+    font-family: "Spaced";
+    src: url("../public/fonts/Spaced_OTF.otf");
+}
+
+html {
+    scroll-behavior: smooth;
+    color: #fff;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .nft_card_hover {
+        @apply duration-200;
+        box-shadow: 0px 15px 47px 0px #0ad3ff80 !important;
+    }
+    .container {
+        @apply mx-auto;
+    }
+    .landing_page_container {
+        @apply mx-auto max-w-full px-5 md:px-6 xl:max-w-[1280px];
+    }
+    .bg-size-full {
+        background-size: 100%;
+    }
+
+    .nft_card_hover_shadow {
+        box-shadow: 0px 1px 30px -2px #71eeff;
+    }
+    .bg-110 {
+        background-size: 110%;
+    }
+}
+
+.faq_section .Collapsible {
+    @apply rounded-3xl md:rounded-full duration-200 bg-gradient-to-bl from-[#121C37] to-[#091C4A] border border-[#6396F9];
+}
+.faq_section .Collapsible .minus_icon,
+.faq_section .Collapsible.currently_open .plus_icon {
+    display: none;
+}
+
+.faq_section .Collapsible.currently_open {
+    @apply rounded-3xl;
+}
+
+.faq_section .Collapsible.currently_open .minus_icon {
+    display: block !important;
+}
+
+.animate_slide_up_down {
+    animation: animate_slide_up_down 1.5s linear infinite;
+}
+
+@keyframes animate_slide_up_down {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
