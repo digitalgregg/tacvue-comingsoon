@@ -21,9 +21,9 @@ export const modalStyle = {
     p: 1,
 };
 
-if (typeof window !== "undefined") {
-    AOS.init();
-}
+// if (typeof window !== "undefined") {
+//     AOS.init();
+// }
 
 const headingClasses = "uppercase text-white text-5xl md:text-[64px] font-spaced";
 const headingClasses_sm = "uppercase text-white text-[35px] md:text-[45px] leading-[1] font-spaced";
@@ -62,7 +62,7 @@ function LandingPage() {
     const modalHandleClose = () => setModalIsOpen(false);
 
     useEffect(() => {
-        AOS.init();
+        AOS.init({ disable: "mobile" });
     }, []);
 
     return (
@@ -94,9 +94,10 @@ function LandingPage() {
                     <div className="w-full h-full absolute top-0 left-0 z-[0]">
                         <video
                             src="/video/TacVue-Bkgd-header.webm"
-                            muted
                             autoPlay
                             loop
+                            muted
+                            playsInline
                             className="w-full h-full object-cover"
                         ></video>
                     </div>
@@ -580,7 +581,7 @@ function LandingPage() {
                             <h5
                                 data-aos="fade-up"
                                 data-aos-delay="250"
-                                className="text-xl md:text-3xl font-sans md:leading-[40px] mb-8 mt-6"
+                                className="text-xl md:text-3xl font-sans md:leading-[40px] px-5 md:px-0 mb-8 mt-6"
                             >
                                 Subscribe to TacVue and get the latest updates and announcements in
                                 your inbox!
