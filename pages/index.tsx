@@ -1,12 +1,10 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
-import { SiDiscord } from "react-icons/si";
 import { HiChevronDoubleDown, HiOutlineArrowRight } from "react-icons/hi";
 import { FaInstagram, FaTiktok, FaTwitter } from "react-icons/fa";
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 import Collapsible from "react-collapsible";
 import { ReactNode, useState } from "react";
-import Link from "next/link";
 import AOS from "aos";
 import { useEffect } from "react";
 import Modal from "@mui/material/Modal";
@@ -29,7 +27,7 @@ if (typeof window !== "undefined") {
 
 const headingClasses = "uppercase text-white text-5xl md:text-[64px] font-spaced";
 const headingClasses_sm = "uppercase text-white text-[35px] md:text-[45px] leading-[1] font-spaced";
-const paragraphClasses = "font-sans text-[#9EB5E1] text-lg leading-[1.6]";
+const paragraphClasses = "font-sans text-[#9EB5E1] text-sm xs:text-base sm:text-lg leading-[1.6]";
 
 const SocialIcons = () => {
     return (
@@ -105,7 +103,7 @@ function LandingPage() {
                     {/* Background Video --End-- */}
 
                     <div className="landing_page_container flex flex-col items-center justify-center h-full w-full relative z-10">
-                        <h1 className="text-6xl md:text-8xl text-center uppercase font-spaced mb-3">
+                        <h1 className="text-5xl xs:text-6xl md:text-8xl text-center uppercase font-spaced mb-3">
                             <p data-aos="fade-up">nfts</p>
                             <p data-aos="fade-up" data-aos-delay="100">
                                 reimagined
@@ -118,7 +116,7 @@ function LandingPage() {
                                 onClick={modalHandleOpen}
                                 data-aos="fade-up"
                                 data-aos-delay="200"
-                                className="from-blue-500 to-cyan-500 bg-gradient-to-r px-10 py-2.5 rounded-full hover:from-blue-600 hover:to-cyan-600"
+                                className="from-blue-500 to-cyan-500 bg-gradient-to-r text-sm sm:text-base px-10 py-2.5 rounded-full hover:from-blue-600 hover:to-cyan-600"
                             >
                                 ENTER MULTIVERSE
                             </button>
@@ -165,17 +163,19 @@ function LandingPage() {
                     <div className="grid md:grid-cols-[auto,400px] gap-20 place-items-center">
                         <div className="md:pr-20 ">
                             <h3 className={`${headingClasses_sm} mb-6`} data-aos="fade-up">
-                                THE FASTEST ECO-FRIENDLY MARKETPLACE FOR DIGITAL MERCHANDISE
+                                <p>NFTs Are A Game.</p>
+                                <p>Come Play Them on TacVue.</p>
                             </h3>
                             <p
                                 className={`${paragraphClasses} mb-8 md:w-[80%]`}
                                 data-aos="fade-up"
                                 data-aos-delay="100"
                             >
-                                TacVue is built on the Avalanche marketplace, which allows us to
-                                provide minimal gas fees and fast transaction speeds to our
-                                collectors with a significantly lower carbon footprint than most of
-                                our competitors.
+                                TacVue is designed to gamify the experience of discovering,
+                                collecting and creating high quality digital content. We make the
+                                NFT experience less technical, and more fun, by blending game
+                                mechanics, decentralized finance and digital identity into an
+                                immersive experience.
                             </p>
                         </div>
                         <div className="md:w-full" data-aos="fade-up">
@@ -192,18 +192,21 @@ function LandingPage() {
             <section className="py-28 md:mt-16">
                 <div className="landing_page_container">
                     <div>
-                        <h2 className={`${headingClasses} text-center`} data-aos="fade-up">
-                            THE FUTURE OF WEB3
+                        <h2
+                            className={`${headingClasses} text-center uppercase`}
+                            data-aos="fade-up"
+                        >
+                            The Destiny of Web3
                         </h2>
                         <p
                             className={`${paragraphClasses} text-center mt-5 md:w-[80%] mx-auto mb-5`}
                             data-aos="fade-up"
                             data-aos-delay="100"
                         >
-                            TacVue is a multi-pronged social network that expands the limited nature
-                            of social media into a sustainable protocol for social content
-                            distribution and brand monetization. We provide entites with three
-                            different ways to get involved.
+                            Enthusiasts understand that web3 is powerful enough to rebuild social
+                            constructs and reorganize our common interests towards a better future.
+                            Most systems attempt to educate you on how to harness its power. TacVue
+                            is designed for anyone to have fun doing it.
                         </p>
                         <div className="grid md:grid-cols-2 gap-20 mt-[120px]">
                             {/* Box One --Start-- */}
@@ -225,7 +228,7 @@ function LandingPage() {
                                             data-aos="fade-up"
                                             className="font-sans font-bold text-2xl mb-2 md:w-[65%] text-transparent bg-clip-text bg-gradient-to-br from-[#11AAF5] to-[#65D3FF]"
                                         >
-                                            Creators
+                                            Create
                                         </h5>
                                         <p
                                             data-aos="fade-up"
@@ -235,7 +238,7 @@ function LandingPage() {
                                             Creators can focus on delivering the highest quality
                                             content to their community instead of fighting for space
                                             on a never-ending timeline. They earn $AVAX for selling
-                                            their digital merchandise to third-party collectors.
+                                            their digital merchandise to their biggest fans.
                                         </p>
                                     </div>
                                 </div>
@@ -261,18 +264,19 @@ function LandingPage() {
                                             data-aos="fade-up"
                                             className="font-sans font-bold text-2xl mb-2 md:w-[65%] text-transparent bg-clip-text bg-gradient-to-br from-[#AD72F3] to-[#C797FF]"
                                         >
-                                            Collectors
+                                            Collect
                                         </h5>
                                         <p
                                             data-aos="fade-up"
                                             data-aos-delay="200"
                                             className={`${paragraphClasses} md:w-[95%]`}
                                         >
-                                            Collectors can exchange and communicate with other
-                                            collectors in order to acquire, promote and validate
-                                            creator’s ideation, expertise and vision for their
-                                            projects. They earn $RXG for choosing the most engaging
-                                            merchandise
+                                            Collectors can exchange assets with other collectors as
+                                            a means of portraying their social identity and
+                                            establishing an immutable record of sponsorship for
+                                            certain projects and creators. They can earn financial
+                                            rewards for finding undervalued creations before other
+                                            Entities.
                                         </p>
                                     </div>
                                 </div>
@@ -290,15 +294,15 @@ function LandingPage() {
                     <div className="text-center relative z-10">
                         <BluryCircle className="top-[150%] left-1/2 -translate-x-1/2 -translate-y-1/2" />
                         <h2 className={`${headingClasses} mb-5`} data-aos="fade-up">
-                            The Future Of NFTS
+                            Become an Insider
                         </h2>
                         <p
                             className={`${paragraphClasses} md:w-[40%] mx-auto`}
                             data-aos="fade-up"
                             data-aos-delay="100"
                         >
-                            Our onboarding process is simple, secure, and immersive, created to
-                            deliver the best experience to all our users.
+                            Seize your ticket into the web3 revolution by creating your first
+                            Multiverse Entity. This asset grants you access to the TacVue ecosystem.
                         </p>
                     </div>
                     <div
@@ -314,20 +318,20 @@ function LandingPage() {
                             }}
                         ></div>
                         <NFtCard
-                            title="Create"
-                            subtitle="Create your entity card with your own personal HQ."
+                            title="Personalize"
+                            subtitle="Customize your own tag so people can find you."
                             iconImgSrc="/images/nft_power_icon.png"
                             bgImgSrc="/images/nft_card_bg.png"
                         />
                         <NFtCard
-                            title="Explore"
-                            subtitle="View all projects and NFTs on our marketplace"
+                            title="Recognize"
+                            subtitle="Make your wallet easily identifiable with your TacVue Entity."
                             iconImgSrc="/images/search_icon.png"
                             bgImgSrc="/images/nft_card_purple_bg.png"
                         />
                         <NFtCard
-                            title="Buy and Sell"
-                            subtitle="Create, buy and mint NFTs. Made simple."
+                            title="Uncensored"
+                            subtitle="Secure your content with your irrevocable access token."
                             iconImgSrc="/images/coin_icon.png"
                             bgImgSrc="/images/nft_card_bg.png"
                         />
@@ -686,7 +690,7 @@ const NFtCard = ({ bgImgSrc, iconImgSrc, title, subtitle }: nftCardProps) => {
                 <div className="grow w-full flex items-center justify-center">
                     <img src={iconImgSrc} alt="nft_power_icon" className="scale-75" />
                 </div>
-                <div className="text-center px-10 flex-shrink-0 py-10 pb-10">
+                <div className="text-center px-4 xs:px-5 sm:px-7 flex-shrink-0 py-10 pb-10">
                     <h6 className="font-sans font-bold mb-4 text-[22px] text-transparent bg-clip-text bg-gradient-to-br from-[#6396F9] to-[#00D1FF] uppercase">
                         {title}
                     </h6>
