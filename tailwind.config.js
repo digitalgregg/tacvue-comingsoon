@@ -10,6 +10,9 @@ module.exports = {
         sans: ["Helvetica Neue", ...defaultTheme.fontFamily.sans],
         spaced: ["Spaced", "sans-serif"],
       },
+      screens: {
+        'xs': '360px',
+      }
     },
   },
   plugins: [],
