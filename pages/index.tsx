@@ -578,51 +578,13 @@ function LandingPage() {
                 {/* FAQ Section --End-- */}
 
                 {/* Discord Section --Start-- */}
-                <section className="pb-14 md:pb-28">
+                <section className="pb-14 md:pb-28 mt-[150px]">
                     <div className="landing_page_container">
                         <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
-                            <div
-                                className="md:w-[80%] bg-cover md:bg-110 mx-auto flex flex-col justify-center items-center py-14 md:py-0 md:h-[700px] md:px-14 text-center md:bg-size-full"
-                                style={{
-                                    backgroundImage: "url('/images/discord_bd.png')",
-                                    backgroundPosition: "center",
-                                    backgroundRepeat: "no-repeat",
-                                }}
-                            >
-                                <div data-aos="fade-up" data-aos-delay="150">
-                                    <img
-                                        src="/images/tacvue-gradient-icon.svg"
-                                        className="w-[90px]"
-                                        alt="Tacvue"
-                                    />
-                                </div>
-                                <h5
-                                    data-aos="fade-up"
-                                    data-aos-delay="250"
-                                    className="text-xl md:text-3xl font-sans md:leading-[40px] px-5 md:px-0 mb-8 mt-6"
-                                >
-                                    Subscribe to TacVue and get the latest updates and announcements
-                                    in your inbox!
-                                </h5>
+                            <div className="md:w-[80%] bg-cover md:bg-110 mx-auto flex flex-col justify-center items-center py-14 md:py-0 md:px-14 text-center md:bg-size-full">
+                                {/* Kalviyo Form --Start-- */}
                                 <div className="klaviyo-form-XGdvPD"></div>
-
-                                {/* <form className="w-full px-4 md:px-0 md:w-[80%] mx-auto flex justify-center items-center flex-col">
-                                    <input
-                                        type="text"
-                                        data-aos="fade-up"
-                                        data-aos-delay="300"
-                                        className="block bg-[#121831] text-white text-center px-6 py-3 rounded-md mb-6 w-full text-xl outline-none"
-                                        placeholder="Email address"
-                                    />
-                                    <button
-                                        data-aos="fade-up"
-                                        data-aos-delay="350"
-                                        className="from-blue-500 font-sans font-medium to-cyan-500 bg-gradient-to-r px-10 py-2.5 rounded-full hover:from-blue-600 hover:to-cyan-600 flex items-center justify-center gap-3"
-                                    >
-                                        Subscribe Now
-                                        <HiOutlineArrowRight size={18} />
-                                    </button>
-                                </form> */}
+                                {/* Kalviyo Form --End-- */}
                             </div>
                         </div>
                     </div>
