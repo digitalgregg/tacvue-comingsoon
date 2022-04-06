@@ -33,6 +33,9 @@ html {
     .bg-110 {
         background-size: 110%;
     }
+    .btn_gradient{
+        @apply from-blue-500 to-cyan-500 bg-gradient-to-r text-sm sm:text-base px-10 py-2.5 rounded-full hover:from-blue-600 hover:to-cyan-600;
+    }
 }
 
 .faq_section .Collapsible {
@@ -70,3 +73,33 @@ html {
 .klaviyo-form-XGdvPD .needsclick.kl-private-reset-css-Xuajs1 form {
     overflow: hidden !important;
 }
+
+.gradient_text{
+    background: linear-gradient(91.52deg, #6396F9 40.77%, #00D1FF 115.11%), #FFFFFF;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+}
+
+.collections_range_wrapper .MuiSlider-colorPrimary {
+    padding: 0 !important;
+  }
+  .collections_range_wrapper .MuiSlider-rail.css-14pt78w-MuiSlider-rail {
+    background-color: #273452 !important;
+    height: 10px;
+  }
+  .collections_range_wrapper .MuiSlider-track.css-1gv0vcd-MuiSlider-track {
+    height: 10px;
+  }
+  .collections_range_wrapper .MuiSlider-track.css-1gv0vcd-MuiSlider-track,
+  .collections_range_wrapper
+    .MuiSlider-thumbColorPrimary.MuiSlider-thumbSizeMedium.MuiSlider-thumb.css-1ti6opd-MuiSlider-thumb {
+    background: linear-gradient(91.52deg, #6396f9 40.77%, #00d1ff 115.11%),
+      linear-gradient(0deg, #00a3ff, #00a3ff) !important;
+  }
+  .collections_range_wrapper
+    .MuiSlider-thumbColorPrimary.MuiSlider-thumbSizeMedium.MuiSlider-thumb.css-1ti6opd-MuiSlider-thumb {
+    width: 25px;
+    height: 25px;
+  }
