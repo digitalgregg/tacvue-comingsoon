@@ -1,5 +1,5 @@
 import { ThemeProvider } from "@mui/material";
-import "aos/dist/aos.css";
+// import "aos/dist/aos.css";
 import Script from "next/script";
 import { MUI_DARK_THEME } from "../config/mui-theme";
 import "../styles/globals.css";

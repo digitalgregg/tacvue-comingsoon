@@ -68,9 +68,9 @@ function LandingPage() {
   const modalHandleOpen = () => setModalIsOpen(true);
   const modalHandleClose = () => setModalIsOpen(false);
 
-  useEffect(() => {
-    AOS.init({ disable: 'mobile' });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({ disable: 'mobile' });
+  // }, []);
 
   return (
     <>
@@ -88,15 +88,15 @@ function LandingPage() {
         <section className='bg-cover bg-no-repeat bg-top'>
           <div className='h-screen w-full relative'>
             {/* Background Video --Start-- */}
-            <div className='w-full h-full absolute top-0 left-0 z-[0]'>
-              <video
+            <div className='w-full h-full absolute top-0 left-0 z-[0] bg-red-600'>
+              {/* <video
                 src='/video/TacVue-Bkgd-header.webm'
                 autoPlay
                 loop
                 muted
                 playsInline
                 className='w-full h-full object-cover'
-              ></video>
+              ></video> */}
             </div>
             {/* Background Video --End-- */}
 
@@ -360,9 +360,8 @@ function LandingPage() {
         <section
           style={{
             backgroundImage: "url('/images/grids_bg.svg')",
-            backgroundSize: '120%',
           }}
-          className='bg-top bg-cover pb-[150px] mt-[150px] md:mt-[250px]'
+          className='bg-top bg-cover pb-[150px] mt-[150px] md:mt-[250px] bg-no-repeat md:bg-120 container'
         >
           <h2
             data-aos='fade-up'
