@@ -36,6 +36,9 @@ html {
     .btn_gradient{
         @apply from-blue-500 to-cyan-500 bg-gradient-to-r text-sm sm:text-base px-10 py-2.5 rounded-full hover:from-blue-600 hover:to-cyan-600;
     }
+    .bg-120{
+        background-size: 120%;
+    }
 }
 
 .faq_section .Collapsible {

@@ -5,6 +5,8 @@ import cx from 'classnames';
 import ServiceCard from '../components/ServiceCard';
 import { BsArrowRightShort } from 'react-icons/bs';
 import Footer from '../components/Footer';
+import QuickAboutCard from '../components/QuickAboutCard';
+import { FaDiscord } from 'react-icons/fa';
 
 export const subtitle_sm = 'text-lg text-[#9EB5E1] !leading-[160%] capitalize';
 export const text_gradient =
@@ -243,8 +245,123 @@ const Blueprint = () => {
       </section>
       {/* Partners Section --End-- */}
 
+      {/* Quick About --Start-- */}
+      <section className='mt-[220px]'>
+        <div className='container'>
+          <div className='gap-[120px] grid grid-cols-2'>
+            <div className='space-y-5'>
+              <div className='grid grid-cols-[348px,292px] gap-5'>
+                <div>
+                  <QuickAboutCard
+                    img={{
+                      src: '/images/quick_about_1.png',
+                      width: 348,
+                      height: 396,
+                    }}
+                    name='Abadul Richards'
+                    title='CEO'
+                  />
+                </div>
+                <div className='flex items-end translate-y-[-20px]'>
+                  <QuickAboutCard
+                    img={{
+                      src: '/images/quick_about_2.png',
+                      width: 292,
+                      height: 332,
+                    }}
+                    name='Nayem Jonathan'
+                    title='Head of operation'
+                  />
+                </div>
+              </div>
+              <div className='grid grid-cols-[292px,348px] gap-5 translate-x-[35px]'>
+                <div className='flex items-start'>
+                  <QuickAboutCard
+                    img={{
+                      src: '/images/quick_about_3.png',
+                      width: 292,
+                      height: 332,
+                    }}
+                    name='Hasib Bishwash'
+                    title='Assistant Manager'
+                  />
+                </div>
+                <div className='translate-y-[-20px]'>
+                  <QuickAboutCard
+                    img={{
+                      src: '/images/quick_about_1.png',
+                      width: 348,
+                      height: 396,
+                    }}
+                    name='Sakib Richards'
+                    title='Vice Presi'
+                  />
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2 className={cx(title_sm, text_gradient)}>Quick about</h2>
+              <p className={cx(subtitle_sm, 'mt-[45px] w-[70%]')}>
+                After four friends discovered Solana and its tremendous
+                potential, Magic Eden was born. With backgrounds across crypto,
+                DeFi, consumer internet
+              </p>
+              <p className={cx(subtitle_sm, 'mt-8 w-[70%] mb-5')}>
+                companies and management consulting, they identified gaps in
+                existing NFT marketplaces and created something new.
+              </p>
+              <Button />
+
+              <div className='mt-10 flex items-center gap-6'>
+                <a
+                  href='#'
+                  style={{
+                    background:
+                      'linear-gradient(rgb(47 182 253 / 10%),#030B1A) padding-box padding-box, linear-gradient(180deg, rgb(25 195 254 / 29%) 0%, rgba(25, 195, 254, 0) 79.17%) border-box border-box',
+                  }}
+                  className='w-[60px] h-[60px] border-4 border-transparent rounded-[10px] flex items-center justify-center'
+                >
+                  <img src='/images/icons8-discord.svg' className='w-8 h-8' />
+                </a>
+                <a
+                  href='#'
+                  style={{
+                    background:
+                      'linear-gradient(rgb(47 182 253 / 10%),#030B1A) padding-box padding-box, linear-gradient(180deg, rgb(25 195 254 / 29%) 0%, rgba(25, 195, 254, 0) 79.17%) border-box border-box',
+                  }}
+                  className='w-[60px] h-[60px] border-4 border-transparent rounded-[10px] flex items-center justify-center'
+                >
+                  <img src='/images/icons8-twitter.png' className='w-8 h-8' />
+                </a>
+                <a
+                  href='#'
+                  style={{
+                    background:
+                      'linear-gradient(rgb(47 182 253 / 10%),#030B1A) padding-box padding-box, linear-gradient(180deg, rgb(25 195 254 / 29%) 0%, rgba(25, 195, 254, 0) 79.17%) border-box border-box',
+                  }}
+                  className='w-[60px] h-[60px] border-4 border-transparent rounded-[10px] flex items-center justify-center'
+                >
+                  <img src='/images/telegram_icon.png' className='w-8 h-8' />
+                </a>
+                <a
+                  href='#'
+                  style={{
+                    background:
+                      'linear-gradient(rgb(47 182 253 / 10%),#030B1A) padding-box padding-box, linear-gradient(180deg, rgb(25 195 254 / 29%) 0%, rgba(25, 195, 254, 0) 79.17%) border-box border-box',
+                  }}
+                  className='w-[60px] h-[60px] border-4 border-transparent rounded-[10px] flex items-center justify-center'
+                >
+                  <img src='/images/instagram_icon.png' className='w-8 h-8' />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Quick About --End-- */}
+
       {/* Join Section --Start-- */}
-      <section className='mt-[120px] mb-[60px]'>
+      <section className='mt-[220px] mb-[60px]'>
         <div className='container'>
           <div className='w-fit mx-auto relative'>
             <img src='/images/join_bg.svg' alt='join_bg' />
@@ -265,6 +382,7 @@ const Blueprint = () => {
                 </button>
               </div>
             </div>
+            <p></p>
           </div>
         </div>
       </section>
