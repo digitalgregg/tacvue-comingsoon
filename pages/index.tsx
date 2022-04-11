@@ -5,8 +5,8 @@ import { FaInstagram, FaTiktok, FaTwitter } from 'react-icons/fa';
 import { AiOutlinePlus, AiOutlineMinus } from 'react-icons/ai';
 import Collapsible from 'react-collapsible';
 import { ReactNode, useState } from 'react';
-import AOS from 'aos';
-import { useEffect } from 'react';
+// import AOS from 'aos';
+// import { useEffect } from 'react';
 import Modal from '@mui/material/Modal';
 import { Box } from '@mui/material';
 import Script from 'next/script';
@@ -81,14 +81,14 @@ function LandingPage() {
         defer
       />
 
-      <div className='max-w-[100vw] overflow-hidden bg-[#030C16]'>
+      <div className='max-w-[100vw]'>
         <Header />
 
         {/* Hero Section --Start-- */}
         <section className='bg-cover bg-no-repeat bg-top'>
           <div className='h-screen w-full relative'>
             {/* Background Video --Start-- */}
-            <div className='w-full h-full absolute top-0 left-0 z-[0] bg-red-600'>
+            <div className='w-full h-full absolute top-0 left-0 z-[0]'>
               {/* <video
                 src='/video/TacVue-Bkgd-header.webm'
                 autoPlay
@@ -97,6 +97,10 @@ function LandingPage() {
                 playsInline
                 className='w-full h-full object-cover'
               ></video> */}
+              <img
+                src='/images/background-header.jpg'
+                className='w-full h-full object-cover'
+              />
             </div>
             {/* Background Video --End-- */}
 
@@ -119,7 +123,7 @@ function LandingPage() {
                     data-aos='fade-up'
                     data-aos-delay='200'
                   >
-                    PRE-LAUNCH YOUR PROJECT
+                    APPLY TO LAUNCHPAD
                   </a>
                 </Link>
                 <button
@@ -227,7 +231,7 @@ function LandingPage() {
                 {/* Box One --Start-- */}
                 <div>
                   <div className='grid md:grid-cols-[90px,auto] gap-10 relative z-10'>
-                    <BluryCircle className='md:-top-full md:-left-1/2' />
+                    {/* <BluryCircle className='md:-top-full md:-left-1/2' /> */}
                     <div
                       className='-mt-5 w-[40%] mx-auto md:w-full'
                       data-aos='fade-up'
@@ -263,7 +267,7 @@ function LandingPage() {
                 {/* Box Two --Start-- */}
                 <div>
                   <div className='grid md:grid-cols-[90px,auto] gap-10 relative z-10'>
-                    <BluryCircle className='md:-top-full md:-right-1/3 !bg-[#30266E]' />
+                    {/* <BluryCircle className='md:-top-full md:-right-1/3 !bg-[#30266E]' /> */}
                     <div
                       data-aos='fade-up'
                       className='-mt-5 w-[40%] mx-auto md:w-full'
@@ -307,7 +311,7 @@ function LandingPage() {
         <section className='py-14 md:py-20'>
           <div className='landing_page_container'>
             <div className='text-center relative z-10'>
-              <BluryCircle className='top-[150%] left-1/2 -translate-x-1/2 -translate-y-1/2' />
+              {/* <BluryCircle className='top-[150%] left-1/2 -translate-x-1/2 -translate-y-1/2' /> */}
               <h2 className={`${headingClasses} mb-5`} data-aos='fade-up'>
                 Become an Insider
               </h2>
@@ -368,7 +372,8 @@ function LandingPage() {
             data-aos-delay='100'
             className={`${headingClasses} text-center`}
           >
-            Built for <span className='gradient_text'>your journey</span>
+            Built for your journey
+            {/* <span className='gradient_text'>your journey</span> */}
           </h2>
           <p
             data-aos='fade-up'
@@ -386,7 +391,7 @@ function LandingPage() {
               data-aos-delay='300'
               className='btn_gradient'
             >
-              VIEW OUR ROADMAP
+              VIEW OUR BLUEPRINT
             </button>
           </div>
         </section>
@@ -406,7 +411,7 @@ function LandingPage() {
                 {/* Box One --Start-- */}
                 <div>
                   <div className='grid md:grid-cols-[90px,auto] gap-10 relative z-10'>
-                    <BluryCircle className='md:-top-full md:-left-1/2' />
+                    {/* <BluryCircle className='md:-top-full md:-left-1/2' /> */}
                     <div
                       className='-mt-5 w-[40%] mx-auto md:w-full'
                       data-aos='fade-up'
@@ -443,7 +448,7 @@ function LandingPage() {
                 {/* Box Two --Start-- */}
                 <div>
                   <div className='grid md:grid-cols-[90px,auto] gap-10 relative z-10'>
-                    <BluryCircle className='md:-top-full md:-right-1/3 !bg-[#30266E]' />
+                    {/* <BluryCircle className='md:-top-full md:-right-1/3 !bg-[#30266E]' /> */}
                     <div
                       data-aos='fade-up'
                       className='-mt-5 w-[40%] mx-auto md:w-full'
@@ -478,7 +483,7 @@ function LandingPage() {
                 {/* Box One --Start-- */}
                 <div>
                   <div className='grid md:grid-cols-[90px,auto] gap-10 relative z-10'>
-                    <BluryCircle className='md:-top-full md:-left-1/2' />
+                    {/* <BluryCircle className='md:-top-full md:-left-1/2' /> */}
                     <div
                       className='-mt-5 w-[40%] mx-auto md:w-full'
                       data-aos='fade-up'
@@ -515,7 +520,7 @@ function LandingPage() {
                 {/* Box Two --Start-- */}
                 <div>
                   <div className='grid md:grid-cols-[90px,auto] gap-10 relative z-10'>
-                    <BluryCircle className='md:-top-full md:-right-1/3 !bg-[#30266E]' />
+                    {/* <BluryCircle className='md:-top-full md:-right-1/3 !bg-[#30266E]' /> */}
                     <div
                       data-aos='fade-up'
                       className='-mt-5 w-[40%] mx-auto md:w-full'
@@ -565,7 +570,7 @@ function LandingPage() {
             </h2>
 
             <div className='text-white space-y-8 relative z-10'>
-              <BluryCircle className='top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 !h-[420px] !blur-[180px]' />
+              {/* <BluryCircle className='top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 !h-[420px] !blur-[180px]' /> */}
               <FaqAccordion
                 data-aos='fade-up'
                 data-aos-delay='200'
@@ -593,7 +598,7 @@ function LandingPage() {
               <FaqAccordion
                 data-aos='fade-up'
                 data-aos-delay='400'
-                title='What can I do with my NFT?'
+                title='What can I do with a NFT?'
                 description='Non-fungible tokens can be used to grow decentralized autonomous organizations
               around brand assets and provide early participants with additional benefits for their
               prolonged support of the brand, creator or project. They can be used as authentication
@@ -677,13 +682,13 @@ const FaqAccordion = ({ title, description, ...rest }: FaqAccordionProps) => {
 // FAQ Accordion Component --End--
 
 // BluryCircle Component --Start--
-const BluryCircle = ({ className = '' }: { className?: string }) => {
-  return (
-    <div
-      className={`w-[600px] h-[350px] bg-[#1A335D] absolute rounded-full blur-[190px] z-[-1] ${className}`}
-    ></div>
-  );
-};
+// const BluryCircle = ({ className = '' }: { className?: string }) => {
+//   return (
+//     <div
+//       className={`w-[600px] h-[350px] bg-[#1A335D] absolute rounded-full blur-[190px] z-[-1] ${className}`}
+//     ></div>
+//   );
+// };
 // BluryCircle Component --End--
 
 // Nft Card Component --Start--

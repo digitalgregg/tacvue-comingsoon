@@ -341,7 +341,7 @@ const Blueprint = () => {
                   }}
                   className='w-[60px] h-[60px] border-4 border-transparent rounded-[10px] flex items-center justify-center'
                 >
-                  <img src='/images/telegram_icon.png' className='w-8 h-8' />
+                  <img src='/images/telegram_icon.png' className='w-7 h-7' />
                 </a>
                 <a
                   href='#'
@@ -351,7 +351,7 @@ const Blueprint = () => {
                   }}
                   className='w-[60px] h-[60px] border-4 border-transparent rounded-[10px] flex items-center justify-center'
                 >
-                  <img src='/images/instagram_icon.png' className='w-8 h-8' />
+                  <img src='/images/instagram_icon.png' className='w-7 h-7' />
                 </a>
               </div>
             </div>

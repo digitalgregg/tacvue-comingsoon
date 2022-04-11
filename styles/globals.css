@@ -1,11 +1,15 @@
 @font-face {
-    font-family: "Spaced";
-    src: url("../public/fonts/Spaced_OTF.otf");
+  font-family: 'Spaced';
+  src: url('../public/fonts/Spaced_OTF.otf');
 }
 
 html {
-    scroll-behavior: smooth;
-    color: #fff;
+  scroll-behavior: smooth;
+  color: #fff;
+}
+
+body {
+  background: #030c16;
 }
 
 @tailwind base;
@@ -13,96 +17,96 @@ html {
 @tailwind utilities;
 
 @layer utilities {
-    .nft_card_hover {
-        @apply duration-200;
-        box-shadow: 0px 15px 47px 0px #0ad3ff80 !important;
-    }
-    .container {
-        @apply mx-auto;
-    }
-    .landing_page_container {
-        @apply mx-auto max-w-full px-5 md:px-6 xl:max-w-[1280px];
-    }
-    .bg-size-full {
-        background-size: 100%;
-    }
+  .nft_card_hover {
+    @apply duration-200;
+    box-shadow: 0px 15px 47px 0px #0ad3ff80 !important;
+  }
+  .container {
+    @apply mx-auto;
+  }
+  .landing_page_container {
+    @apply mx-auto max-w-full px-5 md:px-6 xl:max-w-[1280px];
+  }
+  .bg-size-full {
+    background-size: 100%;
+  }
 
-    .nft_card_hover_shadow {
-        box-shadow: 0px 1px 30px -2px #71eeff;
-    }
-    .bg-110 {
-        background-size: 110%;
-    }
-    .btn_gradient{
-        @apply from-blue-500 to-cyan-500 bg-gradient-to-r text-sm sm:text-base px-10 py-2.5 rounded-full hover:from-blue-600 hover:to-cyan-600;
-    }
-    .bg-120{
-        background-size: 120%;
-    }
+  .nft_card_hover_shadow {
+    box-shadow: 0px 1px 30px -2px #71eeff;
+  }
+  .bg-110 {
+    background-size: 110%;
+  }
+  .btn_gradient {
+    @apply from-blue-500 to-cyan-500 bg-gradient-to-r text-sm sm:text-base px-10 py-2.5 rounded-full hover:from-blue-600 hover:to-cyan-600;
+  }
+  .bg-120 {
+    background-size: 120%;
+  }
 }
 
 .faq_section .Collapsible {
-    @apply rounded-3xl md:rounded-full duration-200 bg-gradient-to-bl from-[#121C37] to-[#091C4A] border border-[#6396F9];
+  @apply rounded-3xl md:rounded-full duration-200 bg-gradient-to-bl from-[#121C37] to-[#091C4A] border border-[#6396F9];
 }
 .faq_section .Collapsible .minus_icon,
 .faq_section .Collapsible.currently_open .plus_icon {
-    display: none;
+  display: none;
 }
 
 .faq_section .Collapsible.currently_open {
-    @apply rounded-3xl;
+  @apply rounded-3xl;
 }
 
 .faq_section .Collapsible.currently_open .minus_icon {
-    display: block !important;
+  display: block !important;
 }
 
 .animate_slide_up_down {
-    animation: animate_slide_up_down 1.5s linear infinite;
+  animation: animate_slide_up_down 1.5s linear infinite;
 }
 
 @keyframes animate_slide_up_down {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(20px);
-    }
-    100% {
-        transform: translateY(0);
-    }
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .klaviyo-form-XGdvPD .needsclick.kl-private-reset-css-Xuajs1 form {
-    overflow: hidden !important;
+  overflow: hidden !important;
 }
 
-.gradient_text{
-    background: linear-gradient(91.52deg, #6396F9 40.77%, #00D1FF 115.11%), #FFFFFF;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-
+.gradient_text {
+  background: linear-gradient(91.52deg, #6396f9 40.77%, #00d1ff 115.11%),
+    #ffffff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .collections_range_wrapper .MuiSlider-colorPrimary {
-    padding: 0 !important;
-  }
-  .collections_range_wrapper .MuiSlider-rail.css-14pt78w-MuiSlider-rail {
-    background-color: #273452 !important;
-    height: 10px;
-  }
-  .collections_range_wrapper .MuiSlider-track.css-1gv0vcd-MuiSlider-track {
-    height: 10px;
-  }
-  .collections_range_wrapper .MuiSlider-track.css-1gv0vcd-MuiSlider-track,
-  .collections_range_wrapper
-    .MuiSlider-thumbColorPrimary.MuiSlider-thumbSizeMedium.MuiSlider-thumb.css-1ti6opd-MuiSlider-thumb {
-    background: linear-gradient(91.52deg, #6396f9 40.77%, #00d1ff 115.11%),
-      linear-gradient(0deg, #00a3ff, #00a3ff) !important;
-  }
-  .collections_range_wrapper
-    .MuiSlider-thumbColorPrimary.MuiSlider-thumbSizeMedium.MuiSlider-thumb.css-1ti6opd-MuiSlider-thumb {
-    width: 25px;
-    height: 25px;
-  }
+  padding: 0 !important;
+}
+.collections_range_wrapper .MuiSlider-rail.css-14pt78w-MuiSlider-rail {
+  background-color: #273452 !important;
+  height: 10px;
+}
+.collections_range_wrapper .MuiSlider-track.css-1gv0vcd-MuiSlider-track {
+  height: 10px;
+}
+.collections_range_wrapper .MuiSlider-track.css-1gv0vcd-MuiSlider-track,
+.collections_range_wrapper
+  .MuiSlider-thumbColorPrimary.MuiSlider-thumbSizeMedium.MuiSlider-thumb.css-1ti6opd-MuiSlider-thumb {
+  background: linear-gradient(91.52deg, #6396f9 40.77%, #00d1ff 115.11%),
+    linear-gradient(0deg, #00a3ff, #00a3ff) !important;
+}
+.collections_range_wrapper
+  .MuiSlider-thumbColorPrimary.MuiSlider-thumbSizeMedium.MuiSlider-thumb.css-1ti6opd-MuiSlider-thumb {
+  width: 25px;
+  height: 25px;
+}
