@@ -9,7 +9,7 @@ function Header() {
     <header>
       <nav
         className={
-          "flex justify-between w-full py-4 md:py-8 fixed top-0 left-0 z-50 backdrop-blur-sm px-5 xl:px-16 2xl:px-20"
+          "flex justify-between w-full py-4 pb-2 md:py-8 md:pb-3 fixed top-0 left-0 z-50 backdrop-blur-sm px-5 xl:px-16 2xl:px-20"
         }
       >
         <div className="flex items-center cursor-pointer w-[140px] md:w-auto">
