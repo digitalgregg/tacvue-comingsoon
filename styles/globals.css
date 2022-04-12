@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Spaced';
-  src: url('../public/fonts/Spaced_OTF.otf');
+  font-family: "Spaced";
+  src: url("../public/fonts/Spaced_OTF.otf");
 }
 
 html {
@@ -42,6 +42,18 @@ body {
   }
   .bg-120 {
     background-size: 120%;
+  }
+
+  .roadmap_circle_bg {
+    background: linear-gradient(#091c4a, #091c4a) padding-box padding-box,
+      linear-gradient(91.52deg, #6396f9 40.77%, #00d1ff 115.11%) border-box
+        border-box;
+  }
+  .roadmap_circle_bg_hover {
+    background: linear-gradient(91.52deg, #6396f9 40.77%, #00d1ff 115.11%)
+        padding-box padding-box,
+      linear-gradient(91.52deg, #6396f9 40.77%, #00d1ff 115.11%) border-box
+        border-box;
   }
 }
 

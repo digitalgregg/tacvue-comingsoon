@@ -88,7 +88,7 @@ function LandingPage() {
         <section className="bg-cover bg-no-repeat bg-top">
           <div className="h-screen w-full relative">
             {/* Background Video --Start-- */}
-            <div className="w-full h-full absolute top-0 left-0 z-[0]">
+            <div className="w-full h-full absolute top-0 left-0 z-[0] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black/50">
               {/* <video
                 src='/video/TacVue-Bkgd-header.webm'
                 autoPlay
@@ -365,34 +365,37 @@ function LandingPage() {
           style={{
             backgroundImage: "url('/images/grids_bg.svg')",
           }}
-          className="bg-top bg-cover pb-[150px] mt-[150px] md:mt-[250px] bg-no-repeat md:bg-120 container"
+          className="bg-top bg-cover pb-[150px] mt-[150px] md:mt-[250px] bg-no-repeat md:bg-120"
         >
-          <h2
-            data-aos="fade-up"
-            data-aos-delay="100"
-            className={`${headingClasses} text-center`}
-          >
-            Built for your journey
-            {/* <span className='gradient_text'>your journey</span> */}
-          </h2>
-          <p
-            data-aos="fade-up"
-            data-aos-delay="200"
-            className="lg:w-[520px] mx-auto text-white text-center !leading-[30px] mt-10 text-lg font-light"
-          >
-            Our blueprint maps out the goals and strategies our marketpalce to
-            communicate its long-term value. We include key project milestones,
-            short and long-term goals, and plans for marketing and growth.
-          </p>
-          <div className="flex justify-center mt-10">
-            <button
-              onClick={modalHandleOpen}
+          <div className="container">
+            <h2
               data-aos="fade-up"
-              data-aos-delay="300"
-              className="btn_gradient"
+              data-aos-delay="100"
+              className={`${headingClasses} text-center`}
             >
-              VIEW OUR BLUEPRINT
-            </button>
+              Built for your journey
+              {/* <span className='gradient_text'>your journey</span> */}
+            </h2>
+            <p
+              data-aos="fade-up"
+              data-aos-delay="200"
+              className="lg:w-[520px] mx-auto text-white text-center !leading-[30px] mt-10 text-lg font-light"
+            >
+              Our blueprint maps out the goals and strategies our marketpalce to
+              communicate its long-term value. We include key project
+              milestones, short and long-term goals, and plans for marketing and
+              growth.
+            </p>
+            <div className="flex justify-center mt-10">
+              <button
+                onClick={modalHandleOpen}
+                data-aos="fade-up"
+                data-aos-delay="300"
+                className="btn_gradient"
+              >
+                VIEW OUR BLUEPRINT
+              </button>
+            </div>
           </div>
         </section>
         {/* Build for your journey --End-- */}
@@ -669,8 +672,8 @@ const FaqAccordion = ({ title, description, ...rest }: FaqAccordionProps) => {
             </div>
           </div>
         }
-        onOpen={() => setisOpen(true)}
-        onClose={() => setisOpen(false)}
+        onOpening={() => setisOpen(true)}
+        onClosing={() => setisOpen(false)}
       >
         <p className={`${paragraphClasses} px-10 pb-5`}>{description}</p>
       </Collapsible>
