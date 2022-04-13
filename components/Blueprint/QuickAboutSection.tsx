@@ -24,8 +24,8 @@ const QuickAboutSection = () => {
                       width: 348,
                       height: 396,
                     }}
-                    name="Abadul Richards"
-                    title="CEO"
+                    name="Team Member"
+                    title="Role"
                   />
                 </div>
                 <div className="flex items-end md:translate-y-[-20px]">
@@ -35,8 +35,8 @@ const QuickAboutSection = () => {
                       width: 292 * 3,
                       height: 332 * 3,
                     }}
-                    name="Nayem Jonathan"
-                    title="Head of operation"
+                    name="Team Member"
+                    title="Role"
                   />
                 </div>
               </div>
@@ -48,8 +48,8 @@ const QuickAboutSection = () => {
                       width: 292 * 3,
                       height: 332 * 3,
                     }}
-                    name="Hasib Bishwash"
-                    title="Assistant Manager"
+                    name="Team Member"
+                    title="Role"
                   />
                 </div>
                 <div className="md:translate-y-[-20px]">
@@ -59,8 +59,8 @@ const QuickAboutSection = () => {
                       width: 348,
                       height: 396,
                     }}
-                    name="Sakib Richards"
-                    title="Vice Presi"
+                    name="Team Member"
+                    title="Role"
                   />
                 </div>
               </div>

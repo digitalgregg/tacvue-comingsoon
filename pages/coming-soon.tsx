@@ -54,7 +54,7 @@ function BorderedDropDown({
         <div
           className={classNames(
             "border border-[#576993] bg-transparent px-4 py-3 flex",
-            rounded
+            rounded,
           )}
           onClick={() => setVisible(!isVisible)}
         >
@@ -62,7 +62,7 @@ function BorderedDropDown({
             <span
               className={classNames(
                 "flex-1 pl-3 align-middle",
-                selected !== "" ? "text-white" : "text-[#576993]"
+                selected !== "" ? "text-white" : "text-[#576993]",
               )}
             >
               {selected === "" && placeholder}
@@ -105,7 +105,7 @@ function BorderedDropDown({
             <div
               className={classNames(
                 "w-full flex flex-col py-3 px-4 rounded-lg",
-                "space-y-2 divide-y divide-[#576993]"
+                "space-y-2 divide-y divide-[#576993]",
               )}
               style={{
                 background:
@@ -186,7 +186,7 @@ function NFTCard({
         className={classNames(
           `drop-shadow-lg from-cyan-500 to-blue-500 bg-gradient-to-r`,
           "relative rounded-3xl p-px",
-          "relative"
+          "relative",
         )}
       >
         <svg
@@ -214,7 +214,7 @@ function NFTCard({
                   "w-[240px] h-[300px] mx-auto object-fill",
                 orientation === "constraint" &&
                   "w-[300px] h-[300px] object-cover mx-auto",
-                orientation === "full" && "object-cover"
+                orientation === "full" && "object-cover",
               )}
               alt=" "
             />
@@ -224,14 +224,14 @@ function NFTCard({
         <div
           className={classNames(
             "absolute bottom-0 left-0 right-0 w-full ",
-            "flex flex-col"
+            "flex flex-col",
           )}
         >
           <div
             className={classNames(
               "absolute flex items-center justify-center  -top-5 left-8",
               "rounded-full from-cyan-500 to-blue-500 bg-gradient-to-r p-0.5",
-              "w-10 h-10 z-50"
+              "w-10 h-10 z-50",
             )}
           >
             <img
@@ -260,12 +260,12 @@ function NFTCard({
                   className={classNames(
                     "w-full rounded-b-3xl flex",
                     "px-5 xl:px-3 pb-3 pt-6",
-                    "space-x-4 justify-end"
+                    "space-x-4 justify-end",
                   )}
                 >
                   <div
                     className={classNames(
-                      "flex justify-between flex-1 space-y-3"
+                      "flex justify-between flex-1 space-y-3",
                     )}
                   >
                     <div>
@@ -273,7 +273,7 @@ function NFTCard({
                         className={classNames(
                           "text-sm font-medium tracking-wider md:text-base xl:text-lg 2xl:text-xl",
                           "text-left whitespace-nowrap min-h-[15px]",
-                          "text-ellipsis w-44 overflow-hidden"
+                          "text-ellipsis w-44 overflow-hidden",
                         )}
                       >
                         {nftName}
@@ -281,7 +281,7 @@ function NFTCard({
                       <p
                         className={classNames(
                           "-mt-1 text-[10px] xl:text-xs 2xl:text-base font-light text-[#9EBBFF] text-opacity-80",
-                          "text-left"
+                          "text-left",
                         )}
                       >
                         by {tagName}
@@ -290,20 +290,20 @@ function NFTCard({
                     <button
                       className={classNames(
                         `from-blue-500 to-cyan-500 bg-gradient-to-r`,
-                        "rounded-3xl p-[2px]"
+                        "rounded-3xl p-[2px]",
                       )}
                     >
                       <p
                         className={classNames(
                           "bg-gradient-to-l from-[#091C4A] to-[#121C37]",
                           "rounded-3xl w-full h-full ",
-                          "px-3 2xl:px-4  py-[2px]"
+                          "px-3 2xl:px-4  py-[2px]",
                         )}
                       >
                         <span
                           className={classNames(
                             `from-blue-500 to-cyan-500 bg-gradient-to-r bg-clip-text text-transparent`,
-                            "text-xs xl:text-sm 2xl:text-base"
+                            "text-xs xl:text-sm 2xl:text-base",
                           )}
                         >
                           1.5 AVAX
@@ -317,7 +317,7 @@ function NFTCard({
                   <button
                     className={classNames(
                       "flex-1 py-1 text-white rounded-3xl",
-                      "whitespace-nowrap w-full"
+                      "whitespace-nowrap w-full",
                     )}
                     style={{
                       background:
@@ -329,7 +329,7 @@ function NFTCard({
                   <button
                     className={classNames(
                       "flex-1 py-1 text-white rounded-3xl",
-                      "whitespace-nowrap w-full border border-white"
+                      "whitespace-nowrap w-full border border-white",
                     )}
                   >
                     Place Bid
@@ -357,7 +357,7 @@ function CreateNFTRoundedButton({
     <button
       className={classNames(
         "text-white rounded-full font-semibold from-[#6396f9] to-[#00d1ff] bg-gradient-to-r p-[2px]",
-        "transition-all duration-300 ease-in-out w-full"
+        "transition-all duration-300 ease-in-out w-full",
       )}
       onClick={() => {
         alert("Create NFT Triggered"); // placeholder function
@@ -369,7 +369,7 @@ function CreateNFTRoundedButton({
           "hover:bg-gradient-to-r hover:from-[#6396f9] hover:to-[#00d1ff]",
           "transition-all duration-300 ease-in-out",
           "hover:text-white group w-full",
-          textClassName
+          textClassName,
         )}
       >
         <span
@@ -378,7 +378,7 @@ function CreateNFTRoundedButton({
             "transition-all duration-300 ease-in-out",
             `group-hover:text-white`,
             "whitespace-nowrap uppercase",
-            textSize
+            textSize,
           )}
         >
           {name}
@@ -413,7 +413,7 @@ const GradientDateSelector: React.FC = () => (
   <div className={classNames("rounded-lg p-px bg-[#576993]")}>
     <div
       className={classNames(
-        "flex items-center justify-between bg-[#101528] w-full py-3 rounded-lg"
+        "flex items-center justify-between bg-[#101528] w-full py-3 rounded-lg",
       )}
     >
       <div className="px-4 w-full">
@@ -499,7 +499,7 @@ const LinkedInGIcons = () => (
 );
 
 const DropsFormSection = () => (
-  <div className="grid grid-cols-3 gap-10">
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10">
     <div className="flex flex-col space-y-1">
       <p className={classNames("text-[#9EBBFF]", "text-sm pb-3")}>
         Project Twitter Link
@@ -508,7 +508,7 @@ const DropsFormSection = () => (
         <div
           className={classNames(
             "absolute inset-y-0 flex items-center justify-center w-6 h-10 pt-2 left-1",
-            "ml-5"
+            "ml-5",
           )}
         >
           <GradientTweeterIcon />
@@ -520,7 +520,7 @@ const DropsFormSection = () => (
             "px-5 py-3 border border-[#576993] bg-transparent",
             "w-full rounded-md",
             "placeholder:font-light placeholder:text-[#576993] z-50",
-            "bg-[#101528] rounded-lg"
+            "bg-[#101528] rounded-lg",
           )}
           placeholder="@yournftlaunch"
         />
@@ -534,7 +534,7 @@ const DropsFormSection = () => (
         <div
           className={classNames(
             "absolute inset-y-0 flex items-center justify-center w-6 h-10 pt-2 left-1",
-            "ml-5"
+            "ml-5",
           )}
         >
           <DiscordIcon />
@@ -546,7 +546,7 @@ const DropsFormSection = () => (
             "px-5 py-3 border border-[#576993] bg-transparent",
             "w-full rounded-md",
             "placeholder:font-light placeholder:text-[#576993] z-50",
-            "bg-[#101528] rounded-lg"
+            "bg-[#101528] rounded-lg",
           )}
           placeholder="@yournftlaunch"
         />
@@ -560,7 +560,7 @@ const DropsFormSection = () => (
         <div
           className={classNames(
             "absolute inset-y-0 flex items-center justify-center w-6 h-10 pt-2 left-1",
-            "ml-5"
+            "ml-5",
           )}
         >
           <LinkedInGIcons />
@@ -572,7 +572,7 @@ const DropsFormSection = () => (
               "pl-14 px-5 py-3 w-full rounded-md",
               "placeholder:font-light placeholder:text-[#576993] z-50",
               "bg-[#101528] rounded-lg",
-              "border  border-[#576993]  "
+              "border  border-[#576993]  ",
             )}
             placeholder="@yournftlaunch"
           />
@@ -595,7 +595,7 @@ const BorderedTextArea: React.FC<{
         "px-5 py-3 border border-[#576993] bg-transparent",
         "w-full rounded-md",
         "placeholder:font-light placeholder:text-[#576993] z-50",
-        "bg-[#101528] rounded-lg"
+        "bg-[#101528] rounded-lg",
       )}
       placeholder={placeholder}
     />
@@ -649,7 +649,7 @@ const TeamDetailsSeciton: React.FC = () => {
       className={classNames(
         "bg-[#1C233D] border-[#576993] border",
         "flex justify-center items-center",
-        "w-full py-3 rounded-lg"
+        "w-full py-3 rounded-lg",
       )}
       onClick={onClick}
     >
@@ -682,7 +682,7 @@ const TeamDetailsSeciton: React.FC = () => {
                     "px-5 py-3 border border-[#576993] bg-transparent",
                     "w-full rounded-md",
                     "placeholder:font-light placeholder:text-[#576993]",
-                    "bg-[#0E1014] rounded-lg"
+                    "bg-[#0E1014] rounded-lg",
                   )}
                   placeholder="Project Name"
                   {...register(`projects.${idx}.name` as const)}
@@ -693,7 +693,7 @@ const TeamDetailsSeciton: React.FC = () => {
                     "px-5 py-3 border border-[#576993] bg-transparent",
                     "w-full rounded-md",
                     "placeholder:font-light placeholder:text-[#576993]",
-                    "bg-[#0E1014] rounded-lg"
+                    "bg-[#0E1014] rounded-lg",
                   )}
                   key={`${project.id}`}
                   placeholder="Project Link"
@@ -737,7 +737,7 @@ const TeamDetailsSeciton: React.FC = () => {
                     "px-5 py-3 border border-[#576993] bg-transparent",
                     "w-full rounded-md",
                     "placeholder:font-light placeholder:text-[#576993]",
-                    "bg-[#0E1014] rounded-lg"
+                    "bg-[#0E1014] rounded-lg",
                   )}
                   placeholder="Name"
                   id={`${teammate.id}-name`}
@@ -749,7 +749,7 @@ const TeamDetailsSeciton: React.FC = () => {
                     "px-5 py-3 border border-[#576993] bg-transparent",
                     "w-full rounded-md",
                     "placeholder:font-light placeholder:text-[#576993]",
-                    "bg-[#0E1014] rounded-lg"
+                    "bg-[#0E1014] rounded-lg",
                   )}
                   placeholder="Position"
                   id={`${teammate.id}-position`}
@@ -761,7 +761,7 @@ const TeamDetailsSeciton: React.FC = () => {
                     "px-5 py-3 border border-[#576993] bg-transparent",
                     "w-full rounded-md",
                     "placeholder:font-light placeholder:text-[#576993]",
-                    "bg-[#0E1014] rounded-lg"
+                    "bg-[#0E1014] rounded-lg",
                   )}
                   placeholder="Twitter"
                   id={`${teammate.id}-twitter`}
@@ -773,7 +773,7 @@ const TeamDetailsSeciton: React.FC = () => {
                     "px-5 py-3 border border-[#576993] bg-transparent",
                     "w-full rounded-md",
                     "placeholder:font-light placeholder:text-[#576993]",
-                    "bg-[#0E1014] rounded-lg"
+                    "bg-[#0E1014] rounded-lg",
                   )}
                   placeholder="Entity"
                   id={`${teammate.id}-linkedin`}
@@ -802,8 +802,8 @@ const TeamDetailsSeciton: React.FC = () => {
   return (
     <div>
       <p className="mt-16 text-lg text-white">Team Details</p>
-      <div className="flex mt-4 space-x-16">
-        <div className="flex-1">
+      <div className="flex flex-col md:flex-row gap-6 mt-4 md:gap-16">
+        <div>
           <p className="text-[#9EBBFF] text-sm pb-4">
             Are you a team member of other NFT projects?
           </p>
@@ -817,7 +817,7 @@ const TeamDetailsSeciton: React.FC = () => {
           />
           {hasProject && <ProjectsSection />}
         </div>
-        <div className="flex-1">
+        <div>
           <p className="text-[#9EBBFF] text-sm pb-4">
             Is the founding team doxed?
           </p>
@@ -863,23 +863,23 @@ const LaunchYourNFTModal = () => {
         <div className="flex justify-center min-h-screen px-4 pt-4 pb-20 relative z-10 mt-[100px]">
           <div
             className={classNames(
-              "inline-block text-left align-bottom transition-all transform",
-              "shadow-xl sm:my-8 sm:align-middle sm:max-w-6xl sm:w-full",
-              "rounded-[30px] relative px-20",
-              "bg-[#0E1014] border-2 border-[#576993]"
+              "block text-left align-bottom transition-all transform",
+              "shadow-xl sm:my-8 sm:align-middle w-full md:max-w-6xl",
+              "rounded-[30px] relative px-5 md:px-20",
+              "bg-[#0E1014] border-2 border-[#576993]",
             )}
           >
             <div className="h-full">
               <p
                 className={classNames(
-                  "text-8xl mt-16 mb-[100px] text-center font-spaced",
-                  GradientText
+                  "text-4xl md:text-8xl mt-16 mb-[50px] md:mb-[100px] text-center font-spaced",
+                  GradientText,
                 )}
               >
                 PROJECT LaunchPad
               </p>
               <p className="mt-8 text-lg text-white">Collection Details</p>
-              <div className="grid grid-cols-2 gap-20 mt-3">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-20 mt-3">
                 <div className="max-w-xl">
                   {/* Collection */}
                   <div className="pt-2">
@@ -892,13 +892,13 @@ const LaunchYourNFTModal = () => {
                         "px-5 py-3 border border-[#576993] bg-transparent",
                         "w-full rounded-md",
                         "placeholder:font-light placeholder:text-[#576993] z-50",
-                        "bg-[#101528] rounded-lg"
+                        "bg-[#101528] rounded-lg",
                       )}
                       placeholder="Choose a project"
                     />
                     <p
                       className={classNames(
-                        "text-xs pt-px text-[#576993] mt-1 leading-5"
+                        "text-xs pt-px text-[#576993] mt-1 leading-5",
                       )}
                     >
                       You must choose a product that has never been minted or
@@ -973,7 +973,8 @@ const LaunchYourNFTModal = () => {
                   </div>
                 </div>
               </div>
-              <div className="grid grid-cols-3 gap-16 mt-12">
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-16 mt-12">
                 <div className="flex-1">
                   <p className="text-[#9EBBFF] text-sm pb-4">
                     # of collection items being minted?
@@ -995,7 +996,7 @@ const LaunchYourNFTModal = () => {
                     <div
                       className={classNames(
                         "absolute inset-y-0 flex items-center justify-center w-6 h-10 pt-2 left-1",
-                        "ml-3"
+                        "ml-3",
                       )}
                     >
                       <AvaxIcon />
@@ -1007,7 +1008,7 @@ const LaunchYourNFTModal = () => {
                         "px-5 py-3 border border-[#576993] bg-transparent",
                         "w-full rounded-md",
                         "placeholder:font-light placeholder:text-[#576993] z-50",
-                        "bg-[#101528] rounded-lg"
+                        "bg-[#101528] rounded-lg",
                       )}
                       placeholder="0.00"
                     />
@@ -1021,7 +1022,7 @@ const LaunchYourNFTModal = () => {
                     <div
                       className={classNames(
                         "absolute inset-y-0 flex items-center justify-center w-6 h-10 pt-2 left-1",
-                        "ml-3"
+                        "ml-3",
                       )}
                     >
                       <AvaxIcon />
@@ -1033,7 +1034,7 @@ const LaunchYourNFTModal = () => {
                         "px-5 py-3 border border-[#576993] bg-transparent",
                         "w-full rounded-md",
                         "placeholder:font-light placeholder:text-[#576993] z-50",
-                        "bg-[#101528] rounded-lg"
+                        "bg-[#101528] rounded-lg",
                       )}
                       placeholder="0.00"
                     />
@@ -1041,7 +1042,9 @@ const LaunchYourNFTModal = () => {
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-16 mt-12">
+              {/* ------- */}
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-16 mt-12">
                 <div className="flex flex-col justify-center">
                   <label className="text-[#9EBBFF] text-sm pb-4">
                     Royalty Percentage
@@ -1064,7 +1067,7 @@ const LaunchYourNFTModal = () => {
                       <p
                         className={classNames(
                           "text-xl font-medium",
-                          GradientText
+                          GradientText,
                         )}
                       >
                         {rangeValue}%
@@ -1081,7 +1084,10 @@ const LaunchYourNFTModal = () => {
               </div>
 
               <p className="mt-16 text-lg text-white">Contact Infomation</p>
-              <div className="grid grid-cols-2 gap-32 mt-4">
+
+              {/* ----- */}
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-32 mt-4">
                 <div className="pt-2">
                   <p className={classNames("text-[#9EBBFF]", "text-sm pb-3")}>
                     Email address for main contact:
@@ -1092,7 +1098,7 @@ const LaunchYourNFTModal = () => {
                       "px-5 py-3 border border-[#576993] bg-transparent",
                       "w-full rounded-md",
                       "placeholder:font-light placeholder:text-[#576993] z-50",
-                      "bg-[#101528] rounded-lg"
+                      "bg-[#101528] rounded-lg",
                     )}
                     placeholder="youremail@goeshere.com"
                   />
@@ -1107,12 +1113,15 @@ const LaunchYourNFTModal = () => {
                       "px-5 py-3 border border-[#576993] bg-transparent",
                       "w-full rounded-md",
                       "placeholder:font-light placeholder:text-[#576993] z-50",
-                      "bg-[#101528] rounded-lg"
+                      "bg-[#101528] rounded-lg",
                     )}
                     placeholder="@TacvueFan"
                   />
                 </div>
               </div>
+
+              {/* ------ */}
+
               <div className="mt-10">
                 <DropsFormSection />
               </div>
@@ -1120,7 +1129,8 @@ const LaunchYourNFTModal = () => {
               <TeamDetailsSeciton />
 
               <p className="mt-16 text-lg text-white">About Project</p>
-              <div className="grid grid-cols-2 mt-4 gap-x-28 gap-y-8">
+
+              <div className="grid grid-cols-1 md:grid-cols-2 mt-4 gap-6 md:gap-x-28 md:gap-y-8">
                 <BorderedTextArea
                   label="Give a brief description of your project."
                   placeholder="Add your description here..."
@@ -1147,7 +1157,7 @@ const LaunchYourNFTModal = () => {
                 />
 
                 <div className="bg-[#576993] w-full mx-auto h-px my-4 col-span-full" />
-                <div className="flex justify-between pb-8 col-span-full">
+                <div className="flex flex-col md:flex-row gap-y-5 justify-between pb-8 col-span-full">
                   <div className="flex items-center justify-center space-x-2">
                     <FormControlLabel
                       className="select-none text-white/50"

@@ -17,7 +17,7 @@ const RoadMapSection = () => {
                 background:
                   "linear-gradient(356.65deg, #00D1FF 2.93%, #6396F9 51.73%, #00D1FF 93.07%)",
               }}
-              className="absolute top-1/2 -translate-y-1/2 -left-[2px] md:left-1/2 md:-translate-x-1/2 w-1 h-[81%]"
+              className="absolute top-1/2 -translate-y-1/2 -left-[2px] md:left-1/2 md:-translate-x-1/2 w-1 h-[79%] md:h-[81%]"
             ></div>
             {/* Line --End-- */}
 
