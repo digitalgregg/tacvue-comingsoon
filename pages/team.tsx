@@ -1,5 +1,6 @@
 import classNames from "classnames";
 import React from "react";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { GradientText } from "../components/Marketplace/Components/CommonStyles";
 import HeroSection from "../components/TeamPage/HeroSection";
@@ -17,6 +18,7 @@ const TeamPage = () => {
       <OurVisionAndMissionSection />
       <TeamSection />
       <OurValues />
+      <Footer />
     </>
   );
 };
