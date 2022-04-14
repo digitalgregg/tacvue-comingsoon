@@ -17,13 +17,7 @@ const ServiceCard = ({
     //   }}
     //   className='border border-transparent rounded-[20px]'
     >
-      <div
-        style={{
-          background:
-            "linear-gradient(180deg, rgba(0, 209, 255, 0.1) 0%, rgba(0, 209, 255, 0) 100%)",
-        }}
-        className="pt-[50px] pb-[95px] rounded-[20px] border border-transparent px-6 md:px-8"
-      >
+      <div className="pt-[50px] pb-[95px] rounded-[20px] px-6 md:px-7 bg-[#0D1329]/60 border border-white/20">
         <div
           style={{
             background:
