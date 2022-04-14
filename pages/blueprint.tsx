@@ -14,6 +14,7 @@ import PartnersSection from "../components/Blueprint/PartnersSection";
 import QuickAboutSection from "../components/Blueprint/QuickAboutSection";
 import JoinSection from "../components/Blueprint/JoinSection";
 import RoadMapSection from "../components/Blueprint/RoadMapSection";
+import ThreeJsAnimation from "../components/Blueprint/ThreeJsAnimation";
 
 export const subtitle_sm =
   "text-base md:text-lg text-[#9EB5E1] !leading-[160%] capitalize";
@@ -25,12 +26,20 @@ export const title_sm =
 const Blueprint = () => {
   return (
     <div
+      // style={{
+      //   background: "linear-gradient(237.69deg, #121831 2.21%, #000715 87.3%)",
+      // }}
       style={{
-        background: "linear-gradient(237.69deg, #121831 2.21%, #000715 87.3%)",
+        background:
+          'url("https://user-images.githubusercontent.com/26748614/96337246-f14d4580-1085-11eb-8793-a86d929e034d.jpg")',
+        backgroundSize: "contain",
+        backgroundRepeat: "repeat",
+        backdropFilter: "brightness(50%)",
       }}
     >
       <Header />
-      <HeroSection />
+      <ThreeJsAnimation />
+      {/* <HeroSection /> */}
       <StorySection />
       <ServicesSection />
       <RoadMapSection />

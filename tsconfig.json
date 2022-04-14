@@ -16,6 +16,13 @@
     "downlevelIteration": true,
     "jsx": "preserve"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.css", "**.*.js"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.css",
+    "**.*.js",
+    "components/Blueprint/ThreeJsAnimation.js"
+  ],
   "exclude": ["node_modules"]
 }
