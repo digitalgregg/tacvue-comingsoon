@@ -17,11 +17,13 @@ export const MUI_DARK_THEME = createTheme({
           props: { variant: "tacvue-primary" },
           style: {
             textTransform: "uppercase",
-            background: "linear-gradient(91.52deg, #6396F9 40.77%, #00D1FF 115.11%)",
+            background:
+              "linear-gradient(91.52deg, #6396F9 40.77%, #00D1FF 115.11%)",
             color: "white",
             borderRadius: "35px",
             ":hover": {
-              background: "linear-gradient(91.52deg, #6396F9 40.77%, #00D1FF 115.11%)",
+              background:
+                "linear-gradient(91.52deg, #6396F9 40.77%, #00D1FF 115.11%)",
               opacity: "0.9",
             },
           },
@@ -32,13 +34,15 @@ export const MUI_DARK_THEME = createTheme({
             textTransform: "uppercase",
             border: "1px solid",
             borderImageSlice: 1,
-            borderImageSource: "linear-gradient(91.52deg, #6396F9 40.77%, #00D1FF 115.11%)",
+            borderImageSource:
+              "linear-gradient(91.52deg, #6396F9 40.77%, #00D1FF 115.11%)",
             color: "white",
             borderRadius: "35px",
             ":hover": {
               borderImageSlice: 1,
               background: "none",
-              borderImageSource: "linear-gradient(91.52deg, #6396F9 40.77%, #00D1FF 115.11%)",
+              borderImageSource:
+                "linear-gradient(91.52deg, #6396F9 40.77%, #00D1FF 115.11%)",
               opacity: "0.9",
             },
           },

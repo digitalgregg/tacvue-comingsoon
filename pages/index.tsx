@@ -105,8 +105,8 @@ function LandingPage() {
             {/* Background Video --End-- */}
 
             <div className="landing_page_container flex flex-col items-center justify-center h-full w-full relative z-10">
-              <h1 className="text-5xl xs:text-6xl md:text-8xl text-center uppercase font-spaced mb-3">
-                <p data-aos="fade-up">nfts</p>
+              <h1 className="text-5xl xs:text-6xl md:!text-[110px] md:!leading-[1] text-center uppercase font-spaced mb-3">
+                <p data-aos="fade-up">Media</p>
                 <p data-aos="fade-up" data-aos-delay="100">
                   reimagined
                 </p>

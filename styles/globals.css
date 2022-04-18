@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background: #030c16;
+  @apply bg-[#F4F8FF] dark:bg-[#030c16] opacity-0 pointer-events-none;
 }
 
 @tailwind base;
@@ -55,10 +55,53 @@ body {
       linear-gradient(91.52deg, #6396f9 40.77%, #00d1ff 115.11%) border-box
         border-box;
   }
+
+  .vision_mission_gradient {
+    background: linear-gradient(180deg, #092238 0%, rgba(0, 209, 255, 0) 100%)
+        padding-box padding-box,
+      linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.2) 0%,
+          rgba(255, 255, 255, 0) 100%
+        )
+        border-box border-box;
+  }
+  .value_box_gradient_light {
+    background: linear-gradient(
+          152.97deg,
+          rgba(238, 241, 250, 0.9) 0%,
+          rgba(226, 234, 254, 0.9) 100%
+        )
+        padding-box padding-box,
+      linear-gradient(rgb(255 255 255 / 20%) 0%, rgba(25, 195, 254, 0) 79.17%)
+        border-box border-box;
+  }
+  .value_box_gradient_dark {
+    background: linear-gradient(#062036 0%, rgb(0 209 255 / 0%) 100%)
+        padding-box padding-box,
+      linear-gradient(rgb(255 255 255 / 20%) 0%, rgba(25, 195, 254, 0) 79.17%)
+        border-box border-box;
+  }
+  .value_box_icon_gradient_light {
+    background: linear-gradient(
+        91.52deg,
+        rgb(99 150 249 / 10%) 40.77%,
+        rgb(0 209 255 / 10%) 115.11%
+      ),
+      padding-box padding-box,
+      linear-gradient(rgb(255 255 255 / 20%) 0%, rgba(25, 195, 254, 0) 79.17%)
+        border-box border-box;
+  }
+  .value_box_icon_gradient_dark {
+    background: linear-gradient(#062036 0%, rgb(0 209 255 / 0%) 100%)
+        padding-box padding-box,
+      linear-gradient(rgb(255 255 255 / 20%) 0%, rgba(25, 195, 254, 0) 79.17%)
+        border-box border-box;
+  }
 }
 
 .faq_section .Collapsible {
-  @apply rounded-3xl md:rounded-full duration-200 bg-gradient-to-bl from-[#121C37] to-[#091C4A] border border-[#6396F9];
+  @apply rounded-2xl duration-200 bg-gradient-to-bl from-[#121C37] to-[#091C4A] border border-[#6396F9];
 }
 .faq_section .Collapsible .minus_icon,
 .faq_section .Collapsible.currently_open .plus_icon {
@@ -66,7 +109,7 @@ body {
 }
 
 .faq_section .Collapsible.currently_open {
-  @apply rounded-3xl;
+  @apply rounded-2xl;
 }
 
 .faq_section .Collapsible.currently_open .minus_icon {
