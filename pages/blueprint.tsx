@@ -17,7 +17,7 @@ import RoadMapSection from "../components/Blueprint/RoadMapSection";
 import ThreeJsAnimation from "../components/Blueprint/ThreeJsAnimation";
 
 export const subtitle_sm =
-  "text-base md:text-lg text-[#9EB5E1] !leading-[160%] capitalize";
+  "text-base md:text-lg text-[#576993] dark:text-[#9EB5E1] !leading-[160%] capitalize";
 export const text_gradient =
   "text-transparent bg-clip-text bg-gradient-to-r from-[#6396F9] to-[#00D1FF]";
 export const title_sm =

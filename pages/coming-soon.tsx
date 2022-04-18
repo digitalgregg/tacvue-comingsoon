@@ -53,7 +53,7 @@ function BorderedDropDown({
       <div className="relative">
         <div
           className={classNames(
-            "border border-[#576993] bg-transparent px-4 py-3 flex",
+            "border border-[#D0E0FD] dark:border-[#576993] bg-transparent px-4 py-3 flex bg-white dark:bg-transparent",
             rounded,
           )}
           onClick={() => setVisible(!isVisible)}
@@ -62,7 +62,9 @@ function BorderedDropDown({
             <span
               className={classNames(
                 "flex-1 pl-3 align-middle",
-                selected !== "" ? "text-white" : "text-[#576993]",
+                selected !== ""
+                  ? "text-[#576993] dark:text-white"
+                  : "text-[#576993]",
               )}
             >
               {selected === "" && placeholder}
@@ -104,18 +106,14 @@ function BorderedDropDown({
           <div className="absolute z-50 w-full h-56 overflow-y-auto">
             <div
               className={classNames(
-                "w-full flex flex-col py-3 px-4 rounded-lg",
+                "w-full flex flex-col py-3 px-4 rounded-lg bg-white dark:bg-[#171C32]",
                 "space-y-2 divide-y divide-[#576993]",
               )}
-              style={{
-                background:
-                  "linear-gradient(237.69deg, #181e36 2.21%, #0e1014 87.3%)",
-              }}
             >
               {options.map((option) => (
                 <span
                   key={option}
-                  className={`text-left cursor-pointer text-[#9EBBFF] py-2 hover:text-white`}
+                  className={`text-left cursor-pointer text-[#576993] dark:text-[#9EBBFF] py-2 hover:text-[#7587b2] hover:dark:text-white`}
                   onClick={() => {
                     onSelect(option);
                     setSelected(option);
@@ -410,10 +408,10 @@ const CollectionsItems: CollectionItem[] = [
 // Launch Your NFT Modal
 
 const GradientDateSelector: React.FC = () => (
-  <div className={classNames("rounded-lg p-px bg-[#576993]")}>
+  <div className={classNames("rounded-lg p-px bg-[#D0E0FD] dark:bg-[#576993]")}>
     <div
       className={classNames(
-        "flex items-center justify-between bg-[#101528] w-full py-3 rounded-lg",
+        "flex items-center justify-between bg-white dark:bg-[#101528] w-full py-3 rounded-lg",
       )}
     >
       <div className="px-4 w-full">
@@ -421,7 +419,7 @@ const GradientDateSelector: React.FC = () => (
           type="date"
           name=""
           id=""
-          className="bg-[#101528] outline-none w-full block font-light text-[#576993]"
+          className="bg-white dark:bg-[#101528] outline-none w-full block font-light text-[#576993]"
         />
       </div>
     </div>
@@ -517,10 +515,10 @@ const DropsFormSection = () => (
           type="text"
           className={classNames(
             "pl-14",
-            "px-5 py-3 border border-[#576993] bg-transparent",
+            "px-5 py-3 border border-[#D0E0FD] dark:border-[#576993] bg-transparent",
             "w-full rounded-md",
-            "placeholder:font-light placeholder:text-[#576993] z-50",
-            "bg-[#101528] rounded-lg",
+            "placeholder:font-light placeholder:text-[#576993] text-[#576993] dark:text-white z-50",
+            "bg-white dark:bg-[#101528] rounded-lg",
           )}
           placeholder="@yournftlaunch"
         />
@@ -543,10 +541,10 @@ const DropsFormSection = () => (
           type="text"
           className={classNames(
             "pl-14",
-            "px-5 py-3 border border-[#576993] bg-transparent",
+            "px-5 py-3 border border-[#D0E0FD] dark:border-[#576993] bg-transparent",
             "w-full rounded-md",
-            "placeholder:font-light placeholder:text-[#576993] z-50",
-            "bg-[#101528] rounded-lg",
+            "placeholder:font-light placeholder:text-[#576993] text-[#576993] dark:text-white z-50",
+            "bg-white dark:bg-[#101528] rounded-lg",
           )}
           placeholder="@yournftlaunch"
         />
@@ -570,9 +568,9 @@ const DropsFormSection = () => (
             type="text"
             className={classNames(
               "pl-14 px-5 py-3 w-full rounded-md",
-              "placeholder:font-light placeholder:text-[#576993] z-50",
-              "bg-[#101528] rounded-lg",
-              "border  border-[#576993]  ",
+              "placeholder:font-light placeholder:text-[#576993] text-[#576993] dark:text-white z-50",
+              "bg-white dark:bg-[#101528] rounded-lg",
+              "border  border-[#D0E0FD] dark:border-[#576993]  ",
             )}
             placeholder="@yournftlaunch"
           />
@@ -588,14 +586,21 @@ const BorderedTextArea: React.FC<{
   className?: string;
 }> = ({ label, placeholder, children, className }) => (
   <div className={classNames("pt-2", className)}>
-    <p className={classNames("text-[#9EBBFF]", "text-sm pb-3")}>{label}</p>
+    <p
+      className={classNames(
+        "text-[#9EB5E1] dark:text-[#9EBBFF]",
+        "text-sm pb-3",
+      )}
+    >
+      {label}
+    </p>
     <textarea
       rows={4}
       className={classNames(
-        "px-5 py-3 border border-[#576993] bg-transparent",
+        "px-5 py-3 border border-[#D0E0FD] dark:border-[#576993] bg-transparent",
         "w-full rounded-md",
-        "placeholder:font-light placeholder:text-[#576993] z-50",
-        "bg-[#101528] rounded-lg",
+        "placeholder:font-light placeholder:text-[#576993] text-[#576993] dark:text-white z-50",
+        "bg-white dark:bg-[#101528] rounded-lg",
       )}
       placeholder={placeholder}
     />
@@ -647,7 +652,7 @@ const TeamDetailsSeciton: React.FC = () => {
   }) => (
     <button
       className={classNames(
-        "bg-[#1C233D] border-[#576993] border",
+        "bg-white dark:bg-[#1C233D] border-[#D0E0FD] dark:border-[#576993] border",
         "flex justify-center items-center",
         "w-full py-3 rounded-lg",
       )}
@@ -668,7 +673,7 @@ const TeamDetailsSeciton: React.FC = () => {
             {projects.map((project, idx) => (
               <div key={project.id} className="relative space-y-2">
                 <button
-                  className="absolute -top-2 -right-2 bg-[#1C233D] border border-[#576993] p-[5px] rounded-full"
+                  className="absolute -top-2 -right-2 bg-white dark:bg-[#1C233D] border border-[#D0E0FD] dark:border-[#576993] p-[5px] rounded-full"
                   onClick={() => {
                     removeProject(idx);
                   }}
@@ -679,10 +684,10 @@ const TeamDetailsSeciton: React.FC = () => {
                   type="text"
                   key={`${project.id}-name`}
                   className={classNames(
-                    "px-5 py-3 border border-[#576993] bg-transparent",
+                    "px-5 py-3 border border-[#D0E0FD] dark:border-[#576993] bg-transparent",
                     "w-full rounded-md",
-                    "placeholder:font-light placeholder:text-[#576993]",
-                    "bg-[#0E1014] rounded-lg",
+                    "placeholder:font-light placeholder:text-[#576993] text-[#576993] dark:text-white",
+                    "bg-white dark:bg-[#0E1014] rounded-lg",
                   )}
                   placeholder="Project Name"
                   {...register(`projects.${idx}.name` as const)}
@@ -690,10 +695,10 @@ const TeamDetailsSeciton: React.FC = () => {
                 <input
                   type="text"
                   className={classNames(
-                    "px-5 py-3 border border-[#576993] bg-transparent",
+                    "px-5 py-3 border border-[#D0E0FD] dark:border-[#576993] bg-transparent",
                     "w-full rounded-md",
-                    "placeholder:font-light placeholder:text-[#576993]",
-                    "bg-[#0E1014] rounded-lg",
+                    "placeholder:font-light placeholder:text-[#576993] text-[#576993] dark:text-white",
+                    "bg-white dark:bg-[#0E1014] rounded-lg",
                   )}
                   key={`${project.id}`}
                   placeholder="Project Link"
@@ -724,7 +729,7 @@ const TeamDetailsSeciton: React.FC = () => {
                 className="relative grid grid-cols-2 gap-x-2 gap-y-2"
               >
                 <button
-                  className="absolute -top-2 -right-2 bg-[#1C233D] border border-[#576993] p-[5px] rounded-full"
+                  className="absolute -top-2 -right-2 bg-[#1C233D] border border-[#D0E0FD] dark:border-[#576993] p-[5px] rounded-full"
                   onClick={() => {
                     removeTeammate(idx);
                   }}
@@ -734,9 +739,9 @@ const TeamDetailsSeciton: React.FC = () => {
                 <input
                   type="text"
                   className={classNames(
-                    "px-5 py-3 border border-[#576993] bg-transparent",
+                    "px-5 py-3 border border-[#D0E0FD] dark:border-[#576993] bg-transparent",
                     "w-full rounded-md",
-                    "placeholder:font-light placeholder:text-[#576993]",
+                    "placeholder:font-light placeholder:text-[#576993] text-[#576993] dark:text-white",
                     "bg-[#0E1014] rounded-lg",
                   )}
                   placeholder="Name"
@@ -746,9 +751,9 @@ const TeamDetailsSeciton: React.FC = () => {
                 <input
                   type="text"
                   className={classNames(
-                    "px-5 py-3 border border-[#576993] bg-transparent",
+                    "px-5 py-3 border border-[#D0E0FD] dark:border-[#576993] bg-transparent",
                     "w-full rounded-md",
-                    "placeholder:font-light placeholder:text-[#576993]",
+                    "placeholder:font-light placeholder:text-[#576993] text-[#576993] dark:text-white",
                     "bg-[#0E1014] rounded-lg",
                   )}
                   placeholder="Position"
@@ -758,9 +763,9 @@ const TeamDetailsSeciton: React.FC = () => {
                 <input
                   type="text"
                   className={classNames(
-                    "px-5 py-3 border border-[#576993] bg-transparent",
+                    "px-5 py-3 border border-[#D0E0FD] dark:border-[#576993] bg-transparent",
                     "w-full rounded-md",
-                    "placeholder:font-light placeholder:text-[#576993]",
+                    "placeholder:font-light placeholder:text-[#576993] text-[#576993] dark:text-white",
                     "bg-[#0E1014] rounded-lg",
                   )}
                   placeholder="Twitter"
@@ -770,9 +775,9 @@ const TeamDetailsSeciton: React.FC = () => {
                 <input
                   type="text"
                   className={classNames(
-                    "px-5 py-3 border border-[#576993] bg-transparent",
+                    "px-5 py-3 border border-[#D0E0FD] dark:border-[#576993] bg-transparent",
                     "w-full rounded-md",
-                    "placeholder:font-light placeholder:text-[#576993]",
+                    "placeholder:font-light placeholder:text-[#576993] text-[#576993] dark:text-white",
                     "bg-[#0E1014] rounded-lg",
                   )}
                   placeholder="Entity"
@@ -846,12 +851,7 @@ const LaunchYourNFTModal = () => {
   return (
     <>
       <Header />
-      <div
-        style={{
-          background:
-            "linear-gradient(237.69deg, #181e36 2.21%, #0e1014 87.3%)",
-        }}
-      >
+      <div>
         <div className="w-full h-auto absolute top-0 left-0">
           <Image
             src="/images/launchpad_bg.jpg"
@@ -864,9 +864,9 @@ const LaunchYourNFTModal = () => {
           <div
             className={classNames(
               "block text-left align-bottom transition-all transform",
-              "shadow-xl sm:my-8 sm:align-middle w-full md:max-w-6xl",
+              "sm:my-8 sm:align-middle w-full md:max-w-6xl",
               "rounded-[30px] relative px-5 md:px-20",
-              "bg-[#0E1014] border-2 border-[#576993]",
+              "bg-[#fafcff] dark:bg-[#0E1014]",
             )}
           >
             <div className="h-full">
@@ -889,10 +889,10 @@ const LaunchYourNFTModal = () => {
                     <input
                       type="text"
                       className={classNames(
-                        "px-5 py-3 border border-[#576993] bg-transparent",
+                        "px-5 py-3 border border-[#D0E0FD] dark:border-[#576993] bg-transparent",
                         "w-full rounded-md",
-                        "placeholder:font-light placeholder:text-[#576993] z-50",
-                        "bg-[#101528] rounded-lg",
+                        "placeholder:font-light placeholder:text-[#576993] text-[#576993] dark:text-white z-50",
+                        "bg-white dark:bg-[#101528] rounded-lg",
                       )}
                       placeholder="Choose a project"
                     />
@@ -1005,10 +1005,10 @@ const LaunchYourNFTModal = () => {
                       type="text"
                       className={classNames(
                         "pl-14",
-                        "px-5 py-3 border border-[#576993] bg-transparent",
+                        "px-5 py-3 border border-[#D0E0FD] dark:border-[#576993] bg-transparent",
                         "w-full rounded-md",
-                        "placeholder:font-light placeholder:text-[#576993] z-50",
-                        "bg-[#101528] rounded-lg",
+                        "placeholder:font-light placeholder:text-[#576993] text-[#576993] dark:text-white z-50",
+                        "bg-white dark:bg-[#101528] rounded-lg",
                       )}
                       placeholder="0.00"
                     />
@@ -1031,10 +1031,10 @@ const LaunchYourNFTModal = () => {
                       type="text"
                       className={classNames(
                         "pl-14",
-                        "px-5 py-3 border border-[#576993] bg-transparent",
+                        "px-5 py-3 border border-[#D0E0FD] dark:border-[#576993] bg-transparent",
                         "w-full rounded-md",
-                        "placeholder:font-light placeholder:text-[#576993] z-50",
-                        "bg-[#101528] rounded-lg",
+                        "placeholder:font-light placeholder:text-[#576993] text-[#576993] dark:text-white z-50",
+                        "bg-white dark:bg-[#101528] rounded-lg",
                       )}
                       placeholder="0.00"
                     />
@@ -1095,10 +1095,10 @@ const LaunchYourNFTModal = () => {
                   <input
                     type="text"
                     className={classNames(
-                      "px-5 py-3 border border-[#576993] bg-transparent",
+                      "px-5 py-3 border border-[#D0E0FD] dark:border-[#576993] bg-transparent",
                       "w-full rounded-md",
-                      "placeholder:font-light placeholder:text-[#576993] z-50",
-                      "bg-[#101528] rounded-lg",
+                      "placeholder:font-light placeholder:text-[#576993] text-[#576993] dark:text-white z-50",
+                      "bg-white dark:bg-[#101528] rounded-lg",
                     )}
                     placeholder="youremail@goeshere.com"
                   />
@@ -1110,10 +1110,10 @@ const LaunchYourNFTModal = () => {
                   <input
                     type="text"
                     className={classNames(
-                      "px-5 py-3 border border-[#576993] bg-transparent",
+                      "px-5 py-3 border border-[#D0E0FD] dark:border-[#576993] bg-transparent",
                       "w-full rounded-md",
-                      "placeholder:font-light placeholder:text-[#576993] z-50",
-                      "bg-[#101528] rounded-lg",
+                      "placeholder:font-light placeholder:text-[#576993] text-[#576993] dark:text-white z-50",
+                      "bg-white dark:bg-[#101528] rounded-lg",
                     )}
                     placeholder="@TacvueFan"
                   />

@@ -1,10 +1,19 @@
 import { ThemeProvider } from "@mui/material";
 // import 'aos/dist/aos.css';
 import Script from "next/script";
+import { useEffect } from "react";
 import { MUI_DARK_THEME } from "../config/mui-theme";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    document.documentElement.classList.add("dark");
+    setTimeout(() => {
+      document.body.style.opacity = "1";
+      document.body.style.pointerEvents = "auto";
+    }, 200);
+  }, []);
+
   return (
     <>
       {/* <Script
