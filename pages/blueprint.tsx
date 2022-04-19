@@ -15,6 +15,7 @@ import QuickAboutSection from "../components/Blueprint/QuickAboutSection";
 import JoinSection from "../components/Blueprint/JoinSection";
 import RoadMapSection from "../components/Blueprint/RoadMapSection";
 import ThreeJsAnimation from "../components/Blueprint/ThreeJsAnimation";
+import Link from "next/link";
 
 export const subtitle_sm =
   "text-base md:text-lg text-[#576993] dark:text-[#9EB5E1] !leading-[160%] capitalize";
@@ -54,27 +55,29 @@ const Blueprint = () => {
 export default Blueprint;
 
 const BluePrintButton = React.forwardRef<
-  HTMLButtonElement,
-  ComponentProps<"button">
+  HTMLAnchorElement,
+  ComponentProps<"a">
 >(({ className = "", ...props }, ref) => {
   return (
-    <button className={cx("w-fit", className)} ref={ref} {...props}>
-      <div className="flex items-center gap-2 group">
-        <span className={cx(text_gradient, "font-bold text-lg relative")}>
-          Explore More
+    <Link href={"/team"}>
+      <a className={cx("w-fit", className)} ref={ref} {...props}>
+        <div className="flex items-center gap-2 group">
+          <span className={cx(text_gradient, "font-bold text-lg relative")}>
+            Explore More
+            <img
+              src="/images/gradient_rectangle.svg"
+              className="w-full absolute bottom-[-2px] left-0"
+              alt=""
+            />
+          </span>
           <img
-            src="/images/gradient_rectangle.svg"
-            className="w-full absolute bottom-[-2px] left-0"
-            alt=""
+            src="/images/arrow_curvey.svg"
+            alt="arrow_curvey"
+            className="duration-150 group-hover:translate-x-2.5  group-hover:-translate-y-0.5 group-hover:rotate-[-19deg]"
           />
-        </span>
-        <img
-          src="/images/arrow_curvey.svg"
-          alt="arrow_curvey"
-          className="duration-150 group-hover:translate-x-2.5  group-hover:-translate-y-0.5 group-hover:rotate-[-19deg]"
-        />
-      </div>
-    </button>
+        </div>
+      </a>
+    </Link>
   );
 });
 
