@@ -7,12 +7,14 @@ import Collapsible from "react-collapsible";
 import { ReactNode, useState } from "react";
 // import AOS from 'aos';
 // import { useEffect } from 'react';
-import Modal from "@mui/material/Modal";
-import { Box } from "@mui/material";
+// import Modal from "@mui/material/Modal";
+// import { Box } from "@mui/material";
 import Script from "next/script";
 import Header from "../components/Header";
 import Link from "next/link";
 import Footer from "../components/Footer";
+import QuickAboutSection from "../components/Blueprint/QuickAboutSection";
+import Vimeo from "@u-wave/react-vimeo";
 
 export const modalStyle = {
   position: "absolute",
@@ -62,11 +64,11 @@ export const SocialIcons = () => {
 };
 
 function LandingPage() {
-  const router = useRouter();
+  // const router = useRouter();
 
-  const [modalIsOpen, setModalIsOpen] = useState(false);
-  const modalHandleOpen = () => setModalIsOpen(true);
-  const modalHandleClose = () => setModalIsOpen(false);
+  // const [modalIsOpen, setModalIsOpen] = useState(false);
+  // const modalHandleOpen = () => setModalIsOpen(true);
+  // const modalHandleClose = () => setModalIsOpen(false);
 
   // useEffect(() => {
   //   AOS.init({ disable: 'mobile' });
@@ -88,19 +90,24 @@ function LandingPage() {
         <section className="bg-cover bg-no-repeat bg-top">
           <div className="h-screen w-full relative">
             {/* Background Video --Start-- */}
-            <div className="w-full h-full absolute top-0 left-0 z-[0] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black/50">
-              {/* <video
-                src='/video/TacVue-Bkgd-header.webm'
+            {/* before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black/50 */}
+            <div className="vimeo_wrapper w-full h-full absolute top-0 left-0 z-[0]">
+              <video
+                src="/video/TacVue-Bkgd-header.mp4"
                 autoPlay
                 loop
                 muted
                 playsInline
-                className='w-full h-full object-cover'
-              ></video> */}
-              <img
-                src="/images/background-header.jpg"
                 className="w-full h-full object-cover"
-              />
+              ></video>
+
+              {/* <Vimeo
+                video="700855294"
+                autoplay={true}
+                loop={true}
+                className="w-full h-full"
+                controls={false}
+              /> */}
             </div>
             {/* Background Video --End-- */}
 
@@ -133,7 +140,7 @@ function LandingPage() {
                 >
                   Learn More
                 </button>
-                <Modal
+                {/* <Modal
                   open={modalIsOpen}
                   onClose={modalHandleClose}
                   aria-labelledby="modal-modal-title"
@@ -146,7 +153,7 @@ function LandingPage() {
                       className="w-full h-full object-cover"
                     ></video>
                   </Box>
-                </Modal>
+                </Modal> */}
               </div>
               {/* Buttons --End-- */}
             </div>
@@ -387,14 +394,15 @@ function LandingPage() {
               growth.
             </p>
             <div className="flex justify-center mt-10">
-              <button
-                onClick={modalHandleOpen}
-                data-aos="fade-up"
-                data-aos-delay="300"
-                className="btn_gradient"
-              >
-                VIEW OUR BLUEPRINT
-              </button>
+              <Link href="/blueprint">
+                <a
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  className="btn_gradient"
+                >
+                  VIEW OUR BLUEPRINT
+                </a>
+              </Link>
             </div>
           </div>
         </section>
@@ -562,8 +570,10 @@ function LandingPage() {
         </section>
         {/* The Technology Section --End-- */}
 
+        <QuickAboutSection className="md:!mt-[160px]" />
+
         {/* FAQ Section --Start-- */}
-        <section className="py-14 md:py-20 md:pb-0 faq_section">
+        <section className="py-14 md:py-20 md:pb-0 mt-0 md:mt-16 faq_section">
           <div className="landing_page_container">
             <h2
               className={`${headingClasses} text-center mb-12`}

@@ -7,12 +7,13 @@ import {
 } from "../../pages/blueprint";
 import QuickAboutCard from "../QuickAboutCard";
 import cx from "classnames";
+import classNames from "classnames";
 
-const QuickAboutSection = () => {
+const QuickAboutSection = ({ className = "" }: { className?: string }) => {
   return (
     <>
       {/* Quick About --Start-- */}
-      <section className="mt-[120px] md:mt-[220px]">
+      <section className={classNames(className, "mt-[120px] md:mt-[220px]")}>
         <div className="container">
           <div className="gap-[30px] md:gap-[120px] grid grid-cols-1 md:grid-cols-2">
             <div className="space-y-5">
@@ -78,7 +79,7 @@ const QuickAboutSection = () => {
               </p>
               <BluePrintButton />
 
-              <div className="mt-10 flex items-center gap-6">
+              {/* <div className="mt-10 flex items-center gap-6">
                 <a
                   href="#"
                   style={{
@@ -119,7 +120,7 @@ const QuickAboutSection = () => {
                 >
                   <img src="/images/instagram_icon.png" className="w-7 h-7" />
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

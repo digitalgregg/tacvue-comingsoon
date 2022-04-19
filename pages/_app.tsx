@@ -7,7 +7,7 @@ import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
-    document.documentElement.classList.add("dark");
+    // document.documentElement.classList.add("dark");
     setTimeout(() => {
       document.body.style.opacity = "1";
       document.body.style.pointerEvents = "auto";

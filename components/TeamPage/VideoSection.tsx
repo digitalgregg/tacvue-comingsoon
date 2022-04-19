@@ -7,7 +7,7 @@ const VideoSection = () => {
   const modalHandleClose = () => setmodalIsOpen(false);
   return (
     <section className="mt-[125px]">
-      <div className="rounded-[30px] overflow-hidden relative w-[94%] mx-auto">
+      <div className="rounded-[30px] overflow-hidden relative w-fit max-w-[96%] mx-auto">
         <img src="/images/video_bg.jpg" alt="video_bg" />
 
         <button
