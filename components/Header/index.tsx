@@ -2,6 +2,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { SocialIcons } from "../../pages";
+import GradientSwitch from "../GradientSwitch";
 
 function Header() {
   const router = useRouter();
@@ -14,7 +15,11 @@ function Header() {
     if (getTheme === "dark") {
       setDarkTheme();
     } else {
-      setLightTheme();
+      if (getTheme === "light") {
+        setLightTheme();
+      } else {
+        setDarkTheme();
+      }
     }
 
     setTimeout(() => {
@@ -54,33 +59,35 @@ function Header() {
           "flex justify-between w-full py-4 pb-2 md:py-8 md:pb-3 fixed top-0 left-0 z-50 backdrop-blur-sm px-5 xl:px-16 2xl:px-20"
         }
       >
-        <div className="items-center cursor-pointer w-[140px] md:w-auto hidden dark:flex">
-          <Image
-            alt="Tacvue Logo"
-            className="mr-2"
-            src="/images/tacvue-whitegradient-logo.svg"
-            width={180}
-            height={55}
-            onClick={() => router.push("/")}
-          />
-        </div>
-        <div className="items-center cursor-pointer w-[140px] md:w-auto dark:hidden">
-          <Image
-            alt="Tacvue Logo"
-            className="mr-2"
-            src="/images/logo_gradient.svg"
-            width={180}
-            height={55}
-            onClick={() => router.push("/")}
-          />
+        <div className="items-center cursor-pointer w-[140px] md:w-auto h-[55px]">
+          <span className="hidden dark:inline-block">
+            <Image
+              alt="Tacvue Logo"
+              className="mr-2"
+              src="/images/tacvue-whitegradient-logo.svg"
+              width={180}
+              height={55}
+              onClick={() => router.push("/")}
+            />
+          </span>
+          <span className="dark:hidden">
+            <Image
+              alt="Tacvue Logo"
+              className="mr-2"
+              src="/images/logo_gradient.svg"
+              width={180}
+              height={55}
+              onClick={() => router.push("/")}
+            />
+          </span>
         </div>
 
         <div className="flex items-center gap-5">
           <SocialIcons />
-          <input
-            type="checkbox"
-            onClick={themeHandlerChange}
-            checked={theme === "dark"}
+          <GradientSwitch
+            // onClick={themeHandlerChange}
+            onChange={themeHandlerChange}
+            checked={theme === "dark" ? true : false}
           />
         </div>
       </nav>

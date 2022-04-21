@@ -183,8 +183,8 @@ function LandingPage() {
             <div className="grid md:grid-cols-[auto,400px] gap-20 place-items-center">
               <div className="md:pr-20 ">
                 <h3 className={`${headingClasses_sm} mb-6`} data-aos="fade-up">
-                  <p>NFTs Are A Game.</p>
-                  <p>Come Play Them on TacVue.</p>
+                  <p>ENJOY INNOVATION.</p>
+                  <p>BUILD YOUR FUTURE ON TACVUE.</p>
                 </h3>
                 <p
                   className={`${paragraphClasses} mb-8 md:w-[80%]`}
