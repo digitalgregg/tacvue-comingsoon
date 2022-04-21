@@ -180,3 +180,18 @@ canvas {
   width: 100% !important;
   height: 100% !important;
 }
+
+.gradient_checkbox_input:checked + .gradient_checkbox_wrapper,
+.gradient_checkbox_input:checked
+  + .gradient_checkbox_wrapper
+  .greadient_checkbox_circle {
+  @apply !from-cyan-500 !to-blue-500 !bg-gradient-to-r;
+}
+.gradient_checkbox_input:checked + .gradient_checkbox_inner_wrapper {
+  @apply bg-[#273B5D];
+}
+.gradient_checkbox_input:checked
+  + .gradient_checkbox_wrapper
+  .greadient_checkbox_circle {
+  @apply translate-x-[150%];
+}
