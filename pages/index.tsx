@@ -394,7 +394,7 @@ function LandingPage() {
               growth.
             </p>
             <div className="flex justify-center mt-10">
-              <Link href="/blueprint">
+              <Link href="#">
                 <a
                   data-aos="fade-up"
                   data-aos-delay="300"
