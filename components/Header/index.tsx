@@ -84,11 +84,6 @@ function Header() {
 
         <div className="flex items-center gap-5">
           <SocialIcons />
-          <GradientSwitch
-            // onClick={themeHandlerChange}
-            onChange={themeHandlerChange}
-            checked={theme === "dark" ? true : false}
-          />
         </div>
       </nav>
     </header>
