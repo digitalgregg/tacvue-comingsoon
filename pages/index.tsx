@@ -570,8 +570,6 @@ function LandingPage() {
         </section>
         {/* The Technology Section --End-- */}
 
-        <QuickAboutSection className="md:!mt-[160px]" />
-
         {/* FAQ Section --Start-- */}
         <section className="py-14 md:py-20 md:pb-0 mt-0 md:mt-16 faq_section">
           <div className="landing_page_container">
