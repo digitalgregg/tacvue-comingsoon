@@ -297,11 +297,10 @@ function LandingPage() {
                         data-aos-delay="200"
                         className={`${paragraphClasses} md:w-[95%]`}
                       >
-                        Collectors can exchange assets with other collectors as
-                        a means of portraying their social identity and
-                        establishing an immutable record of sponsorship for
-                        certain projects and creators. They can earn financial
-                        rewards for finding undervalued creations before other
+                        Collectors can exchange assets with a means of representing
+                        their social identity, while supporting their favorite
+                        creators and communities. They can earn earn rewards
+                        undervalued creations before other
                         Entities.
                       </p>
                     </div>
@@ -327,9 +326,9 @@ function LandingPage() {
                 data-aos="fade-up"
                 data-aos-delay="100"
               >
-                Seize your ticket into the web3 revolution by creating your
+                Gain entry into the web3 revolution by creating your
                 first Multiverse Entity. This asset grants you access to the
-                TacVue ecosystem.
+                TacVue system.
               </p>
             </div>
             <div
@@ -357,8 +356,8 @@ function LandingPage() {
                 bgImgSrc="/images/nft_card_purple_bg.png"
               />
               <NFtCard
-                title="Uncensored"
-                subtitle="Secure your content with your irrevocable access token."
+                title="Secure"
+                subtitle="Protect your content with your irrevocable access token."
                 iconImgSrc="/images/coin_icon.png"
                 bgImgSrc="/images/nft_card_bg.png"
               />
@@ -380,7 +379,7 @@ function LandingPage() {
               data-aos-delay="100"
               className={`${headingClasses} text-center`}
             >
-              Built for your journey
+              Building for your journey
               {/* <span className='gradient_text'>your journey</span> */}
             </h2>
             <p
@@ -388,10 +387,7 @@ function LandingPage() {
               data-aos-delay="200"
               className="lg:w-[520px] mx-auto text-white text-center !leading-[30px] mt-10 text-lg font-light"
             >
-              Our blueprint maps out the goals and strategies our marketpalce to
-              communicate its long-term value. We include key project
-              milestones, short and long-term goals, and plans for marketing and
-              growth.
+              Our blueprint maps out the future tools and features that will be offered and available on the tacvue system.
             </p>
             <div className="flex justify-center mt-10">
               <Link href="#">
@@ -557,8 +553,8 @@ function LandingPage() {
                         The TacVue platform is designed to be fun. Instead of
                         educating our members on every aspect of the system, we
                         use gamification to provide an intuitive process that
-                        lets members have fun while learning about the tools of
-                        decentralized finance and cryptocurrency.
+                        lets members have fun while learning about the benefits of
+                        decentralized communities and cryptocurrencies.
                       </p>
                     </div>
                   </div>
@@ -585,11 +581,11 @@ function LandingPage() {
               <FaqAccordion
                 data-aos="fade-up"
                 data-aos-delay="200"
-                title="How do I sign up?"
+                title="How do I become a member"
                 description="In order to become a member of the TacVue community, you must mint your entity. An
-              entity is a digital asset that grants you access to the platform and allows for you to
+              entity is a digital asset that grants you access to the system and allows for you to
               represent your metaverse identity to other members. In order to create your entity you
-              will need to have a crypto wallet with a small amount of $avax to store your access
+              will need to have a crypto wallet with a small amount of $AVAX to store your access
               token on Avalanche Network."
               />
               <FaqAccordion
