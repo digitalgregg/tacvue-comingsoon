@@ -8,7 +8,7 @@ const JoinSection = () => {
       {/* Join Section --Start-- */}
       <section className="mt-[120px] md:mt-[220px] mb-[60px] md:mb-[150px]">
         <div className="container">
-          <div className="w-fit mx-auto relative py-14 md:py-0">
+          <div className="w-full mx-0 md:w-fit md:min-w-[650px] lg:min-w-[1092px] md:mx-auto relative py-14 md:py-0">
             <img
               src="/images/join_bg.svg"
               alt="join_bg"
@@ -19,14 +19,12 @@ const JoinSection = () => {
                 Join tacvue
               </h3>
               <p className={cx(subtitle_sm, "w-[65%] mx-auto mt-8")}>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum text of the printing and typesetting
-                industry.
+                Subscribe to the latest updates
               </p>
 
               <div className="flex justify-center mt-10">
                 <button className="btn_gradient flex items-center gap-2.5">
-                  Connect Wallet{" "}
+                  Subscribe Now{" "}
                   <BsArrowRightShort className="shrink-0" size={25} />
                 </button>
               </div>

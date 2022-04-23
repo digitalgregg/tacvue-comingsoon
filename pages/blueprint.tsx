@@ -1,21 +1,17 @@
 import React, { ComponentProps } from "react";
-import { HiChevronDoubleDown } from "react-icons/hi";
 import Header from "../components/Header";
 import cx from "classnames";
-import ServiceCard from "../components/ServiceCard";
-import { BsArrowRightShort } from "react-icons/bs";
 import Footer from "../components/Footer";
-import QuickAboutCard from "../components/QuickAboutCard";
-import { FaDiscord } from "react-icons/fa";
-import HeroSection from "../components/Blueprint/HeroSection";
+// import HeroSection from "../components/Blueprint/HeroSection";
 import StorySection from "../components/Blueprint/StorySection";
 import ServicesSection from "../components/Blueprint/ServicesSection";
-import PartnersSection from "../components/Blueprint/PartnersSection";
-import QuickAboutSection from "../components/Blueprint/QuickAboutSection";
+// import PartnersSection from "../components/Blueprint/PartnersSection";
+// import QuickAboutSection from "../components/Blueprint/QuickAboutSection";
 import JoinSection from "../components/Blueprint/JoinSection";
 import RoadMapSection from "../components/Blueprint/RoadMapSection";
 import ThreeJsAnimation from "../components/Blueprint/ThreeJsAnimation";
 import Link from "next/link";
+import FounderSection from "../components/Blueprint/FounderSection";
 
 export const subtitle_sm =
   "text-base md:text-lg text-[#576993] dark:text-[#9EB5E1] !leading-[160%] capitalize";
@@ -44,8 +40,9 @@ const Blueprint = () => {
       <StorySection />
       <ServicesSection />
       <RoadMapSection />
-      <PartnersSection />
-      <QuickAboutSection />
+      {/* <PartnersSection />
+      <QuickAboutSection /> */}
+      <FounderSection />
       <JoinSection />
       <Footer />
     </div>

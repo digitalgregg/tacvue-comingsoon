@@ -10,12 +10,14 @@ type QuickAboutCardProps = {
     height: number;
   };
   name: ReactNode;
-  title: ReactNode;
+  title?: ReactNode;
+  twitter?: string;
 };
 const QuickAboutCard = ({
   img: { src, width, height, alt },
   name,
   title,
+  twitter,
 }: QuickAboutCardProps) => {
   return (
     <>
@@ -38,19 +40,26 @@ const QuickAboutCard = ({
         <div
           style={{
             background:
-              "linear-gradient(237.69deg, rgba(18, 24, 49, 0.44) 2.21%, rgba(0, 7, 21, 0.44) 87.3%)",
+              "linear-gradient(244.4deg, rgba(17, 32, 91, 0.6) 2.44%, rgba(5, 40, 109, 0.6) 88.04%)",
             backdropFilter: "blur(88.6504px)",
           }}
           className="absolute bottom-0 left-0 px-[26px] py-[18px] rounded-t-[18px] overflow-hidden w-full h-[84px] flex flex-col justify-center"
         >
           <div className="flex items-center justify-between">
             <div>
-              <h5 className="font-spaced text-white text-xl">{name}</h5>
-              <p className="font-semibold text-base text-white mt-1">{title}</p>
+              <h5 className="font-sans text-white text-xl">{name}</h5>
+              {title && (
+                <p className="font-semibold font-sans text-base text-white mt-1">
+                  {title}
+                </p>
+              )}
             </div>
+
             <div>
               <a
-                href="#"
+                href={twitter || "#"}
+                target="_blank"
+                rel="noreferrer"
                 style={{
                   background:
                     "linear-gradient(#1c1d57,rgb(0,0,0,0)) padding-box padding-box, linear-gradient(180deg, rgb(25 195 254 / 29%) 0%, rgba(25, 195, 254, 0) 79.17%) border-box border-box",

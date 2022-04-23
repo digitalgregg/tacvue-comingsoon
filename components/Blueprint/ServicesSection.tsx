@@ -14,21 +14,21 @@ export type ServiceType = {
 const services: ServiceType[] = [
   {
     img: {
-      src: "/images/create_icon.svg",
-      width: 41,
-      height: 41,
+      src: "/images/color_palatte.svg",
+      width: 57,
+      height: 52,
     },
     title: "CREATE",
-    subtitle: "Create your entity card with your own personal HQ.",
+    subtitle: "Create your entity card with your own personal HQ",
   },
   {
     img: {
-      src: "/images/explore_icon.svg",
-      width: 52,
-      height: 51,
+      src: "/images/cart_icon.svg",
+      width: 50,
+      height: 45,
     },
-    title: "EXPLORE",
-    subtitle: "Create your entity card with your own personal HQ.",
+    title: "BUY & SELL",
+    subtitle: "Discover items and collections on the marketplace.",
   },
   {
     img: {
@@ -36,53 +36,18 @@ const services: ServiceType[] = [
       width: 51,
       height: 41,
     },
-    title: "BUY & SELL",
-    subtitle: "Create your entity card with your own personal HQ.",
+    title: "EARN",
+    subtitle: "earn tokens through staking and the engagement protocol",
   },
   {
     img: {
-      src: "/images/setup_wallet_icon.svg",
-      width: 56,
-      height: 40,
+      src: "/images/users.svg",
+      width: 60,
+      height: 49,
     },
-    title: "Set up your wallet",
-    subtitle: "Create your entity card with your own personal HQ.",
-  },
-  {
-    img: {
-      src: "/images/add_nft_icon.svg",
-      width: 56,
-      height: 40,
-    },
-    title: "Add your NFTs",
-    subtitle: "Create your entity card with your own personal HQ.",
-  },
-  {
-    img: {
-      src: "/images/list_icon.svg",
-      width: 56,
-      height: 40,
-    },
-    title: "List them for sale",
-    subtitle: "Create your entity card with your own personal HQ.",
-  },
-  {
-    img: {
-      src: "/images/create_icon.svg",
-      width: 41,
-      height: 41,
-    },
-    title: "CREATE",
-    subtitle: "Create your entity card with your own personal HQ.",
-  },
-  {
-    img: {
-      src: "/images/create_icon.svg",
-      width: 41,
-      height: 41,
-    },
-    title: "CREATE",
-    subtitle: "Create your entity card with your own personal HQ.",
+    title: "ENGAGE",
+    subtitle:
+      "build and grow with your favorite creators and help shape the future",
   },
 ];
 
@@ -93,18 +58,14 @@ const ServicesSection = () => {
       <section className="mt-[50px] md:mt-[150px]">
         <div className="container">
           <div className="text-center">
-            <h2 className={cx(title_sm, text_gradient)}>OUR Services</h2>
-            <p className={cx(subtitle_sm, "mt-[40px] md:w-[500px] mx-auto")}>
-              After four friends discovered Solana and its tremendous potential,
-              Magic Eden was born
-            </p>
+            <h2 className={cx(title_sm, text_gradient)}>MEDIA REIMAGINED</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-[50px] mt-[75px]">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-[50px] lg:mt-[75px] xl:max-w-[1080px] mx-auto mt-[70px] md:mt-[120px]">
             {services.map((service: ServiceType, i: number) => (
               <ServiceCard {...service} key={i} />
             ))}
           </div>
-          <div className="flex justify-center overflow-hidden max-w-[100vw] mt-0 md:mt-[40px]">
+          <div className="flex justify-center overflow-hidden max-w-[100vw] mt-0">
             <img
               src="/images/services_rectengle.svg"
               alt="services_rectengle"

@@ -23,21 +23,19 @@ const StorySection = () => {
                     "font-bold md:-mb-2 tracking-widest text-sm md:text-base",
                   )}
                 >
-                  STORY
+                  OUR STORY
                 </p>
-                <h2 className={cx(title_sm, text_gradient)}>Tavues story</h2>
+                <h2 className={cx(title_sm, text_gradient)}>WE ARE TACVUE</h2>
                 <img src="/images/gradient_rectangle.svg" alt="" />
-                <p className={cx(subtitle_sm, "md:w-[75%] mt-8")}>
-                  After four friends discovered Solana and its tremendous
-                  potential, Magic Eden was born. With backgrounds across
-                  crypto, DeFi, consumer internet
-                </p>
-                <p className={cx(subtitle_sm, "mt-6 md:w-[75%]")}>
-                  companies and management consulting, they identified gaps in
-                  existing NFT marketplaces and created something new.
+                <p
+                  className={cx(subtitle_sm, "md:w-[75%] !leading-[160%] mt-8")}
+                >
+                  At TacVue , we are excited to offer members of all types a new
+                  system with all of the tools necessary for building a unique
+                  digital experience.
                 </p>
 
-                <BluePrintButton className="mt-[43px]" />
+                <BluePrintButton className="mt-[43px] inline-block" />
               </div>
             </div>
             <div
@@ -48,7 +46,7 @@ const StorySection = () => {
               className="bg-bottom"
             >
               <img
-                src="/images/tacvue_sory_image.svg"
+                src="/images/story_image_bg_without_text.svg"
                 alt="tacvue_sory_image"
                 className="md:scale-[1.2] origin-top-right"
               />
