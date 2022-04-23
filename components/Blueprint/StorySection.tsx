@@ -35,7 +35,7 @@ const StorySection = () => {
                   digital experience.
                 </p>
 
-                <BluePrintButton className="mt-[43px] inline-block" />
+                {/* <BluePrintButton className="mt-[43px] inline-block" /> */}
               </div>
             </div>
             <div
