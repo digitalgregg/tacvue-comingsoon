@@ -297,10 +297,10 @@ function LandingPage() {
                         data-aos-delay="200"
                         className={`${paragraphClasses} md:w-[95%]`}
                       >
-                        Collectors can exchange assets with a means of representing
-                        their social identity, while supporting their favorite
-                        creators and communities. They can earn earn rewards
-                        undervalued creations before other
+                        Collectors can exchange assets with a means of
+                        representing their social identity, while supporting
+                        their favorite creators and communities. They can earn
+                        earn rewards undervalued creations before other
                         Entities.
                       </p>
                     </div>
@@ -326,9 +326,9 @@ function LandingPage() {
                 data-aos="fade-up"
                 data-aos-delay="100"
               >
-                Gain entry into the web3 revolution by creating your
-                first Multiverse Entity. This asset grants you access to the
-                TacVue system.
+                Gain entry into the web3 revolution by creating your first
+                Multiverse Entity. This asset grants you access to the TacVue
+                system.
               </p>
             </div>
             <div
@@ -387,10 +387,11 @@ function LandingPage() {
               data-aos-delay="200"
               className="lg:w-[520px] mx-auto text-white text-center !leading-[30px] mt-10 text-lg font-light"
             >
-              Our blueprint maps out the future tools and features that will be offered and available on the tacvue system.
+              Our blueprint maps out the future tools and features that will be
+              offered and available on the tacvue system.
             </p>
             <div className="flex justify-center mt-10">
-              <Link href="#">
+              <Link href="/blueprint">
                 <a
                   data-aos="fade-up"
                   data-aos-delay="300"
@@ -553,8 +554,8 @@ function LandingPage() {
                         The TacVue platform is designed to be fun. Instead of
                         educating our members on every aspect of the system, we
                         use gamification to provide an intuitive process that
-                        lets members have fun while learning about the benefits of
-                        decentralized communities and cryptocurrencies.
+                        lets members have fun while learning about the benefits
+                        of decentralized communities and cryptocurrencies.
                       </p>
                     </div>
                   </div>

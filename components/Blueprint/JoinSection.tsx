@@ -23,10 +23,15 @@ const JoinSection = () => {
               </p>
 
               <div className="flex justify-center mt-10">
-                <button className="btn_gradient flex items-center gap-2.5">
+                <a
+                  href="https://byofui3lf76.typeform.com/to/Z8oiENlh"
+                  target={"_blank"}
+                  rel="noreferrer"
+                  className="btn_gradient flex items-center gap-2.5"
+                >
                   Subscribe Now{" "}
                   <BsArrowRightShort className="shrink-0" size={25} />
-                </button>
+                </a>
               </div>
             </div>
             <p></p>
