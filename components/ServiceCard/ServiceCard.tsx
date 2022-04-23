@@ -17,7 +17,7 @@ const ServiceCard = ({
     //   }}
     //   className='border border-transparent rounded-[20px]'
     >
-      <div className="pt-[50px] pb-[95px] rounded-[20px] px-6 md:px-7 bg-[#0D1329]/60 border border-white/20">
+      <div className="pt-[50px] pb-[95px] rounded-[20px] px-6 md:px-16 bg-[#0D1329]/60 border border-white/20">
         <div
           style={{
             background:

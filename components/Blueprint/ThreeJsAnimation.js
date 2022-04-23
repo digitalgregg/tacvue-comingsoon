@@ -221,15 +221,10 @@ const ThreeJsAnimation = () => {
 
         <div className="min-h-screen absolute top-0 left-0 w-full h-full flex flex-col justify-center z-[5]">
           <div className="container">
-            <h1 className="text-white font-spaced text-center text-[50px] leading-[45px] md:text-[85px] md:leading-[90px]">
+            <h1 className="text-white font-spaced text-center text-[50px] leading-[45px] md:text-[110px] md:leading-[115px]">
               <p>Built for</p>
               <p>your journey</p>
             </h1>
-            <p className="text-xl text-[#CDF4FF] md:w-[680px] mx-auto text-center mt-[40px] hidden md:block">
-              Avalanche is the fastest smart contracts platform in the
-              blockchain industry. Launch, Buy, and Create NFTs supported by the
-              future of blockchain tech.
-            </p>
           </div>
 
           {/* Learn More --Start-- */}
