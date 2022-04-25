@@ -358,7 +358,7 @@ function LandingPage() {
               <NFtCard
                 title="Secure"
                 subtitle="Protect your content with your irrevocable access token."
-                iconImgSrc="/images/coin_icon.png"
+                iconImgSrc="/images/secure.png"
                 bgImgSrc="/images/nft_card_bg.png"
               />
             </div>
