@@ -300,8 +300,8 @@ function LandingPage() {
                         Collectors can exchange assets with a means of
                         representing their social identity, while supporting
                         their favorite creators and communities. They can earn
-                        earn rewards undervalued creations before other
-                        Entities.
+                        rewards undervalued creations before other
+                        entities.
                       </p>
                     </div>
                   </div>
