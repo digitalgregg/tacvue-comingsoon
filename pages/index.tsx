@@ -122,7 +122,7 @@ function LandingPage() {
               {/* Buttons --Start-- */}
               <div className="flex flex-col items-center mt-8 gap-5">
                 <Link
-                  href={"/coming-soon"}
+                  href={"https://t.co/JSCz7YdhnD"}
                   // onClick={modalHandleOpen}
                 >
                   <a
@@ -133,13 +133,18 @@ function LandingPage() {
                     APPLY TO LAUNCHPAD
                   </a>
                 </Link>
-                <button
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                  className="text-sm sm:text-base px-10 py-2.5 rounded-full border-2 border-white duration-200 text-white font-semibold hover:bg-white hover:text-black uppercase"
+                <Link
+                  href={"https://tacvue.gitbook.io/tacvue/"}
+                  // onClick={modalHandleOpen}
                 >
-                  Learn More
-                </button>
+                  <a
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                    className="text-sm sm:text-base px-10 py-2.5 rounded-full border-2 border-white duration-200 text-white font-semibold hover:bg-white hover:text-black uppercase"
+                  >
+                    LEARN MORE
+                  </a>
+                </Link>
                 {/* <Modal
                   open={modalIsOpen}
                   onClose={modalHandleClose}
