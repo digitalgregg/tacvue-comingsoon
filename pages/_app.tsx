@@ -32,6 +32,13 @@ function MyApp({ Component, pageProps }) {
         src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"
         defer
       />
+      <Script
+        strategy="beforeInteractive"
+        async
+        type="text/javascript"
+        src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=WRgkwc"
+        defer
+      />
       <ThemeProvider theme={MUI_DARK_THEME}>
         <Component {...pageProps} />
       </ThemeProvider>
