@@ -17,6 +17,7 @@ const FounderSection = () => {
               src: "/images/Sebastian_Lueders.jpg",
               width: 348,
               height: 396,
+              alt: "Sebastian"
             }}
             name="Sebastian Lueders"
           />
@@ -25,6 +26,7 @@ const FounderSection = () => {
               src: "/images/Robert_Goldsborough_III.jpg",
               width: 348,
               height: 396,
+              alt: "Robert"
             }}
             name="Robert Goldsborough III"
             twitter="https://twitter.com/GoldsboroughIii"
@@ -34,6 +36,7 @@ const FounderSection = () => {
               src: "/images/Anoop_Nannra.jpg",
               width: 348,
               height: 396,
+              alt: "Anoop"
             }}
             name="Anoop Nannra"
             twitter="https://twitter.com/anannra"
@@ -43,6 +46,7 @@ const FounderSection = () => {
               src: "/images/Brad_Myrick.jpg",
               width: 348,
               height: 396,
+              alt: "Brad"
             }}
             name="Brad Myrick"
             twitter="https://twitter.com/terran_nft"
