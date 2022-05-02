@@ -31,6 +31,10 @@ export const modalStyle = {
 //     AOS.init();
 // }
 
+<head>
+  <title>TacVue - The Multiverse Portal</title>
+</head>
+
 const headingClasses =
   "uppercase text-white text-5xl md:text-[64px] font-spaced";
 const headingClasses_sm =
