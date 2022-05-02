@@ -139,9 +139,7 @@ function LandingPage() {
             <div className="landing_page_container flex flex-col items-center justify-center h-full w-full relative z-10">
               <h1 className="text-5xl xs:text-6xl md:!text-[110px] md:!leading-[1] text-center uppercase font-spaced mb-3">
                 <p data-aos="fade-up">Media</p>
-                <p data-aos="fade-up" data-aos-delay="100">
                   Reimagined
-                </p>
               </h1>
 
               {/* Buttons --Start-- */}
@@ -150,13 +148,7 @@ function LandingPage() {
                   href={"https://t.co/JSCz7YdhnD"}
                   // onClick={modalHandleOpen}
                 >
-                  <a
-                    className="btn_gradient"
-                    data-aos="fade-up"
-                    data-aos-delay="200"
-                  >
                     APPLY TO LAUNCHPAD
-                  </a>
                 </Link>
                 <Link
                   href={"https://tacvue.gitbook.io/tacvue/"}
@@ -164,10 +156,9 @@ function LandingPage() {
                 >
                   <a
                     data-aos="fade-up"
-                    data-aos-delay="300"
                     className="text-sm sm:text-base px-10 py-2.5 rounded-full border-2 border-white duration-200 text-white font-semibold hover:bg-white hover:text-black uppercase"
                   >
-                    LEARN MORE
+                    MORE INFO
                   </a>
                 </Link>
                 {/* <Modal
@@ -219,7 +210,6 @@ function LandingPage() {
                 <p
                   className={`${paragraphClasses} mb-8 md:w-[80%]`}
                   data-aos="fade-up"
-                  data-aos-delay="100"
                 >
                   TacVue is designed to gamify the experience of discovering,
                   collecting and creating high quality digital content. We make
@@ -256,7 +246,6 @@ function LandingPage() {
               <p
                 className={`${paragraphClasses} text-center mt-5 md:w-[80%] mx-auto mb-5`}
                 data-aos="fade-up"
-                data-aos-delay="100"
               >
                 Enthusiasts understand that web3 is powerful enough to rebuild
                 social constructs and reorganize our common interests towards a
@@ -288,7 +277,6 @@ function LandingPage() {
                       </h5>
                       <p
                         data-aos="fade-up"
-                        data-aos-delay="200"
                         className={`${paragraphClasses} md:w-[80%]`}
                       >
                         Creators can focus on delivering the highest quality
@@ -324,7 +312,6 @@ function LandingPage() {
                       </h5>
                       <p
                         data-aos="fade-up"
-                        data-aos-delay="200"
                         className={`${paragraphClasses} md:w-[95%]`}
                       >
                         Collectors can exchange assets with a means of
@@ -353,7 +340,6 @@ function LandingPage() {
               <p
                 className={`${paragraphClasses} md:w-[40%] mx-auto`}
                 data-aos="fade-up"
-                data-aos-delay="100"
               >
                 Gain entry into the web3 revolution by creating your first
                 Multiverse Entity. This asset grants you access to the TacVue
@@ -408,7 +394,6 @@ function LandingPage() {
           <div className="container">
             <h2
               data-aos="fade-up"
-              data-aos-delay="100"
               className={`${headingClasses} text-center`}
             >
               Building for your journey
@@ -416,7 +401,6 @@ function LandingPage() {
             </h2>
             <p
               data-aos="fade-up"
-              data-aos-delay="200"
               className="lg:w-[520px] mx-auto text-white text-center !leading-[30px] mt-10 text-lg font-light"
             >
               Our blueprint maps out the future tools and features that will be
@@ -426,7 +410,6 @@ function LandingPage() {
               <Link href="/blueprint">
                 <a
                   data-aos="fade-up"
-                  data-aos-delay="300"
                   className="btn_gradient"
                 >
                   VIEW OUR BLUEPRINT
@@ -471,7 +454,6 @@ function LandingPage() {
                       </h5>
                       <p
                         data-aos="fade-up"
-                        data-aos-delay="200"
                         className={`${paragraphClasses} md:w-[80%]`}
                       >
                         Our smart contracts are highly secure and efficient and
@@ -504,7 +486,6 @@ function LandingPage() {
                       </h5>
                       <p
                         data-aos="fade-up"
-                        data-aos-delay="200"
                         className={`${paragraphClasses} md:w-[85%]`}
                       >
                         Gone are the days of centralized brand development that
@@ -543,7 +524,6 @@ function LandingPage() {
                       </h5>
                       <p
                         data-aos="fade-up"
-                        data-aos-delay="200"
                         className={`${paragraphClasses} md:w-[80%]`}
                       >
                         The TacVue system allows for new ideas and creations to
@@ -580,7 +560,6 @@ function LandingPage() {
                       </h5>
                       <p
                         data-aos="fade-up"
-                        data-aos-delay="200"
                         className={`${paragraphClasses} md:w-[85%]`}
                       >
                         The TacVue platform is designed to be fun. Instead of
@@ -613,7 +592,6 @@ function LandingPage() {
               {/* <BluryCircle className='top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 !h-[420px] !blur-[180px]' /> */}
               <FaqAccordion
                 data-aos="fade-up"
-                data-aos-delay="200"
                 title="How do I become a member"
                 description="In order to become a member of the TacVue community, you must mint your entity. An
               entity is a digital asset that grants you access to the system and allows for you to
@@ -623,7 +601,6 @@ function LandingPage() {
               />
               <FaqAccordion
                 data-aos="fade-up"
-                data-aos-delay="300"
                 title="What makes TacVue’s marketplace different?"
                 description="Although there are several differences between us and our counterparts, the major
               differences are our social authentication system and engagement protocol. Discord is
@@ -637,7 +614,6 @@ function LandingPage() {
               />
               <FaqAccordion
                 data-aos="fade-up"
-                data-aos-delay="400"
                 title="What can I do with a NFT?"
                 description="Non-fungible tokens can be used to grow decentralized autonomous organizations
               around brand assets and provide early participants with additional benefits for their
@@ -646,7 +622,6 @@ function LandingPage() {
               />
               <FaqAccordion
                 data-aos="fade-up"
-                data-aos-delay="500"
                 title="What are the future plans for Tacvue?"
                 description="We want to create a trustless ecosystem for the development of brands within the
               multiverse and our real-world. We will continue to build out the infrastructure necessary
@@ -666,8 +641,6 @@ function LandingPage() {
           <div className="landing_page_container">
             <div
               data-aos="fade-up"
-              data-aos-delay="400"
-              data-aos-duration="800"
             >
               {/* <div className='md:w-[80%] bg-cover md:bg-110 mx-auto flex flex-col justify-center items-center py-14 md:py-0 md:px-14 text-center md:bg-size-full'>
                 <div className='klaviyo-form-XGdvPD'></div>
