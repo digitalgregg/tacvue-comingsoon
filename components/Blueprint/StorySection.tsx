@@ -26,7 +26,7 @@ const StorySection = () => {
                   OUR STORY
                 </p>
                 <h2 className={cx(title_sm, text_gradient)}>WE ARE TACVUE</h2>
-                <img src="/images/gradient_rectangle.svg" alt="" />
+                <img src="/images/gradient_rectangle.svg" alt="gradient-rectangle" />
                 <p
                   className={cx(subtitle_sm, "md:w-[75%] !leading-[160%] mt-8")}
                 >

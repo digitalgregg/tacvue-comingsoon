@@ -1,4 +1,5 @@
 import React, { ComponentProps } from "react";
+import Head from "next/head";
 import Header from "../components/Header";
 import cx from "classnames";
 import Footer from "../components/Footer";
@@ -23,9 +24,11 @@ export const title_sm =
 const Blueprint = () => {
   return (
     <div
+    
       // style={{
       //   background: "linear-gradient(237.69deg, #121831 2.21%, #000715 87.3%)",
       // }}
+
       style={{
         background:
           'url("https://user-images.githubusercontent.com/26748614/96337246-f14d4580-1085-11eb-8793-a86d929e034d.jpg")',
@@ -64,7 +67,7 @@ const BluePrintButton = React.forwardRef<
             <img
               src="/images/gradient_rectangle.svg"
               className="w-full absolute bottom-[-2px] left-0"
-              alt=""
+              alt="gradient rectangle"
             />
           </span>
           <img
