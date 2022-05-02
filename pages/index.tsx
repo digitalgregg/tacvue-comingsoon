@@ -377,18 +377,21 @@ function LandingPage() {
                 subtitle="Customize your own tag so people can find you."
                 iconImgSrc="/images/nft_power_icon.png"
                 bgImgSrc="/images/nft_card_bg.png"
+                alt="nft_card_bg"
               />
               <NFtCard
                 title="Recognize"
                 subtitle="Make your wallet easily identifiable with your TacVue Entity."
                 iconImgSrc="/images/search_icon.png"
                 bgImgSrc="/images/nft_card_purple_bg.png"
+                alt="nft_card_bg"
               />
               <NFtCard
                 title="Secure"
                 subtitle="Protect your content with your irrevocable access token."
                 iconImgSrc="/images/secure.png"
                 bgImgSrc="/images/nft_card_bg.png"
+                alt="nft_card_bg"
               />
             </div>
           </div>
@@ -732,8 +735,9 @@ type nftCardProps = {
   bgImgSrc: string;
   title: ReactNode;
   subtitle: ReactNode;
+  alt: string;
 };
-const NFtCard = ({ bgImgSrc, iconImgSrc, title, subtitle }: nftCardProps) => {
+const NFtCard = ({ bgImgSrc, iconImgSrc, title, subtitle, alt }: nftCardProps) => {
   return (
     <div className="relative">
       <img src={bgImgSrc} alt="nft_card_bg" className="w-full h-auto" />
