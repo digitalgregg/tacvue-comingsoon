@@ -1,0 +1,3 @@
+User-agent: Googlebot
+Disallow: /cgi-bin/
+Disallow: /images/
