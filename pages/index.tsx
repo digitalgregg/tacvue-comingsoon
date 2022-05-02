@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Head from "next/head";
+
 import { useRouter } from "next/router";
 import { HiChevronDoubleDown, HiOutlineArrowRight } from "react-icons/hi";
 import { FaInstagram, FaTiktok, FaTwitter } from "react-icons/fa";
@@ -41,6 +43,22 @@ const paragraphClasses =
 export const SocialIcons = () => {
   return (
     <div className="flex items-center gap-6 md:gap-10">
+      <Head>
+        <title>TacVue - The Multiverse Portal</title>
+        <meta name="description" content="TacVue is designed to gamify the experience of discovering, collecting and creating high quality digital content.v"></meta>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        {/* Facebook Meta Tag */}
+        <meta property="og:title" content="TacVue" />
+<meta property="og:description" content="Media Reimagined" />
+<meta property="og:image" content="https://www.tacvue.io/images/tacvue-color-icon.png" />
+<meta property="og:url" content="https://tacvue.io" />
+{/* Twitter Meta Tag */}
+<meta name="twitter:title" content="TacVue" />
+<meta name="twitter:description" content="Media Reimagined" />
+<meta name="twitter:url" content="https://www.tacvue.io/images/tacvue-color-icon.png" />
+<meta name="twitter:card" content="Built for Your Journey" />
+
+      </Head>
       <a
         href="https://www.twitter.com/tacvue"
         className="text-[#9EB5E1] hover:text-[#618ee4] -mt-2"
@@ -115,7 +133,7 @@ function LandingPage() {
               <h1 className="text-5xl xs:text-6xl md:!text-[110px] md:!leading-[1] text-center uppercase font-spaced mb-3">
                 <p data-aos="fade-up">Media</p>
                 <p data-aos="fade-up" data-aos-delay="100">
-                  reimagined
+                  Reimagined
                 </p>
               </h1>
 
@@ -305,8 +323,7 @@ function LandingPage() {
                         Collectors can exchange assets with a means of
                         representing their social identity, while supporting
                         their favorite creators and communities. They can earn
-                        rewards undervalued creations before other
-                        entities.
+                        rewards undervalued creations before other entities.
                       </p>
                     </div>
                   </div>

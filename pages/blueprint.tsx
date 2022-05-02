@@ -34,6 +34,16 @@ const Blueprint = () => {
         backdropFilter: "brightness(50%)",
       }}
     >
+      <script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "QAPage",
+  "mainEntity" : {
+    "@type" : "Question",
+    "name" : "THE BLUEPRINT"
+  }
+}
+</script>
       <Header />
       <ThreeJsAnimation />
       {/* <HeroSection /> */}
