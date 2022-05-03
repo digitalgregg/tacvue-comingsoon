@@ -139,17 +139,19 @@ function LandingPage() {
             <div className="landing_page_container flex flex-col items-center justify-center h-full w-full relative z-10">
               <h1 className="text-5xl xs:text-6xl md:!text-[110px] md:!leading-[1] text-center uppercase font-spaced mb-3">
                 <p data-aos="fade-up">Media</p>
-                  Reimagined
+                Reimagined
               </h1>
 
               {/* Buttons --Start-- */}
               <div className="flex flex-col items-center mt-8 gap-5">
-                <Link
-                  href={"https://t.co/JSCz7YdhnD"}
-                  // onClick={modalHandleOpen}
-                >
+                <div className="btn_gradient">
+                  <Link
+                    href={"https://t.co/JSCz7YdhnD"}
+                    // onClick={modalHandleOpen}
+                  >
                     APPLY TO LAUNCHPAD
-                </Link>
+                  </Link>
+                </div>
                 <Link
                   href={"https://tacvue.gitbook.io/tacvue/"}
                   // onClick={modalHandleOpen}
@@ -185,7 +187,7 @@ function LandingPage() {
               href="#read_more"
               className="flex flex-col items-center z-10 cursor-pointer text-[#6396F9] absolute left-1/2 -translate-x-1/2 bottom-16 group"
             >
-              <p>Learn More</p>
+              <p>View More</p>
               <div className="animate_slide_up_down">
                 <HiChevronDoubleDown
                   size={30}
@@ -392,10 +394,7 @@ function LandingPage() {
           className="bg-top bg-cover pb-[150px] mt-[150px] md:mt-[250px] bg-no-repeat md:bg-120"
         >
           <div className="container">
-            <h2
-              data-aos="fade-up"
-              className={`${headingClasses} text-center`}
-            >
+            <h2 data-aos="fade-up" className={`${headingClasses} text-center`}>
               Building for your journey
               {/* <span className='gradient_text'>your journey</span> */}
             </h2>
@@ -408,10 +407,7 @@ function LandingPage() {
             </p>
             <div className="flex justify-center mt-10">
               <Link href="/blueprint">
-                <a
-                  data-aos="fade-up"
-                  className="btn_gradient"
-                >
+                <a data-aos="fade-up" className="btn_gradient">
                   VIEW OUR BLUEPRINT
                 </a>
               </Link>
@@ -440,7 +436,7 @@ function LandingPage() {
                       data-aos="fade-up"
                     >
                       <img
-                        src="/images/verified_shield.png"
+                        src="/images/verified-badge.png"
                         className="w-full"
                         alt="verified_shield"
                       />
@@ -639,9 +635,7 @@ function LandingPage() {
         {/* Discord Section --Start-- */}
         <section className="pb-14 md:pb-28 mt-[150px]">
           <div className="landing_page_container">
-            <div
-              data-aos="fade-up"
-            >
+            <div data-aos="fade-up">
               {/* <div className='md:w-[80%] bg-cover md:bg-110 mx-auto flex flex-col justify-center items-center py-14 md:py-0 md:px-14 text-center md:bg-size-full'>
                 <div className='klaviyo-form-XGdvPD'></div>
               </div> */}
@@ -710,7 +704,13 @@ type nftCardProps = {
   subtitle: ReactNode;
   alt: string;
 };
-const NFtCard = ({ bgImgSrc, iconImgSrc, title, subtitle, alt }: nftCardProps) => {
+const NFtCard = ({
+  bgImgSrc,
+  iconImgSrc,
+  title,
+  subtitle,
+  alt,
+}: nftCardProps) => {
   return (
     <div className="relative">
       <img src={bgImgSrc} alt="nft_card_bg" className="w-full h-auto" />
