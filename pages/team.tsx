@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import Head from "next/head";
 import React from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -13,6 +14,9 @@ import VideoSection from "../components/TeamPage/VideoSection";
 const TeamPage = () => {
   return (
     <>
+      <Head>
+        <title>Team</title>
+      </Head>
       <Header />
       <HeroSection />
       <VideoSection />

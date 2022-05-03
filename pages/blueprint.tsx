@@ -37,6 +37,9 @@ const Blueprint = () => {
         backdropFilter: "brightness(50%)",
       }}
     >
+      <Head>
+        <title>Blueprint</title>
+      </Head>
       <Header />
       <ThreeJsAnimation />
       {/* <HeroSection /> */}
