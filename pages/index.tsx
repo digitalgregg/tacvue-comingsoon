@@ -265,7 +265,7 @@ function LandingPage() {
                       data-aos="fade-up"
                     >
                       <img
-                        src="/images/color_palette.svg"
+                        src="/images/color-palette.png"
                         className="w-full"
                         alt="color_palette"
                       />
@@ -300,7 +300,7 @@ function LandingPage() {
                       className="-mt-5 w-[40%] mx-auto md:w-full"
                     >
                       <img
-                        src="/images/trophy.svg"
+                        src="/images/trophy-1.png"
                         className="w-[85%] ml-auto"
                         alt="trophy"
                       />
@@ -471,7 +471,7 @@ function LandingPage() {
                       data-aos="fade-up"
                       className="-mt-5 w-[40%] mx-auto md:w-full"
                     >
-                      <img src="/images/mic.svg" className="w-full" alt="mic" />
+                      <img src="/images/megaphone.png" className="w-full" alt="mic" />
                     </div>
                     <div className="text-center md:text-left">
                       <h5
@@ -506,7 +506,7 @@ function LandingPage() {
                       data-aos="fade-up"
                     >
                       <img
-                        src="/images/bulb.svg"
+                        src="/images/bulb.png"
                         className="w-[80%] ml-auto"
                         alt="bulb"
                       />
@@ -542,7 +542,7 @@ function LandingPage() {
                       className="-mt-5 w-[40%] mx-auto md:w-full"
                     >
                       <img
-                        src="/images/chase.svg"
+                        src="/images/game.png"
                         className="w-[80%] ml-auto"
                         alt="chase"
                       />
