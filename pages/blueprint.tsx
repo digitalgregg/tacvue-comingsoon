@@ -23,20 +23,29 @@ export const title_sm =
 
 const Blueprint = () => {
   return (
+    <>
+    <Head>
+    <title>Our Story - The TacVue Blueprint</title>
+        <meta
+          name="description"
+          content="The story about how TacVue started, where TacVue is, and what TacVue is planning for the future."
+        ></meta>
+    </Head>
     <div
     
-      // style={{
+    
+    // style={{
       //   background: "linear-gradient(237.69deg, #121831 2.21%, #000715 87.3%)",
       // }}
-
+      
       style={{
         background:
-          'url("https://user-images.githubusercontent.com/26748614/96337246-f14d4580-1085-11eb-8793-a86d929e034d.jpg")',
+        'url("https://user-images.githubusercontent.com/26748614/96337246-f14d4580-1085-11eb-8793-a86d929e034d.jpg")',
         backgroundSize: "contain",
         backgroundRepeat: "repeat",
         backdropFilter: "brightness(50%)",
       }}
-    >
+      >
       <Header />
       <ThreeJsAnimation />
       {/* <HeroSection /> */}
@@ -49,6 +58,7 @@ const Blueprint = () => {
       <JoinSection />
       <Footer />
     </div>
+      </>
   );
 };
 

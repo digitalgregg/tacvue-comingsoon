@@ -46,7 +46,7 @@ export const SocialIcons = () => {
         <title>TacVue - The Multiverse Portal</title>
         <meta
           name="description"
-          content="TacVue is designed to gamify the experience of discovering, collecting and creating high quality digital content.v"
+          content="TacVue is designed to gamify the experience of discovering, collecting and creating high quality digital content."
         ></meta>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         {/* Facebook Meta Tag */}
@@ -158,7 +158,7 @@ function LandingPage() {
                     data-aos="fade-up"
                     className="text-sm sm:text-base px-10 py-2.5 rounded-full border-2 border-white duration-200 text-white font-semibold hover:bg-white hover:text-black uppercase"
                   >
-                    LEARN ABOUT TACVUE
+                    MORE ABOUT TACVUE
                   </a>
                 </Link>
                 {/* <Modal
