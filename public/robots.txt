@@ -1,4 +1,9 @@
-User-agent: Googlebot
-Disallow: /cgi-bin/
-Disallow: /images/
-Disallow: /pages/
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.tacvue.io/
+
+# Sitemaps
+Sitemap: https://www.tacvue.io/sitemap.xml
