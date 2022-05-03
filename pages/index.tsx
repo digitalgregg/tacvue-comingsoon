@@ -158,7 +158,7 @@ function LandingPage() {
                     data-aos="fade-up"
                     className="text-sm sm:text-base px-10 py-2.5 rounded-full border-2 border-white duration-200 text-white font-semibold hover:bg-white hover:text-black uppercase"
                   >
-                    MORE INFO
+                    LEARN ABOUT TACVUE
                   </a>
                 </Link>
                 {/* <Modal
