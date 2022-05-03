@@ -265,7 +265,7 @@ function LandingPage() {
                       data-aos="fade-up"
                     >
                       <img
-                        src="/images/color-palette.png"
+                        src="/images/color-pallette.png"
                         className="w-full"
                         alt="color_palette"
                       />
