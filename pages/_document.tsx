@@ -12,7 +12,7 @@ class MyDocument extends Document {
             <Html>
                 <Head>
                     <link rel="icon" type="image/png" href="/images/tacvue-gradient-icon.svg" />
-                    <link rel="stylesheet" href="/fonts.css" />
+                    <link rel="stylesheet" href="/fonts/fonts.css" />
                 </Head>
                 <body>
                     <Main />
