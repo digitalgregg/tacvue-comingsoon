@@ -319,7 +319,7 @@ function LandingPage() {
                         Collectors can exchange assets with a means of
                         representing their social identity, while supporting
                         their favorite creators and communities. They can earn
-                        rewards undervalued creations before other entities.
+                        rewards and creations before other entities.
                       </p>
                     </div>
                   </div>
@@ -471,7 +471,11 @@ function LandingPage() {
                       data-aos="fade-up"
                       className="-mt-5 w-[40%] mx-auto md:w-full"
                     >
-                      <img src="/images/megaphone.png" className="w-full" alt="mic" />
+                      <img
+                        src="/images/megaphone.png"
+                        className="w-full"
+                        alt="mic"
+                      />
                     </div>
                     <div className="text-center md:text-left">
                       <h5
