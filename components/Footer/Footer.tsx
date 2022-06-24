@@ -9,8 +9,8 @@ const Footer = () => {
     <>
       {/* Footer Section --Start-- */}
       <footer>
-        <div className="px-5 xl:px-16 2xl:px-20 pb-10 font-sans flex items-center justify-between gap-10 md:gap-0">
-          <div className="flex items-center gap-8">
+        <div className="px-5 xl:px-16 2xl:px-20 pb-10 font-sans flex items-center flex-col gap-10 mt-36 mb-8">
+          {/* <div className="flex items-center gap-8">
             <div className="flex items-center cursor-pointer w-[140px] h-[55px] md:w-auto">
               <span className="hidden dark:inline-block">
                 <Image
@@ -33,9 +33,12 @@ const Footer = () => {
                 />
               </span>
             </div>
-          </div>
+          </div> */}
 
           <SocialIcons />
+          <p className="text-center capitalize text-[#9EBBFF] font-medium">
+            copyright © 2022 TacVue, Inc. All Rights Reserved.
+          </p>
         </div>
       </footer>
       {/* Footer Section --End-- */}

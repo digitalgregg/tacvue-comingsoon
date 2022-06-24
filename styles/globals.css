@@ -26,7 +26,7 @@ body {
     @apply mx-auto px-5 2xl:max-w-[1450px];
   }
   .landing_page_container {
-    @apply mx-auto max-w-full px-5 md:px-6 xl:max-w-[1280px];
+    @apply mx-auto max-w-full px-5 md:px-6 xl:max-w-[1380px];
   }
   .bg-size-full {
     background-size: 100%;
@@ -194,4 +194,16 @@ canvas {
   + .gradient_checkbox_wrapper
   .greadient_checkbox_circle {
   @apply translate-x-[150%];
+}
+
+.box_gradient_text {
+  background: linear-gradient(93.32deg, #11aaf5 0.18%, #65d3ff 88.34%), #ffffff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.products_and_services_slider .swiper-wrapper {
+  transition-timing-function: linear;
 }
