@@ -17,6 +17,12 @@ body {
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .__input {
+    @apply input_border focus:input_gradient_border border border-transparent w-full block outline-none py-4 px-6 rounded-[10px] text-base lg:text-lg placeholder:text-[#576993] placeholder:capitalize text-white;
+  }
+}
+
 @layer utilities {
   .nft_card_hover {
     @apply duration-200;
@@ -98,6 +104,19 @@ body {
         padding-box padding-box,
       linear-gradient(rgb(255 255 255 / 20%) 0%, rgba(25, 195, 254, 0) 79.17%)
         border-box border-box;
+  }
+
+  .input_gradient_border {
+    background: linear-gradient(#1c233d 0%, #1c233d 100%) padding-box
+        padding-box,
+      linear-gradient(91.52deg, #6396f9 40.77%, #00d1ff 115.11%) border-box
+        border-box;
+  }
+  .input_border {
+    background: linear-gradient(#1c233d 0%, #1c233d 100%) padding-box
+        padding-box,
+      linear-gradient(91.52deg, #1c233d 40.77%, #1c233d 115.11%) border-box
+        border-box;
   }
 }
 

@@ -39,18 +39,18 @@ const cardsData: CardProps[] = [
 
 const UniqueValuePropositionsSection = () => {
   return (
-    <section className="py-[170px]">
+    <section className="py-20 lg:py-[170px]">
       <div className="landing_page_container">
-        <h2 className="text-center font-spaced text-[64px] leading-[61px] ">
+        <h2 className="text-center font-spaced text-[32px] leading-[30px] lg:text-[64px] lg:leading-[61px] ">
           Unique Value Propositions
         </h2>
-        <p className="max-w-[950px] mx-auto mt-7 text-[#838CA3] text-xl text-center ">
+        {/* <p className="max-w-[950px] mx-auto mt-7 text-[#838CA3] text-base leading-[22px] lg:text-[20px] lg:leading-[26px] text-center ">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam
-        </p>
+        </p> */}
 
-        <div className="mt-[60px] grid grid-cols-3 gap-[30px]">
+        <div className="mt-[60px] grid-cols-1 grid lg:grid-cols-3 gap-5 lg:gap-[30px]">
           {cardsData.map((card, i) => (
             <Card {...card} key={i} />
           ))}

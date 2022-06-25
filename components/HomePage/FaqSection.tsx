@@ -59,17 +59,17 @@ const FaqSection = () => {
           />
         </div>
 
-        <div className="mt-[160px] flex justify-center items-center gap-[85px]">
-          <h6 className="font-spaced text-[56px] leading-[60px] -translate-y-2">
+        <div className="mt-20 lg:mt-[160px] flex flex-col lg:justify-center lg:items-center gap-4 lg:gap-[85px]">
+          <h6 className="font-spaced text-[24px] leading-[22px] lg:text-[56px] lg:leading-[60px] -translate-y-2">
             More info:
           </h6>
-          <div className="flex items-center gap-[117px]">
+          <div className="flex items-center gap-4 lg:gap-[117px]">
             <button
               style={{
                 background:
                   "linear-gradient(180deg, #0E1B33 0%, #0E1B33 100%) padding-box padding-box, linear-gradient(91.52deg, #6396F9 40.77%, #00D1FF 115.11%) border-box border-box",
               }}
-              className="py-4 px-10 rounded-full text-xl capitalize border-[3px] border-transparent"
+              className="py-4 px-6 lg:px-10 rounded-full text-base lg:text-xl capitalize border-[3px] border-transparent"
             >
               <span className="box_gradient_text font-semibold">
                 View our Gitbook
@@ -80,7 +80,7 @@ const FaqSection = () => {
                 background:
                   "linear-gradient(180deg, #0E1B33 0%, #0E1B33 100%) padding-box padding-box, linear-gradient(91.52deg, #6396F9 40.77%, #00D1FF 115.11%) border-box border-box",
               }}
-              className="py-4 px-10 rounded-full text-xl capitalize border-[3px] border-transparent"
+              className="py-4 px-6 lg:px-10 rounded-full text-base lg:text-xl capitalize border-[3px] border-transparent"
             >
               <span className="box_gradient_text font-semibold">
                 Contact Support

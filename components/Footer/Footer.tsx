@@ -36,7 +36,7 @@ const Footer = () => {
           </div> */}
 
           <SocialIcons />
-          <p className="text-center capitalize text-[#9EBBFF] font-medium">
+          <p className="text-center capitalize text-[#576993] font-medium">
             copyright © 2022 TacVue, Inc. All Rights Reserved.
           </p>
         </div>
