@@ -85,7 +85,7 @@ const Card = ({ isRtl, imgSrc, title, desc }: CardProps) => {
           <h4 className="text-white text-2xl lg:text-[48px] lg:leading-[45px] font-spaced ">
             {title}
           </h4>
-          <p className="text-[#838CA3] text-base lg:text-xl mt-4 lg:mt-5">
+          <p className="text-[#838CA3] text-base lg:text-xl mt-4 lg:mt-5 capitalize">
             {desc}
           </p>
 
