@@ -81,10 +81,6 @@ function Header() {
             />
           </span>
         </div>
-
-        <div className="flex items-center gap-5">
-          <SocialIcons />
-        </div>
       </nav>
     </header>
   );

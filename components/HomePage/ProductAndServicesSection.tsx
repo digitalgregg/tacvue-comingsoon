@@ -15,12 +15,10 @@ const ProductAndServicesSection = () => {
     >
       <div className="landing_page_container">
         <h2 className="text-center font-spaced text-[32px] leading-[30px] lg:text-[64px] lg:leading-[61px]">
-          Our products & services
-          <p>(member exclusive)</p>
+          products & services
         </h2>
         <p className="mt-7 text-[#838CA3] text-base leading-[22px] lg:text-[20px] lg:leading-[26px] text-center ">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor!
+          Member exclusive services to make your project a growing success
         </p>
       </div>
 
