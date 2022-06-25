@@ -36,25 +36,25 @@ export const SocialIcons = () => {
     <div className="flex items-center gap-6 md:gap-12">
       <a
         href="https://www.twitter.com/tacvue"
-        className="text-[#9EBBFF] hover:text-[#4d81e1] -mt-2"
+        className="text-[#576993] hover:text-[#4f6391] -mt-2"
       >
         <FaTwitter className="w-7 h-7 md:h-8 md:w-8" />
       </a>
       <a
         href="https://www.twitter.com/tacvue"
-        className="text-[#9EBBFF] hover:text-[#4d81e1] -mt-2"
+        className="text-[#576993] hover:text-[#4f6391] -mt-2"
       >
         <SiDiscord className="w-7 h-7 md:h-8 md:w-8" />
       </a>
       <a
         href="https://www.instagram.com/tacvue/"
-        className="text-[#9EBBFF] hover:text-[#4d81e1] -mt-2"
+        className="text-[#576993] hover:text-[#4f6391] -mt-2"
       >
         <FaInstagram className="w-7 h-7 md:h-8 md:w-8" />
       </a>
       <a
         href="https://www.tiktok.com/@tacvue"
-        className="text-[#9EBBFF] hover:text-[#4d81e1] -mt-2"
+        className="text-[#576993] hover:text-[#4f6391] -mt-2"
       >
         <FaMediumM className="w-7 h-7 md:h-8 md:w-8" />
       </a>
@@ -125,6 +125,7 @@ function LandingPage() {
         <TechnologySection />
         <FutureOfNFTSection />
         <WhyJoinTacVueSection /> */}
+
         <FaqSection />
         <BuildForYourJourney />
 
