@@ -16,9 +16,9 @@ const SubscribeSection = () => {
           <h2 className="text-center font-spaced text-[24px] leading-[22px] lg:text-[30px] lg:leading-[35px] lg:w-[45%] mx-auto">
             Subscribe for our latest projects and monthly newsletters!
           </h2>
-          <p className="text-xl mt-5 text-center text-[#838CA3] capitalize">
+          {/* <p className="text-xl mt-5 text-center text-[#838CA3] capitalize">
             Don&apos;t miss out on the tips and strategies we offer to community
-          </p>
+          </p> */}
 
           <form className="max-w-[700px] mx-auto mt-12 lg:mt-[70px]">
             <div className="relative">
