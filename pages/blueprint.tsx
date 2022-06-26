@@ -17,6 +17,7 @@ import OurVision from "../components/Blueprint/OurVision";
 import Leadership from "../components/Blueprint/Leadership";
 import TeamMembers from "./../components/Blueprint/TeamMembers";
 import NewsLetter from "./../components/Blueprint/NewsLetter";
+import SubscribeSection from "../components/HomePage/SubscribeSection";
 
 export const subtitle_sm =
   "text-base md:text-lg text-[#576993] dark:text-[#9EB5E1] !leading-[160%] capitalize";
@@ -53,7 +54,7 @@ const Blueprint = () => {
         <OurVision />
         <Leadership />
         <TeamMembers />
-        <NewsLetter />
+        <SubscribeSection />
         {/* <HeroSection /> */}
         {/* <StorySection />
       <ServicesSection />
