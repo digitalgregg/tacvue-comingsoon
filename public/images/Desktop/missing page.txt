@@ -1,0 +1,87 @@
+*/dashboard-director/add-role
+1.Summary {
+btn. Private,
+btn. Open
+}
+2.Instruction Hours {
+btn. Yes,
+btn. No
+}
+3.Select
+ Role(s) {
+ add role (btn) (modal missing)
+}
+
+
+*/path issue
+issue 1./dashboard-director/add-role
+right 2.director-dashboard/add-role
+
+
+*/director-dashboard
+1. clander
+2.{
+btn. Day
+btn. Weeks
+btn. Months
+}
+3.Your People card {
+btn. Manage
+btn. Remove Apprentice
+}
+4. Apprentice {
+1. modal
+}
+5. Manager{
+1. modal
+}
+
+
+
+* /director-dashboard/role-management
+1. Share opportunity (btn)
+2.all paginestion user card {
+btn. 3dottet
+}
+
+
+* /director-dashboard/gosprout
+1. share details (card){
+Edit (btn)
+}
+2. Know Your Strength  (card){
+Start (btn)
+}
+3. modal (isseu) (complite)
+
+* /director-dashboard/director-report
+1. days , Weeks, Months (btn)
+2. clander
+^^^this btn clickit but not changing data
+
+
+* /director-dashboard/form-library
+1. add from (btn) click on a modal ( but this modal not provide )
+
+
+* /director-dashboard/settings/account
+1. profile change (btn)
+2. Update Password (btn)
+3. Save Changes  (btn)
+
+
+* /director-dashboard/settings/administration
+1. Save Changes  (btn)
+
+
+* /director-dashboard/settings
+1. Notification, Privacy and Security, Accessibility, Helpdesk,  (btn)
+^^^this btn not adding pages as like url path
+
+
+* /director-dashboard/apprenticeship-management
+1. add Apprentices (btn)
+2.all paginestion user card {
+btn. Manage
+btn. Remove Apprentice
+} 

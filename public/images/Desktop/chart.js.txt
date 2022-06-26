@@ -1,0 +1,402 @@
+// import React, { useEffect, useLayoutEffect, useState } from "react";
+// import {
+//   BarChart,
+//   Bar,
+//   XAxis,
+//   CartesianGrid,
+//   Tooltip,
+//   ResponsiveContainer,
+// } from "recharts";
+// import { useQuery } from "react-query";
+// import api from "../../api";
+// import useAuth from "../../hooks/useAuth";
+// import Moment from "react-moment";
+
+// export default function Chart() {
+//   const [datasAll, setDatesAll] = useState([]);
+//   const { user }: any = useAuth();
+//   const { data: activity, isLoading } = useQuery("activities-data-chart", () =>
+//     api.get(`/api/user-activity?filter=apprenticeID&value=${user?._id}`)
+//   );
+//   const userActivity = activity?.data.data;
+//   const filter = userActivity?.filter((item: any) => item.activityID !== null);
+//   const datas = filter?.map((item: any) => item.activityID.updatedAt);
+
+//   const [formatMonth, setFormatMonth] = useState([]);
+
+//   const arrayDate = datas;
+//   const spliceDate = arrayDate?.map((item: any) => item?.split("-")[1]);
+//   console.log(filter, "activity: filter by id");
+//   const itemFilter6 = spliceDate?.filter((item: any) => item == "06");
+//   const itemFilter1 = spliceDate?.filter((item: any) => item == "01");
+//   const itemFilter2 = spliceDate?.filter((item: any) => item == "02");
+//   const itemFilter3 = spliceDate?.filter((item: any) => item == "03");
+//   const itemFilter4 = spliceDate?.filter((item: any) => item == "04");
+//   const itemFilter5 = spliceDate?.filter((item: any) => item == "05");
+//   const itemFilter7 = spliceDate?.filter((item: any) => item == "07");
+//   const itemFilter8 = spliceDate?.filter((item: any) => item == "08");
+//   const itemFilter9 = spliceDate?.filter((item: any) => item == "09");
+//   const itemFilter10 = spliceDate?.filter((item: any) => item == "10");
+//   const itemFilter11 = spliceDate?.filter((item: any) => item == "11");
+//   const itemFilter12 = spliceDate?.filter((item: any) => item == "12");
+//   const itemFilter13 = spliceDate?.filter((item: any) => item == "13");
+//   const itemFilter14 = spliceDate?.filter((item: any) => item == "14");
+//   const itemFilter15 = spliceDate?.filter((item: any) => item == "15");
+//   const itemFilter16 = spliceDate?.filter((item: any) => item == "16");
+//   const itemFilter17 = spliceDate?.filter((item: any) => item == "17");
+//   const itemFilter18 = spliceDate?.filter((item: any) => item == "18");
+//   const itemFilter19 = spliceDate?.filter((item: any) => item == "19");
+//   const itemFilter20 = spliceDate?.filter((item: any) => item == "20");
+//   const itemFilter21 = spliceDate?.filter((item: any) => item == "21");
+//   const itemFilter22 = spliceDate?.filter((item: any) => item == "22");
+//   const itemFilter23 = spliceDate?.filter((item: any) => item == "23");
+//   const itemFilter24 = spliceDate?.filter((item: any) => item == "24");
+//   const itemFilter25 = spliceDate?.filter((item: any) => item == "25");
+//   const itemFilter26 = spliceDate?.filter((item: any) => item == "26");
+//   const itemFilter27 = spliceDate?.filter((item: any) => item == "27");
+//   const itemFilter28 = spliceDate?.filter((item: any) => item == "28");
+//   const itemFilter29 = spliceDate?.filter((item: any) => item == "29");
+//   const itemFilter30 = spliceDate?.filter((item: any) => item == "30");
+//   const itemFilter31 = spliceDate?.filter((item: any) => item == "31");
+
+//   const [data, setData] = useState([
+//     {
+//       name: "1",
+//       progress: itemFilter1?.length,
+//     },
+//     {
+//       name: "2",
+//       progress: itemFilter2?.length,
+//     },
+//     {
+//       name: "3",
+//       progress: itemFilter3?.length,
+//     },
+//     {
+//       name: "4",
+//       progress: itemFilter4?.length,
+//     },
+//     {
+//       name: "5",
+//       progress: itemFilter5?.length,
+//     },
+//     {
+//       name: "6",
+//       progress: itemFilter6?.length,
+//     },
+//     {
+//       name: "7",
+//       progress: itemFilter7?.length,
+//     },
+//     {
+//       name: "8",
+//       progress: itemFilter8?.length,
+//     },
+//     {
+//       name: "9",
+//       progress: itemFilter9?.length,
+//     },
+//     {
+//       name: "10",
+//       progress: itemFilter10?.length,
+//     },
+//     {
+//       name: "11",
+//       progress: itemFilter11?.length,
+//     },
+//     {
+//       name: "12",
+//       progress: itemFilter12?.length,
+//     },
+//     {
+//       name: "13",
+//       progress: itemFilter13?.length,
+//     },
+//     {
+//       name: "14",
+//       progress: itemFilter14?.length,
+//     },
+//     {
+//       name: "15",
+//       progress: itemFilter15?.length,
+//     },
+//     {
+//       name: "16",
+//       progress: itemFilter16?.length,
+//     },
+//     {
+//       name: "17",
+//       progress: itemFilter17?.length,
+//     },
+//     {
+//       name: "18",
+//       progress: itemFilter18?.length,
+//     },
+//     {
+//       name: "19",
+//       progress: itemFilter19?.length,
+//     },
+//     {
+//       name: "20",
+//       progress: itemFilter20?.length,
+//     },
+//     {
+//       name: "21",
+//       progress: itemFilter21?.length,
+//     },
+//     {
+//       name: "22",
+//       progress: itemFilter22?.length,
+//     },
+//     {
+//       name: "23",
+//       progress: itemFilter23?.length,
+//     },
+//     {
+//       name: "24",
+//       progress: itemFilter24?.length,
+//     },
+//     {
+//       name: "25",
+//       progress: itemFilter25?.length,
+//     },
+//     {
+//       name: "26",
+//       progress: itemFilter26?.length,
+//     },
+//     {
+//       name: "27",
+//       progress: itemFilter27?.length,
+//     },
+//     {
+//       name: "28",
+//       progress: itemFilter28?.length,
+//     },
+//     {
+//       name: "29",
+//       progress: itemFilter29?.length,
+//     },
+//     {
+//       name: "30",
+//       progress: itemFilter30?.length,
+//     },
+//     {
+//       name: "31",
+//       progress: itemFilter31?.length,
+//     },
+//   ]);
+
+//   return (
+//     <ResponsiveContainer>
+//       <BarChart
+//         data={data}
+//         margin={{
+//           top: 5,
+//           bottom: 5,
+//         }}
+//         barSize={12}
+//       >
+//         <CartesianGrid strokeDasharray="" horizontal={true} vertical={false} />
+//         <XAxis dataKey="name" fontSize={11} fontWeight={500} />
+//         <Tooltip />
+//         <Bar dataKey="progress" fill="#F9A928" radius={[10, 10, 0, 0]} />
+//       </BarChart>
+//     </ResponsiveContainer>
+//   );
+// }
+
+import React, { useEffect, useLayoutEffect, useState } from "react";
+
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  CartesianGrid,
+  Tooltip,
+  ResponsiveContainer,
+} from "recharts";
+import { useQuery } from "react-query";
+import api from "../../api";
+import useAuth from "../../hooks/useAuth";
+import Moment from "react-moment";
+
+export default function Chart() {
+  const [allActivities, setAllActivities] = useState([]);
+  const { user }: any = useAuth();
+
+  function getDay(dayFind: any) {
+    const dates = new Date(`${dayFind}`);
+    const day = dates.getDate();
+    return day;
+  }
+
+  const mapActivity = allActivities.map((item: any) => item?.activityID);
+  console.log(allActivities, ">>>>>>>allActivities>>>>>>>>>>");
+
+  function dayNum(num: any) {
+    const day = mapActivity.filter(
+      (item: any) => getDay(`${item?.createdAt}`) === num
+    );
+    return day;
+  }
+  const day1 = mapActivity.filter((item: any) =>
+    getDay(`${item?.createdAt}`) === 17 ? 7 : 0
+  );
+  console.log(day1, "()______________++++++++++________________");
+
+  useEffect(() => {
+    api
+      .get(`/api/user-activity?filter=apprenticeID&value=${user?._id}`)
+      .then((res) => {
+        const activities = res?.data.data;
+        setAllActivities(activities);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, [user]);
+  const [data, setData] = useState([
+    {
+      name: "1",
+      progress: day1,
+    },
+    {
+      name: "2",
+      progress: dayNum(2).length,
+    },
+    {
+      name: "3",
+      progress: dayNum(3).length,
+    },
+    {
+      name: "4",
+      progress: dayNum(4).length,
+    },
+    {
+      name: "5",
+      progress: dayNum(5).length,
+    },
+    {
+      name: "6",
+      progress: dayNum(6) ? dayNum(6).length : 0,
+    },
+    {
+      name: "7",
+      progress: dayNum(7) ? dayNum(7).length : 0,
+    },
+    {
+      name: "8",
+      progress: dayNum(8) ? dayNum(8).length : 0,
+    },
+    {
+      name: "9",
+      progress: dayNum(9) ? dayNum(9).length : 0,
+    },
+    {
+      name: "10",
+      progress: dayNum(10) ? dayNum(10).length : 0,
+    },
+    {
+      name: "11",
+      progress: dayNum(11) ? dayNum(11).length : 0,
+    },
+    {
+      name: "12",
+      progress: dayNum(12) ? dayNum(12).length : 0,
+    },
+    {
+      name: "13",
+      progress: dayNum(13) ? dayNum(13).length : 0,
+    },
+    {
+      name: "14",
+      progress: dayNum(14) ? dayNum(14).length : 0,
+    },
+    {
+      name: "15",
+      progress: dayNum(15) ? dayNum(15).length : 0,
+    },
+    {
+      name: "16",
+      progress: dayNum(16) ? dayNum(16).length : 0,
+    },
+    {
+      name: "17",
+      progress: 5,
+    },
+    {
+      name: "18",
+      progress: dayNum(18) ? dayNum(18).length : 0,
+    },
+    {
+      name: "19",
+      progress: dayNum(19) ? dayNum(19).length : 0,
+    },
+    {
+      name: "20",
+      progress: dayNum(20) ? dayNum(20).length : 0,
+    },
+    {
+      name: "21",
+      progress: dayNum(21) ? dayNum(21).length : 0,
+    },
+    {
+      name: "22",
+      progress: dayNum(22) ? dayNum(22).length : 0,
+    },
+    {
+      name: "23",
+      progress: dayNum(23) ? dayNum(23).length : 0,
+    },
+    {
+      name: "24",
+      progress: dayNum(24) ? dayNum(24).length : 0,
+    },
+    {
+      name: "25",
+      progress: dayNum(25) ? dayNum(25).length : 0,
+    },
+    {
+      name: "26",
+      progress: dayNum(26) ? dayNum(26).length : 0,
+    },
+    {
+      name: "27",
+      progress: dayNum(27) ? dayNum(27).length : 0,
+    },
+    {
+      name: "28",
+      progress: dayNum(28) ? dayNum(28).length : 0,
+    },
+    {
+      name: "29",
+      progress: dayNum(29) ? dayNum(29).length : 0,
+    },
+    {
+      name: "30",
+      progress: dayNum(30) ? dayNum(30).length : 0,
+    },
+    {
+      name: "31",
+      progress: dayNum(31) ? dayNum(31).length : 0,
+    },
+  ]);
+
+  return (
+    <ResponsiveContainer>
+      <BarChart
+        data={data}
+        margin={{
+          top: 5,
+          bottom: 5,
+        }}
+        barSize={12}
+      >
+        <CartesianGrid strokeDasharray="" horizontal={true} vertical={false} />
+        <XAxis dataKey="name" fontSize={11} fontWeight={500} />
+        <Tooltip />
+        <Bar dataKey="progress" fill="#F9A928" radius={[10, 10, 0, 0]} />
+      </BarChart>
+    </ResponsiveContainer>
+  );
+}

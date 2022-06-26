@@ -1,0 +1,187 @@
+import React, { useEffect, useLayoutEffect, useState } from "react";
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  CartesianGrid,
+  Tooltip,
+  ResponsiveContainer,
+} from "recharts";
+import { useQuery } from "react-query";
+import api from "../../api";
+import useAuth from "../../hooks/useAuth";
+import Moment from "react-moment";
+
+interface Props {
+  isMonthly: boolean;
+}
+
+export default function Chart({ isMonthly }: Props) {
+  const { user }: any = useAuth();
+
+  function getDay(dayFind: any) {
+    const dates = new Date(`${dayFind}`);
+    const day = dates.getDate();
+    return day;
+  }
+
+  const { data: activity, isLoading } = useQuery("activities-data-chart", () =>
+    api.get(
+      `/api/user-activity?filter=apprenticeID&value=62af4ce19e421700838bceea`
+    )
+  );
+  const userActivity = activity?.data.data;
+  const filter = userActivity?.filter((item: any) => item.activityID !== null);
+  const datas = filter?.map((item: any) => getDay(item.activityID.createdAt));
+
+  function getDayNumber(days: any) {
+    const day = datas?.filter((item: any) => item === days);
+    return day;
+  }
+  console.log(getDayNumber(23), "function>>>>>>>>>>>>>>>>>>");
+
+  const [data, setData] = useState([
+    {
+      name: "1",
+      progress: getDayNumber(1) && getDayNumber(1).length,
+    },
+    {
+      name: "2",
+      progress: getDayNumber(2) && getDayNumber(2).length,
+    },
+    {
+      name: "3",
+      progress: getDayNumber(3) && getDayNumber(3).length,
+    },
+    {
+      name: "4",
+      progress: getDayNumber(4) && getDayNumber(4).length,
+    },
+    {
+      name: "5",
+      progress: getDayNumber(5) && getDayNumber(5).length,
+    },
+    {
+      name: "6",
+      progress: getDayNumber(6) && getDayNumber(6).length,
+    },
+    {
+      name: "7",
+      progress: getDayNumber(7) && getDayNumber(7).length,
+    },
+    {
+      name: "8",
+      progress: getDayNumber(8) && getDayNumber(8).length,
+    },
+    {
+      name: "9",
+      progress: getDayNumber(9) && getDayNumber(9).length,
+    },
+    {
+      name: "10",
+      progress: getDayNumber(10) && getDayNumber(10).length,
+    },
+    {
+      name: "11",
+      progress: getDayNumber(11) && getDayNumber(11).length,
+    },
+    {
+      name: "12",
+      progress: getDayNumber(12) && getDayNumber(12).length,
+    },
+    {
+      name: "13",
+      progress: getDayNumber(13) && getDayNumber(13).length,
+    },
+    {
+      name: "14",
+      progress: getDayNumber(14) && getDayNumber(14).length,
+    },
+    {
+      name: "15",
+      progress: getDayNumber(15) && getDayNumber(15).length,
+    },
+    {
+      name: "16",
+      progress: getDayNumber(16) && getDayNumber(16).length,
+    },
+    {
+      name: "17",
+      progress: getDayNumber(17) && getDayNumber(17).length,
+    },
+    {
+      name: "18",
+      progress: getDayNumber(18) && getDayNumber(18).length,
+    },
+    {
+      name: "19",
+      progress: getDayNumber(19) && getDayNumber(19).length,
+    },
+    {
+      name: "20",
+      progress: getDayNumber(20) && getDayNumber(20).length,
+    },
+    {
+      name: "21",
+      progress: getDayNumber(21) && getDayNumber(21).length,
+    },
+    {
+      name: "22",
+      progress: getDayNumber(22) && getDayNumber(22).length,
+    },
+    {
+      name: "23",
+      progress: getDayNumber(23) && getDayNumber(23).length,
+    },
+    {
+      name: "24",
+      progress: getDayNumber(24) && getDayNumber(24).length,
+    },
+    {
+      name: "25",
+      progress: getDayNumber(25) && getDayNumber(25).length,
+    },
+    {
+      name: "26",
+      progress: getDayNumber(26) && getDayNumber(26).length,
+    },
+    {
+      name: "27",
+      progress: getDayNumber(27) && getDayNumber(27).length,
+    },
+    {
+      name: "28",
+      progress: getDayNumber(28) && getDayNumber(28).length,
+    },
+    {
+      name: "29",
+      progress: getDayNumber(29) && getDayNumber(29).length,
+    },
+    {
+      name: "30",
+      progress: getDayNumber(30) && getDayNumber(30).length,
+    },
+    {
+      name: "31",
+      progress: getDayNumber(31) && getDayNumber(31).length,
+    },
+  ]);
+
+  return (
+    <ResponsiveContainer>
+      <BarChart
+        data={isMonthly ? data : data.slice(0, 7)}
+        margin={{
+          top: 5,
+          bottom: 5,
+        }}
+        barSize={12}
+      >
+        <CartesianGrid strokeDasharray="" horizontal={true} vertical={false} />
+        <XAxis dataKey="name" fontSize={11} fontWeight={500} />
+        <Tooltip />
+        <Bar dataKey="progress" fill="#F9A928" radius={[10, 10, 0, 0]} />
+      </BarChart>
+    </ResponsiveContainer>
+  );
+}

@@ -13,6 +13,10 @@ import RoadMapSection from "../components/Blueprint/RoadMapSection";
 import ThreeJsAnimation from "../components/Blueprint/ThreeJsAnimation";
 import Link from "next/link";
 import FounderSection from "../components/Blueprint/FounderSection";
+import OurVision from "../components/Blueprint/OurVision";
+import Leadership from "../components/Blueprint/Leadership";
+import TeamMembers from "./../components/Blueprint/TeamMembers";
+import NewsLetter from "./../components/Blueprint/NewsLetter";
 
 export const subtitle_sm =
   "text-base md:text-lg text-[#576993] dark:text-[#9EB5E1] !leading-[160%] capitalize";
@@ -24,41 +28,43 @@ export const title_sm =
 const Blueprint = () => {
   return (
     <>
-    <Head>
-    <title>Our Story - The TacVue Blueprint</title>
+      <Head>
+        <title>Our Story - The TacVue Blueprint</title>
         <meta
           name="description"
           content="The story about how TacVue started, where TacVue is, and what TacVue is planning for the future."
         ></meta>
-    </Head>
-    <div
-    
-    
-    // style={{
-      //   background: "linear-gradient(237.69deg, #121831 2.21%, #000715 87.3%)",
-      // }}
-      
-      style={{
-        background:
-        'url("https://user-images.githubusercontent.com/26748614/96337246-f14d4580-1085-11eb-8793-a86d929e034d.jpg")',
-        backgroundSize: "contain",
-        backgroundRepeat: "repeat",
-        backdropFilter: "brightness(50%)",
-      }}
+      </Head>
+      <div
+        // style={{
+        //   background: "linear-gradient(237.69deg, #121831 2.21%, #000715 87.3%)",
+        // }}
+
+        style={{
+          background:
+            'url("https://user-images.githubusercontent.com/26748614/96337246-f14d4580-1085-11eb-8793-a86d929e034d.jpg")',
+          backgroundSize: "contain",
+          backgroundRepeat: "repeat",
+          backdropFilter: "brightness(50%)",
+        }}
       >
-      <Header />
-      <ThreeJsAnimation />
-      {/* <HeroSection /> */}
-      <StorySection />
+        <Header />
+        <ThreeJsAnimation />
+        <OurVision />
+        <Leadership />
+        <TeamMembers />
+        <NewsLetter />
+        {/* <HeroSection /> */}
+        {/* <StorySection />
       <ServicesSection />
-      <RoadMapSection />
-      {/* <PartnersSection />
+      <RoadMapSection /> */}
+        {/* <PartnersSection />
       <QuickAboutSection /> */}
-      <FounderSection />
-      <JoinSection />
-      <Footer />
-    </div>
-      </>
+        {/* <FounderSection />
+      <JoinSection /> */}
+        <Footer />
+      </div>
+    </>
   );
 };
 

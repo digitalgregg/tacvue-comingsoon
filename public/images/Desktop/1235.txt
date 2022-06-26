@@ -1,0 +1,54 @@
+import React, { useContext, useState } from "react";
+import { useQuery } from "react-query";
+import api from "../../../api";
+import { MyContext } from "../../../components/ShareOpportunity";
+
+const Page1 = () => {
+  const { setClick } = useContext(MyContext);
+  const [managers, setManagers] = useState([]);
+  const { data, isLoading } = useQuery("get-managers", () =>
+    api
+      .get("/api/company-user/")
+      .then((res) => {
+        const allUser = res?.data.data;
+        const managers =
+          allUser &&
+          allUser?.filter((manager: any) => manager.role === "manager");
+        managers.map((manager: any) => {
+          api
+            .get(`/api/user/${manager.userID}`)
+            .then((res) => {
+              setManagers(res?.data.data);
+            })
+            .catch((err) => {
+              console.log(err);
+            });
+        });
+      })
+      .catch((err) => {
+        console.log(err);
+      })
+  );
+  // const getAllUser = data?.data.data;
+
+  // const allManager =
+  //   getAllUser &&
+  //   getAllUser?.filter((manager: any) => manager.role === "manager");
+
+  return (
+    <form className="select   w-full md:w-[595px] h-[59px] mx-auto rounded-[27px] md:mb-[123px]">
+      <select onChange={() => setClick(true)} className="rounded-[27px] ">
+        <option value="" disabled>
+          Managers
+        </option>
+        {/* {Object.keys((manager: any) => (
+          <option key={manager._id} value={manager._id}>
+            {manager.firs_name}
+          </option>
+        ))} */}
+      </select>
+    </form>
+  );
+};
+
+export default Page1;
