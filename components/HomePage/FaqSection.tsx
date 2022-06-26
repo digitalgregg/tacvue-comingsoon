@@ -3,9 +3,12 @@ import Collapsible from "react-collapsible";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 import { headingClasses, paragraphClasses } from "../../pages";
 
+const CollapsibleComponent =
+  Collapsible as unknown as React.ComponentProps<any>;
+
 const FaqSection = () => {
   return (
-    <section className="py-14 md:py-20 md:pb-0 mt-0 md:mt-16 faq_section">
+    <section className="mt-0 py-14 md:py-20 md:pb-0 md:mt-16 faq_section">
       <div className="landing_page_container">
         <h2
           className={`${headingClasses} text-center mb-12`}
@@ -14,7 +17,7 @@ const FaqSection = () => {
           FAQ
         </h2>
 
-        <div className="text-white space-y-8 relative z-10">
+        <div className="relative z-10 space-y-8 text-white">
           {/* <BluryCircle className='top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 !h-[420px] !blur-[180px]' /> */}
           <FaqAccordion
             data-aos="fade-up"
@@ -71,7 +74,7 @@ const FaqSection = () => {
               }}
               className="py-4 px-6 lg:px-10 rounded-full text-base lg:text-xl capitalize border-[3px] border-transparent"
             >
-              <span className="box_gradient_text font-semibold">
+              <span className="font-semibold box_gradient_text">
                 View our Gitbook
               </span>
             </button>
@@ -82,7 +85,7 @@ const FaqSection = () => {
               }}
               className="py-4 px-6 lg:px-10 rounded-full text-base lg:text-xl capitalize border-[3px] border-transparent"
             >
-              <span className="box_gradient_text font-semibold">
+              <span className="font-semibold box_gradient_text">
                 Contact Support
               </span>
             </button>
@@ -103,7 +106,7 @@ const FaqAccordion = ({ title, description, ...rest }: FaqAccordionProps) => {
   const [isOpen, setisOpen] = useState(false);
   return (
     <div {...rest}>
-      <Collapsible
+      <CollapsibleComponent
         transitionTime={200}
         openedClassName="currently_open"
         trigger={
@@ -122,7 +125,7 @@ const FaqAccordion = ({ title, description, ...rest }: FaqAccordionProps) => {
         onClosing={() => setisOpen(false)}
       >
         <p className={`${paragraphClasses} px-10 pb-5`}>{description}</p>
-      </Collapsible>
+      </CollapsibleComponent>
     </div>
   );
 };

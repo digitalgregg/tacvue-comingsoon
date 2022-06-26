@@ -1,0 +1,12 @@
+1.Work with Next.js api and  , connect with non-sql and sql and build professional project
+2. Typescript core learn and build professional project
+3. Next.Auth
+4. Js core concept
+5.Project Structure handle professionally
+6.Product development
+7.Focus on full stack development
+
+8.Learn css from online tutorial youtube chanel.
+9. Block chain.
+10. crypto, and nft project
+11. yup, formic
