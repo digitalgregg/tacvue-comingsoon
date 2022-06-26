@@ -10,7 +10,7 @@ html {
 
 body {
   @apply bg-[#F4F8FF] dark:bg-[#030c16] opacity-0 pointer-events-none;
-  overflow-y: overlay;
+  /* overflow-y: overlay; */
 }
 
 @tailwind base;

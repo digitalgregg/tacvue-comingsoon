@@ -74,9 +74,14 @@ const FaqSection = () => {
               }}
               className="py-4 px-6 lg:px-10 rounded-full text-base lg:text-xl capitalize border-[3px] border-transparent"
             >
-              <span className="font-semibold box_gradient_text">
+              <a
+                href="https://tacvue.gitbook.io/tacvue/"
+                target="_blank"
+                rel="noreferrer"
+                className="font-semibold box_gradient_text"
+              >
                 View our Gitbook
-              </span>
+              </a>
             </button>
             <button
               style={{
