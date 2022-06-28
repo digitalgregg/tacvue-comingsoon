@@ -14,8 +14,6 @@ const SubscribeSection = () => {
     formState: { errors },
   } = useForm();
 
-  console.log({ errors });
-
   const onSubmit = (data) => {
     setIsSubmiting(true);
     setIsSuccess(false);
@@ -33,7 +31,6 @@ const SubscribeSection = () => {
       .then((res) => res.json())
       .then((res) => {
         if (res.errors?.length > 0) {
-          console.log({ first: res.errors[0] });
           setError(
             "email",
             {
@@ -73,7 +70,7 @@ const SubscribeSection = () => {
           className="py-[30px] lg:py-[100px] rounded-[20px] overflow-hidden px-5"
         >
           <h2 className="text-center font-spaced text-[24px] leading-[22px] lg:text-[30px] lg:leading-[35px] lg:w-[45%] mx-auto">
-            Subscribe for our latest projects and monthly newsletters!
+            Don’t be like the guy that missed out Apple…
           </h2>
           {/* <p className="text-xl mt-5 text-center text-[#838CA3] capitalize">
             Don&apos;t miss out on the tips and strategies we offer to community

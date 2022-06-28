@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { SocialIcons } from "../../pages";
@@ -56,7 +57,7 @@ function Header() {
     <header>
       <nav
         className={
-          "flex justify-between w-full py-4 pb-2 md:py-8 md:pb-3 fixed top-0 left-0 z-50 px-5 xl:px-16 2xl:px-20"
+          "flex items-center justify-between w-full py-4 pb-2 md:py-8 md:pb-3 fixed top-0 left-0 z-50 px-5 xl:px-16 2xl:px-20"
         }
       >
         <div className="items-center cursor-pointer w-[140px] md:w-auto h-[55px]">
@@ -80,6 +81,15 @@ function Header() {
               onClick={() => router.push("/")}
             />
           </span>
+        </div>
+
+        <div>
+          <Link
+            href={"https://t.co/JSCz7YdhnD"}
+            // onClick={modalHandleOpen}
+          >
+            <a className="btn_gradient">APPLY TO LAUNCHPAD</a>
+          </Link>
         </div>
       </nav>
     </header>

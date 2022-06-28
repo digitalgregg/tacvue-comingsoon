@@ -7,7 +7,7 @@ const RXGAirdropsSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-[100px] lg:place-items-center">
           <div className="grid grid-cols-2 gap-[30px]">
             <Box value={807} label="entities minted" />
-            <Box value={150} label="projects launched" />
+            <Box value={150} label="Projects Supported" />
           </div>
           <div>
             <h2 className="text-[30px] leading-[34px] lg:text-[64px] lg:leading-[61px] font-spaced ">
