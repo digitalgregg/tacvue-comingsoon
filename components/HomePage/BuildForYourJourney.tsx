@@ -20,7 +20,7 @@ const BuildForYourJourney = () => {
           className="lg:w-[520px] mx-auto text-white text-center !leading-[30px] mt-10 text-lg font-light"
         >
           Our blueprint maps out the future tools and features that will be
-          offered and available on the tacvue system.
+          offered and available on the TacVue system.
         </p>
         <div className="flex justify-center mt-10">
           <Link href="/blueprint">

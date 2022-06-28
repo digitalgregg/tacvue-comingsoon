@@ -22,12 +22,12 @@ function MyApp({ Component, pageProps }) {
     gtag('config', 'G-SKMJ4HQPR9');`}
       </Script>
 
-      {/* <Script
-        strategy='beforeInteractive'
-        type='text/javascript'
-        src='https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=XtYuXA'
+      <Script
+        strategy="beforeInteractive"
+        type="text/javascript"
+        src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=XtYuXA"
         async
-      /> */}
+      />
 
       <Script
         strategy="beforeInteractive"
@@ -47,13 +47,20 @@ function MyApp({ Component, pageProps }) {
         src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"
         defer
       />
-      {/* <Script
+      <Script
         strategy="beforeInteractive"
         async
         type="text/javascript"
         src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=WRgkwc"
         defer
-      /> */}
+      />
+      <Script
+        strategy="beforeInteractive"
+        async
+        type="text/javascript"
+        src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=YtBdg6"
+        defer
+      />
       <ThemeProvider theme={MUI_DARK_THEME}>
         <Component {...pageProps} />
       </ThemeProvider>

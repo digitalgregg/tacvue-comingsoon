@@ -42,7 +42,7 @@ const UniqueValuePropositionsSection = () => {
     <section className="py-20 lg:py-[170px]">
       <div className="landing_page_container">
         <h2 className="text-center font-spaced text-[32px] leading-[30px] lg:text-[64px] lg:leading-[61px] ">
-          Unique Value Propositions
+          TacVue Alpha
         </h2>
         {/* <p className="max-w-[950px] mx-auto mt-7 text-[#838CA3] text-base leading-[22px] lg:text-[20px] lg:leading-[26px] text-center ">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
