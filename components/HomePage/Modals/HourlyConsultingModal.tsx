@@ -1,10 +1,11 @@
-import { CircularProgress } from "@mui/material";
-import classNames from "classnames";
+import { TextField } from "@mui/material";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import Input from "../../Input";
 import { RegisterModalFooter } from "../../RegisterModalLayout";
-import Select from "../../Select";
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
+import { DateTimePicker } from "@mui/x-date-pickers";
 
 type HourlyConsultingModalProps = {
   onClose: () => void;
@@ -12,14 +13,23 @@ type HourlyConsultingModalProps = {
 const HourlyConsultingModal = ({ onClose }: HourlyConsultingModalProps) => {
   const [isSubmiting, setIsSubmiting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
-  const [selectValue, setsSlectValue] = useState<any>(null);
+
   const {
     register,
     handleSubmit,
     setError,
+    setValue,
+    watch,
     reset,
     formState: { errors },
   } = useForm();
+
+  const handleChange = (newValue: Date | null) => {
+    setValue("time_and_date", newValue);
+    if (newValue) {
+      setError("time_and_date", null);
+    }
+  };
 
   const onSubmit = (data) => {
     setIsSubmiting(true);
@@ -126,17 +136,28 @@ const HourlyConsultingModal = ({ onClose }: HourlyConsultingModalProps) => {
             <ErrorMessage name="email" />
           </div>
           <div>
-            <Input
-              {...register("time_and_date", {
-                required: {
-                  value: true,
-                  message: "Time and date is required",
-                },
-              })}
-              label="Time and date"
-              type={"datetime-local"}
-              placeholder="Time and date"
-            />
+            <LocalizationProvider dateAdapter={AdapterDateFns}>
+              <DateTimePicker
+                {...register("time_and_date", {
+                  required: {
+                    value: true,
+                    message: "Date and Time is required",
+                  },
+                })}
+                value={watch("time_and_date")}
+                onChange={handleChange}
+                renderInput={(params) => {
+                  params.inputProps.placeholder = "Select Time And Date";
+                  params.inputProps.readOnly = true;
+                  return (
+                    <div className="custom_date_input_wrapper translate-y-0.5">
+                      <p className="__label">Time and date</p>
+                      <TextField {...params} />
+                    </div>
+                  );
+                }}
+              />
+            </LocalizationProvider>
             <ErrorMessage name="time_and_date" />
           </div>
         </div>

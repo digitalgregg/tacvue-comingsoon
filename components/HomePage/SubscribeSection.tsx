@@ -69,7 +69,7 @@ const SubscribeSection = () => {
           }}
           className="py-[30px] lg:py-[100px] rounded-[20px] overflow-hidden px-5"
         >
-          <h2 className="text-center font-spaced text-[24px] leading-[22px] lg:text-[30px] lg:leading-[35px] lg:w-[45%] mx-auto">
+          <h2 className="text-center font-spaced text-[24px] leading-[22px] lg:text-[30px] lg:leading-[35px] mx-auto">
             Don’t be like the guy that missed out Apple…
           </h2>
           {/* <p className="text-xl mt-5 text-center text-[#838CA3] capitalize">

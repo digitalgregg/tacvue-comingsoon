@@ -57,7 +57,7 @@ function Header() {
     <header>
       <nav
         className={
-          "flex items-center justify-between w-full py-4 pb-2 md:py-8 md:pb-3 fixed top-0 left-0 z-50 px-5 xl:px-16 2xl:px-20"
+          "flex justify-between w-full py-4 pb-2 md:py-8 md:pb-3 fixed top-0 left-0 z-50 px-5 xl:px-16 2xl:px-20"
         }
       >
         <div className="items-center cursor-pointer w-[140px] md:w-auto h-[55px]">
@@ -83,12 +83,12 @@ function Header() {
           </span>
         </div>
 
-        <div>
+        <div className="translate-y-1.5">
           <Link
             href={"https://t.co/JSCz7YdhnD"}
             // onClick={modalHandleOpen}
           >
-            <a className="btn_gradient">APPLY TO LAUNCHPAD</a>
+            <a className="btn_gradient !px-5 lg:!px-10">APPLY TO LAUNCHPAD</a>
           </Link>
         </div>
       </nav>

@@ -4,7 +4,7 @@ import Script from "next/script";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import SubscribeSection from "../components/HomePage/SubscribeSection";
-import UniqueValuePropositionsSection from "../components/HomePage/UniqueValuePropositionsSection";
+import TacVueAlphaSection from "../components/HomePage/TacVueAlphaSection";
 import WhiteGloveServicesSection from "../components/HomePage/WhiteGloveServicesSection";
 import RXGAirdropsSection from "../components/HomePage/RXGAirdropsSection";
 import BuildForYourJourney from "../components/HomePage/BuildForYourJourney";
@@ -12,6 +12,7 @@ import FaqSection from "../components/HomePage/FaqSection";
 import HeroSection from "../components/HomePage/HeroSection";
 import ProductAndServicesSection from "../components/HomePage/ProductAndServicesSection";
 import { SiDiscord } from "react-icons/si";
+import UniqueValuePropositionsSection from "../components/HomePage/UniqueValuePropositionsSection";
 
 export const modalStyle = {
   position: "absolute",
@@ -118,6 +119,7 @@ function LandingPage() {
         <HeroSection />
         <SubscribeSection />
         <UniqueValuePropositionsSection />
+        <TacVueAlphaSection />
         <ProductAndServicesSection />
         <WhiteGloveServicesSection />
         <RXGAirdropsSection />
