@@ -1,3 +1,6 @@
+import { TextField } from "@mui/material";
+import { DatePicker, LocalizationProvider } from "@mui/x-date-pickers";
+import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import Input from "../../Input";
@@ -15,8 +18,17 @@ const LaunchDaySupportModal = ({ onClose }: LaunchDaySupportModalProps) => {
     handleSubmit,
     setError,
     reset,
+    setValue,
+    watch,
     formState: { errors },
   } = useForm();
+
+  const handleChange = (newValue: Date | null) => {
+    setValue("launch_date", newValue);
+    if (newValue) {
+      setError("launch_date", null);
+    }
+  };
 
   const onSubmit = (data) => {
     setIsSubmiting(true);
@@ -123,18 +135,29 @@ const LaunchDaySupportModal = ({ onClose }: LaunchDaySupportModalProps) => {
             <ErrorMessage name="email" />
           </div>
           <div>
-            <Input
-              {...register("expected_launch_date", {
-                required: {
-                  value: true,
-                  message: "Expected launch date is required",
-                },
-              })}
-              label="Expected Launch Date"
-              type={"datetime-local"}
-              placeholder="Expected Launch Date"
-            />
-            <ErrorMessage name="expected_launch_date" />
+            <LocalizationProvider dateAdapter={AdapterDateFns}>
+              <DatePicker
+                {...register("launch_date", {
+                  required: {
+                    value: true,
+                    message: "Expected launch date is required",
+                  },
+                })}
+                value={watch("launch_date")}
+                onChange={handleChange}
+                renderInput={(params) => {
+                  params.inputProps.placeholder = "Expected Launch Date";
+                  params.inputProps.readOnly = true;
+                  return (
+                    <div className="custom_date_input_wrapper translate-y-0.5">
+                      <p className="__label">Expected Launch Date</p>
+                      <TextField {...params} />
+                    </div>
+                  );
+                }}
+              />
+            </LocalizationProvider>
+            <ErrorMessage name="launch_date" />
           </div>
         </div>
         <div>

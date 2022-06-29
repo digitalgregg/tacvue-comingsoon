@@ -11,7 +11,7 @@ const RXGAirdropsSection = () => {
           </div>
           <div>
             <h2 className="text-[30px] leading-[34px] lg:text-[64px] lg:leading-[61px] font-spaced ">
-              Don’t Miss out on RXG Airdrops!
+              Don’t Miss out on RXG Airdrops
             </h2>
             <p className="mt-6 lg:mt-8 text-base lg:text-xl text-[#E5E7EB]">
               Genesis Entities will be rewarded with exclusive airdrops for

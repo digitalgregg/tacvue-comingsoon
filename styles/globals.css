@@ -229,3 +229,19 @@ canvas {
 .products_and_services_slider .swiper-wrapper {
   transition-timing-function: linear;
 }
+
+.custom_date_input_wrapper input {
+  @apply __input h-[62px] py-0 placeholder:opacity-100;
+}
+.custom_date_input_wrapper > div {
+  @apply w-full;
+}
+.custom_date_input_wrapper .MuiOutlinedInput-notchedOutline {
+  @apply !border-none;
+}
+.custom_date_input_wrapper .MuiOutlinedInput-root {
+  @apply !p-0;
+}
+.custom_date_input_wrapper .MuiInputAdornment-root {
+  @apply absolute top-1/2 -translate-y-1/2 right-6;
+}
