@@ -61,41 +61,6 @@ const FaqSection = () => {
               artificial intelligence."
           />
         </div>
-
-        <div className="mt-20 lg:mt-[160px] flex flex-col lg:justify-center lg:items-center gap-4 lg:gap-[85px]">
-          <h6 className="font-spaced text-[24px] leading-[22px] lg:text-[56px] lg:leading-[60px] -translate-y-2">
-            More info:
-          </h6>
-          <div className="flex items-center gap-4 lg:gap-[117px]">
-            <button
-              style={{
-                background:
-                  "linear-gradient(180deg, #0E1B33 0%, #0E1B33 100%) padding-box padding-box, linear-gradient(91.52deg, #6396F9 40.77%, #00D1FF 115.11%) border-box border-box",
-              }}
-              className="py-4 px-6 lg:px-10 rounded-full text-base lg:text-xl capitalize border-[3px] border-transparent"
-            >
-              <a
-                href="https://tacvue.gitbook.io/tacvue/"
-                target="_blank"
-                rel="noreferrer"
-                className="font-semibold box_gradient_text"
-              >
-                View our Gitbook
-              </a>
-            </button>
-            <button
-              style={{
-                background:
-                  "linear-gradient(180deg, #0E1B33 0%, #0E1B33 100%) padding-box padding-box, linear-gradient(91.52deg, #6396F9 40.77%, #00D1FF 115.11%) border-box border-box",
-              }}
-              className="py-4 px-6 lg:px-10 rounded-full text-base lg:text-xl capitalize border-[3px] border-transparent"
-            >
-              <span className="font-semibold box_gradient_text">
-                Contact Support
-              </span>
-            </button>
-          </div>
-        </div>
       </div>
     </section>
   );
