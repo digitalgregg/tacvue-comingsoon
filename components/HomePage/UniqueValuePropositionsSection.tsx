@@ -38,7 +38,7 @@ const UniqueValuePropositionsSection = () => {
     <section className="pt-20 lg:pt-[170px]">
       <div className="landing_page_container">
         <h2 className="text-center font-spaced text-[32px] leading-[30px] lg:text-[64px] lg:leading-[61px] ">
-          Unique Value Propositions
+          Tacvue Alpha
         </h2>
 
         <div className="mt-[100px] grid grid-cols-1 gap-y-5 md:gap-x-7 md:gap-y-5 md:grid-cols-2 xl:gap-y-[60px] xl:gap-x-[30px] xl:grid-cols-3">
