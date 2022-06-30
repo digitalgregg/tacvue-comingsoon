@@ -10,10 +10,9 @@ const HeroSection = () => {
         {/* before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-black/50 */}
         <div className="vimeo_wrapper w-full h-full absolute top-0 left-0 z-[0]">
           <video
-            src="/video/rev2.mp4"
+            src="/video/TacVue-Bkgd-header.mp4"
             autoPlay
             loop
-            poster="/video/rev2.jpeg"
             muted
             playsInline
             className="w-full h-full object-cover"
