@@ -82,6 +82,24 @@ function LandingPage() {
         type="text/javascript"
         defer
       />
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=UA-205037825-1"
+        async
+        type="text/javascript"
+        defer
+      />
+      <Script
+        id="google_analytics_script"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-205037825-1');
+  `,
+        }}
+      />
 
       <Head>
         <title>TacVue - The Multiverse Portal</title>
@@ -119,7 +137,7 @@ function LandingPage() {
         <HeroSection />
         <SubscribeSection />
         <UniqueValuePropositionsSection />
-        <TacVueAlphaSection />
+        {/* <TacVueAlphaSection /> */}
         <ProductAndServicesSection />
         <WhiteGloveServicesSection />
         <RXGAirdropsSection />
