@@ -2,7 +2,7 @@ import React from "react";
 
 const RXGAirdropsSection = () => {
   return (
-    <section className="pt-10 pb-14 lg:py-40">
+    <section className="py-10 lg:py-[75px]">
       <div className="landing_page_container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-[100px] lg:place-items-center">
           <div className="grid grid-cols-2 gap-[30px]">
@@ -10,10 +10,10 @@ const RXGAirdropsSection = () => {
             <Box value={150} label="Projects Supported" />
           </div>
           <div>
-            <h2 className="text-[30px] leading-[34px] lg:text-[64px] lg:leading-[61px] font-spaced ">
+            <h2 className="title_text text-left">
               Don’t Miss out on RXG Airdrops
             </h2>
-            <p className="mt-6 lg:mt-8 text-base lg:text-xl text-[#E5E7EB]">
+            <p className="mt-6 lg:mt-8 body_text">
               Genesis Entities will be rewarded with exclusive airdrops for
               pioneering the TacVue Community
             </p>
@@ -43,7 +43,7 @@ const Box = ({ value, label }: { value: number; label: string }) => {
         background:
           "linear-gradient(180deg, #091c4a 0%, #0d1c40 100%) padding-box padding-box, linear-gradient(91.52deg, #6396F9 40.77%, #00D1FF 115.11%) border-box border-box",
       }}
-      className="lg:w-[293px] aspect-square border border-transparent rounded-[20px] flex flex-col justify-center items-center"
+      className="lg:w-[293px] aspect-square rounded-[20px] flex flex-col justify-center items-center"
     >
       <h6 className="box_gradient_text text-[48px] leading-[52px] lg:text-[96px] lg:leading-[100px] font-spaced">
         {value}

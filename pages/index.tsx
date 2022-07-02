@@ -136,17 +136,35 @@ function LandingPage() {
         <Header />
         <HeroSection />
         <SubscribeSection />
-        <UniqueValuePropositionsSection />
-        {/* <TacVueAlphaSection /> */}
-        <ProductAndServicesSection />
+        <div
+          style={{
+            backgroundImage: 'url("/images/products_and_services_bg.png")',
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+          }}
+          className="py-10 lg:py-[75px] space-y-20 lg:space-y-[150px]"
+        >
+          <UniqueValuePropositionsSection />
+          {/* <TacVueAlphaSection /> */}
+          <ProductAndServicesSection />
+        </div>
         <WhiteGloveServicesSection />
-        <RXGAirdropsSection />
-        {/* <EcoFriendlyBlockchainSection />
+
+        <div
+          style={{
+            backgroundImage: 'url("/images/products_and_services_bg.png")',
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          <RXGAirdropsSection />
+          {/* <EcoFriendlyBlockchainSection />
         <TechnologySection />
         <FutureOfNFTSection />
         <WhyJoinTacVueSection /> */}
 
-        <FaqSection />
+          <FaqSection />
+        </div>
         <BuildForYourJourney />
 
         {/* klaviyo Section --Start-- */}

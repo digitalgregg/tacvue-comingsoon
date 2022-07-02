@@ -4,7 +4,7 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: 'class',
+  darkMode: "class",
   theme: {
     extend: {
       fontFamily: {
@@ -12,9 +12,9 @@ module.exports = {
         spaced: ["Spaced", "sans-serif"],
       },
       screens: {
-        'xs': '360px',
-      }
+        xs: "360px",
+      },
     },
   },
   plugins: [],
-}
+};
