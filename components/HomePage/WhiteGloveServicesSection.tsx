@@ -6,6 +6,7 @@ import DiscordSetupModal from "./Modals/DiscordSetupModal";
 import MintingWebsiteModal from "./Modals/MintingWebsiteModal";
 import HourlyConsultingModal from "./Modals/HourlyConsultingModal";
 import LaunchDaySupportModal from "./Modals/LaunchDaySupportModal";
+import { GradientText } from "../Marketplace/Components/CommonStyles";
 
 const cards: CardProps[] = [
   {
@@ -48,13 +49,11 @@ const cards: CardProps[] = [
 
 const WhiteGloveServicesSection = () => {
   return (
-    <section className="py-20 lg:pt-[170px] lg:pb-[160px]">
+    <section className="py-10 lg:py-[75px]">
       <div className="landing_page_container">
-        <h2 className="text-center lg:w-[80%] mx-auto font-spaced text-[32px] leading-[30px] lg:text-[64px] lg:leading-[61px]">
-          Need custom solutions for your project?
-        </h2>
+        <h2 className="title_text">Need custom solutions for your project?</h2>
 
-        <div className="mt-14 lg:mt-[120px] space-y-[60px] xl:space-y-[100px]">
+        <div className="mt-14 lg:mt-[120px] space-y-[60px] xl:space-y-[150px]">
           {cards.map((card, i) => (
             <Card {...card} isRtl={(i + 1) % 2 === 0 ? true : false} key={i} />
           ))}
@@ -103,15 +102,24 @@ const Card = ({ isRtl, imgSrc, title, desc, Modal }: CardProps) => {
           <h4 className="text-white text-2xl lg:text-[48px] lg:leading-[45px] font-spaced ">
             {title}
           </h4>
-          <p className="text-[#838CA3] text-base lg:text-xl mt-4 lg:mt-5 capitalize">
+          <p
+            className="mt-4 lg:mt-8 body_text"
+            style={{ textTransform: "unset" }}
+          >
             {desc}
           </p>
 
           <button
+            style={{
+              background:
+                "linear-gradient(#030A1A, #030A1A) padding-box padding-box, linear-gradient(91.52deg, #6396F9 40.77%, #00D1FF 115.11%) border-box border-box",
+            }}
             onClick={() => setIsOpenModal(true)}
-            className="py-[16px] px-[38px] rounded-full bg-[#0D1C40] hover:bg-[#122552] border-none outline-none mt-6 lg:mt-[60px]"
+            className="py-[16px] px-9 rounded-full border-2 border-transparent text-base lg:text-lg outline-none mt-6 lg:mt-[55px]"
           >
-            Register Now
+            <span className={cx(GradientText, "font-medium")}>
+              Register Now
+            </span>
           </button>
         </div>
       </div>

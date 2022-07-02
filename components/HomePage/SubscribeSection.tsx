@@ -58,7 +58,7 @@ const SubscribeSection = () => {
   };
 
   return (
-    <div className="mt-10 lg:mt-[110px]">
+    <div className="mt-20 lg:mt-[150px] pb-10 lg:pb-[75px]">
       <div className="landing_page_container">
         <div
           style={{
@@ -67,18 +67,18 @@ const SubscribeSection = () => {
             backgroundRepeat: "no-repeat",
             backgroundPosition: "bottom center",
           }}
-          className="py-[30px] lg:py-[100px] rounded-[20px] overflow-hidden px-5"
+          className="py-[30px] lg:py-[96px] rounded-[20px] overflow-hidden px-5"
         >
-          <h2 className="text-center font-spaced text-[24px] leading-[22px] lg:text-[30px] lg:leading-[35px] mx-auto">
+          <h2 className="text-center font-spaced text-[24px] leading-[22px] lg:text-[36px] lg:leading-[43px] mx-auto">
             Don’t be like the guy that missed out Apple…
           </h2>
-          {/* <p className="text-xl mt-5 text-center text-[#838CA3] capitalize">
-            Don&apos;t miss out on the tips and strategies we offer to community
-          </p> */}
+          <p className="body_text mt-5 text-center capitalize">
+            Don’t miss out on the tips and strategies we offer to community.
+          </p>
 
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="max-w-[700px] mx-auto mt-12 lg:mt-[70px]"
+            className="max-w-[700px] mx-auto mt-12 lg:mt-[60px]"
           >
             <div className="relative">
               <input
@@ -92,7 +92,7 @@ const SubscribeSection = () => {
                     message: "Email is required",
                   },
                 })}
-                className="w-full block rounded-full text-xl px-9 py-7 lg:pr-[230px] border-none outline-none placeholder:text-[#576993]"
+                className="w-full block rounded-full text-xl px-9 py-[26px] lg:pr-[230px] border-none outline-none placeholder:text-[#576993]"
                 placeholder="Enter Your Email"
               />
 
@@ -104,7 +104,7 @@ const SubscribeSection = () => {
                     background:
                       "linear-gradient(91.52deg, #6396F9 40.77%, #00D1FF 115.11%), #576993",
                   }}
-                  className="text-xl font-medium py-7 w-full lg:w-auto lg:py-0 mt-[14px] lg:mt-0 px-[30px] h-full rounded-full relative"
+                  className="text-xl font-medium py-5 w-full lg:w-auto lg:py-0 mt-4 lg:mt-0 px-[30px] h-full rounded-full relative"
                 >
                   {isSubmiting && (
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[46%]">

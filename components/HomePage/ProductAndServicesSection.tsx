@@ -5,24 +5,15 @@ import { serviceCards } from "../../config/constants";
 
 const ProductAndServicesSection = () => {
   return (
-    <section
-      style={{
-        backgroundImage: 'url("/images/products_and_services_bg.png")',
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-      }}
-      className="py-20 lg:py-40"
-    >
+    <section>
       <div className="landing_page_container">
-        <h2 className="text-center font-spaced text-[32px] leading-[30px] lg:text-[64px] lg:leading-[61px]">
-          products & services
-        </h2>
+        <h2 className="title_text">products & services</h2>
         <p className="mt-7 text-[#838CA3] text-base leading-[22px] lg:text-[20px] lg:leading-[26px] text-center ">
           Member exclusive services to make your project a growing success
         </p>
       </div>
 
-      <div className="mt-10 lg:mt-[60px] products_and_services_slider">
+      <div className="mt-10 lg:mt-[120px] products_and_services_slider">
         <Swiper
           autoplay={{
             delay: 1,
@@ -75,7 +66,7 @@ const ProductAndServicesSection = () => {
                     className="w-full"
                   />
                 </div>
-                <p className="mt-4 text-xl text-center text-[#9EBBFF] capitalize pb-5">
+                <p className="mt-4 text-xl text-center text-[#9EBBFF] capitalize pb-5 px-9">
                   {serviceCard.title}
                 </p>
               </div>
