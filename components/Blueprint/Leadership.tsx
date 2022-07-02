@@ -6,58 +6,58 @@ const Leadership = () => {
   const leadershipData = [
     {
       id: 1,
-      title: "Customer-Centric to our Core",
+      title: "Customer Obsessed",
       description:
-        "Every single action that our leaders make is in our customer’s best interest. There should be no situation that benefits us without also benefiting our customers.",
+        "Every business commitment we make is in our members' best interest. We take pride in looking at every decision from our customer's point of view before taking action.",
       img: "/images/customer-centric.svg",
     },
     {
       id: 2,
       title: "Agility over Size",
       description:
-        "The size of the team is irrelevant, the speed at which they work towards achieving their mission is paramount. Frugality is the recipe for success, not indulgence.",
+        "We firmly believe that the future of our team is decentralized and autonomous. We strive to deliver the necessary tooling for large remote organizations to operate as efficiently as smaller centralized teams but until the right tools are developed, we must stick to our core belief: frugality beats indulgence.",
       img: "/images/agility.svg",
     },
     {
       id: 3,
       title: "Own your Contribution",
       description:
-        "Every employee is expected to treat TacVue customers as their family and our products as their own. Take pride in success, and feel embarrassment in shortcomings.",
+        "Every Entity holder is expected to follow leadership principles. Members are expected to treat their peers with respect and TacVue infrastructure as their own. We hope that every Entity holder takes pride in their contributions to the community, project and platform as our core team members would. ",
       img: "/images/own-your-contribution.svg",
     },
     {
       id: 4,
-      title: "Invent & Automate",
+      title: "Automate the Boring",
       description:
-        "Every task should be seen as a problem without a solution. our employees are never happy with average and are always striving to Automate, innovate, and create new way to be efficient.",
+        "Any task or action that feels repetitive or inefficient should be seen as a problem that requires a solution. If it's tiresome, we strive to automate it.",
       img: "/images/invent-automate.svg",
     },
     {
       id: 5,
-      title: "Creativity over Templates",
+      title: "Creativity over Tradition",
       description:
-        "Our teams never follow models, we take what works and blend the pieces into a successful workflow system. Failure to create  is the failure to provide the TacVue brand with value.",
+        "Failure to innovate, advise or create is considered a failure to provide the TacVue community with value.",
       img: "/images/creativity-over-templates.svg",
     },
     {
       id: 6,
-      title: "Expect Failures",
+      title: "Exude Confidence",
       description:
-        "	Failure is required in order to move forward. Our employees must be confident in their ability to take failures, analyze them, and determine new methods of accomplishing innovation.",
+        "TacVue members must be confident in their ability to receive criticism, reassess their decision-making and determine new paths forward without doubting their own abilities in the case of failure",
       img: "/images/expect-failures.svg",
     },
     {
       id: 7,
       title: "The 51% Rule",
       description:
-        "Success is a state of mind, not a quantitative measure. In order to be considered a leader in this organization, strive to provide value that would be considered beneficial.",
+        "Success is a state of mind, not a quantitative measure. Strive to act in the community's best interest while also vocalizing your unpopular opinions if you believe they are warranted. Leaders serve the community's best interest without playing politics.",
       img: "/images/51-rule.svg",
     },
     {
       id: 8,
-      title: "Curiosity beats Compliance",
+      title: "Go the Extra Mile, Then Go Two More",
       description:
-        "The TacVue team is expected to not just follow orders, but dig deeper into every request by returning completed assignments with additional probing into solutions.",
+        "TacVue members are encouraged to push the boundaries of what's possible by questioning everything on the platform. Rather than ask what something is, you should ask yourself why it exists.",
       img: "/images/curiousity-beats-compliance.svg",
     },
 
@@ -65,44 +65,30 @@ const Leadership = () => {
       id: 9,
       title: "Pursue Perfection",
       description:
-        "Perfection is not attainable, but we must chase it regardless. The pursuit of perfection is required in order to provide the best possible outcome in any situation. ",
+        "Perfection is impossible but it's what drives our community towards the best possible outcome of every situation. Although it's not attainable, it's what drives us.",
       img: "/images/Group 37693.svg",
     },
     {
       id: 10,
-      title: "Think bigger",
+      title: "Think Huge",
       description:
-        "Instead of labeling tasks as chores, our team considers every task to be the opportunity for individuals to produce large-scale change. Regardless of the importance of it. ",
+        "All TacVue members are encouraged to push their projects towards immense goals, relentlessly and unconditionally.",
       img: "/images/VectorProfile.svg",
     },
 
     {
       id: 11,
-      title: "Operate precisely",
+      title: "Transparency is Bound to Trust",
       description:
-        "Move with speed but don’t miss the opportunity. Every action our team takes on should be scrutinized and held to the highest standard.",
+        "The best way to accomplish an immense goal as a community is through transparent communication. Although transparency does not guarantee trust, our community members should put trust before compassion.",
       img: "/images/GroupVectorScall.svg",
     },
     {
       id: 12,
-      title: "Transparency Breeds Trust",
+      title: "Add More Value Than You Take",
       description:
-        "In order to accomplish innovation, trust is required between peers and colleagues. The best way to accomplish trust is by working transparently and without any concealment.",
+        "In order to compete with centralized brands, project communities must collaborate with the intention of providing more value than they receive. The projects that accomplish this will have the potential to move mountains.",
       img: "/images/breeds.svg",
-    },
-    {
-      id: 13,
-      title: "Go the Extra Mile",
-      description:
-        "Our bare minimum is the extra mile. Failure to investigate, check or push for more is a failure to provide the basic level of accountability that’s required to work with TacVue.",
-      img: "/images/extraMile.svg",
-    },
-    {
-      id: 14,
-      title: "Provide Value ",
-      description:
-        "Every team member should create more value than they take from the organization. Failure to accomplish this is a direct insult to the wider mission, values and vision of the organization.",
-      img: "/images/provideValue.svg",
     },
   ];
   return (
