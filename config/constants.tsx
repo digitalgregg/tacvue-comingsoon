@@ -5,27 +5,27 @@ type ServiceCard = {
 export const serviceCards: ServiceCard[] = [
   {
     imgSrc: "/images/tokenize_your_social_profile.jpg",
-    title: "On-Chain & Non-Fungible Accounts",
+    title: "On-Chain & Non-Fungible <br/> Accounts",
   },
   {
     imgSrc: "/images/recharge-your-wallet-while-you-sleep.jpg",
-    title: "Generative NFT Project Assembler",
+    title: "Generative NFT <br/> Project Assembler",
   },
   {
     imgSrc: "/images/promote-your-upcoming-events.jpg",
-    title: "Own a piece of TacVue & govern us to the top",
+    title: "Own a piece of TacVue & <br/> govern us to the top",
   },
   {
     imgSrc: "/images/analyze-member-behavior.jpg",
-    title: "No-Code NFT Launchpad",
+    title: "No-Code NFT <br/> Launchpad",
   },
   {
     imgSrc: "/images/stay-updated-on-the-latest-in-crypto.jpg",
-    title: "Tokenize your social entity",
+    title: "Tokenize your <br/> social entity",
   },
   {
     imgSrc: "/images/real-time-project-tracking.jpg",
-    title: "Entity Rankings & Competitions",
+    title: "Entity Rankings & <br/> Competitions",
   },
   {
     imgSrc: "/images/buy-&-sell-with-one-account.jpg",
@@ -33,22 +33,22 @@ export const serviceCards: ServiceCard[] = [
   },
   {
     imgSrc: "/images/assemble-generative-nft-projects.jpg",
-    title: "Promote your favorite events & projects",
+    title: "Promote your favorite <br/> events & projects",
   },
   {
     imgSrc: "/images/launch-your-own-collection.jpg",
-    title: "Do some recon on the community",
+    title: "Do some recon <br/> on the community",
   },
   {
     imgSrc: "/images/launch-your-project-in-seconds.jpg",
-    title: "All your crypto news in one place",
+    title: "All your crypto <br/> news in one place",
   },
   {
     imgSrc: "/images/buy-&-sell-with-one-account.jpg",
-    title: "Data-driven marketplace ",
+    title: "Data-driven <br/> marketplace ",
   },
   {
     imgSrc: "/images/launch-your-own-collection.jpg",
-    title: "We’re just getting started!",
+    title: "We’re just <br/> getting started!",
   },
 ];

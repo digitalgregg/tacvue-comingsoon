@@ -15,10 +15,10 @@ const ProductAndServicesSection = () => {
 
       <div className="mt-10 lg:mt-[120px] products_and_services_slider">
         <Swiper
-          // autoplay={{
-          //   delay: 1,
-          //   disableOnInteraction: false,
-          // }}
+          autoplay={{
+            delay: 1,
+            disableOnInteraction: false,
+          }}
           speed={4000}
           freeMode={{
             enabled: true,
@@ -66,9 +66,11 @@ const ProductAndServicesSection = () => {
                     className="w-full"
                   />
                 </div>
-                <p className="mt-4 text-xl text-center text-[#9EBBFF] capitalize pb-5 px-4 ipad:px-3 lg:px-11">
-                  {serviceCard.title}
-                </p>
+                <div className="mt-4 text-xl text-center text-[#9EBBFF] capitalize pb-5 px-5">
+                  {serviceCard.title.split("<br/>").map((e) => (
+                    <p>{e}</p>
+                  ))}
+                </div>
               </div>
             </SwiperSlide>
           ))}
