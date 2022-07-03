@@ -67,8 +67,8 @@ const ProductAndServicesSection = () => {
                   />
                 </div>
                 <div className="mt-4 text-xl text-center text-[#9EBBFF] capitalize pb-5 px-5">
-                  {serviceCard.title.split("<br/>").map((e) => (
-                    <p>{e}</p>
+                  {serviceCard.title.split("<br/>").map((e, i) => (
+                    <p key={i}>{e}</p>
                   ))}
                 </div>
               </div>
