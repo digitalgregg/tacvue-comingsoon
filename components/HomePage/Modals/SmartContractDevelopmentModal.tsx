@@ -1,10 +1,7 @@
-import { CircularProgress } from "@mui/material";
-import classNames from "classnames";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import Input from "../../Input";
 import { RegisterModalFooter } from "../../RegisterModalLayout";
-import Select from "../../Select";
 
 type SmartContractDevelopmentModalProps = {
   onClose: () => void;
@@ -14,7 +11,6 @@ const SmartContractDevelopmentModal = ({
 }: SmartContractDevelopmentModalProps) => {
   const [isSubmiting, setIsSubmiting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
-  const [selectValue, setsSlectValue] = useState<any>(null);
   const {
     register,
     handleSubmit,
@@ -83,72 +79,73 @@ const SmartContractDevelopmentModal = ({
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <div className="mt-10 grid  grid-cols-1 gap-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div className="mt-10 grid grid-cols-1 gap-6">
+        <div className="form_grid_2">
           <div>
             <Input
-              {...register("firstName", {
+              {...register("name", {
                 required: {
                   value: true,
-                  message: "First name is required",
+                  message: "Name is required",
                 },
               })}
-              label="First Name"
-              placeholder="Your first name here"
+              label="Name*"
+              placeholder="Your name here"
             />
-            <ErrorMessage name="firstName" />
+            <ErrorMessage name="name" />
           </div>
           <div>
             <Input
-              {...register("lastName", {
-                required: {
-                  value: true,
-                  message: "Last name is required",
-                },
-              })}
-              label="Last Name"
-              placeholder="Your last name here"
+              {...register("companyOrBrand")}
+              label="Company/Brand"
+              placeholder="Your Company/Brand name here"
             />
-            <ErrorMessage name="lastName" />
+            <ErrorMessage name="companyOrBrand" />
           </div>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div>
+          <Input
+            {...register("email", {
+              required: {
+                value: true,
+                message: "Email is required",
+              },
+            })}
+            label="Email*"
+            type={"email"}
+            placeholder="Your email here"
+          />
+          <ErrorMessage name="email" />
+        </div>
+        <div className="form_grid_2">
           <div>
             <Input
-              {...register("email", {
-                required: {
-                  value: true,
-                  message: "Email is required",
-                },
-              })}
-              label="Email"
+              {...register("blockchain")}
+              label="Blockchain"
               type={"email"}
-              placeholder="Your email here"
+              placeholder="Your Blockchain here"
             />
-            <ErrorMessage name="email" />
+            <ErrorMessage name="blockchain" />
           </div>
           <div>
-            <Select
-              label="Do you have an existing smart contract?"
-              value={selectValue}
-              onChange={(opt) => setsSlectValue(opt)}
-              options={[
-                {
-                  value: "yes",
-                  label: "Yes",
+            <Input
+              {...register("country", {
+                required: {
+                  value: true,
+                  message: "Country is required",
                 },
-                {
-                  value: "no",
-                  label: "No",
-                },
-              ]}
+              })}
+              label="Country*"
+              type={"country"}
+              placeholder="Your Country here"
             />
+            <ErrorMessage name="country" />
           </div>
         </div>
         <div>
           <label className="w-full">
             <p className="text-base lg:text-xl font-semibold text-[#9EBBFF] mb-5">
-              Message
+              Please tell us what you want your smart contract to handle*
             </p>
             <textarea
               {...register("message", {

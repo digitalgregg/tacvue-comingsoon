@@ -7,18 +7,18 @@ const ProductAndServicesSection = () => {
   return (
     <section>
       <div className="landing_page_container">
-        <h2 className="title_text">products & services</h2>
-        <p className="mt-7 text-[#838CA3] text-base leading-[22px] lg:text-[20px] lg:leading-[26px] text-center ">
-          Member exclusive services to make your project a growing success
+        <h2 className="title_text">Want the technicals?</h2>
+        <p className="mt-7 ipad:mt-5 text-[#838CA3] text-base leading-[22px] lg:text-[20px] lg:leading-[26px] text-center ">
+          TacVue features at a glance
         </p>
       </div>
 
       <div className="mt-10 lg:mt-[120px] products_and_services_slider">
         <Swiper
-          autoplay={{
-            delay: 1,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 1,
+          //   disableOnInteraction: false,
+          // }}
           speed={4000}
           freeMode={{
             enabled: true,
@@ -31,15 +31,15 @@ const ProductAndServicesSection = () => {
               spaceBetween: 15,
             },
             680: {
-              slidesPerView: 2.2,
+              slidesPerView: 2.5,
               spaceBetween: 20,
             },
-            1024: {
-              slidesPerView: 3.2,
+            830: {
+              slidesPerView: 3,
               spaceBetween: 25,
             },
-            1200: {
-              slidesPerView: 4.2,
+            1024: {
+              slidesPerView: 4,
               spaceBetween: 25,
             },
             1400: {
@@ -66,7 +66,7 @@ const ProductAndServicesSection = () => {
                     className="w-full"
                   />
                 </div>
-                <p className="mt-4 text-xl text-center text-[#9EBBFF] capitalize pb-5 px-9">
+                <p className="mt-4 text-xl text-center text-[#9EBBFF] capitalize pb-5 px-4 ipad:px-3 lg:px-11">
                   {serviceCard.title}
                 </p>
               </div>

@@ -25,10 +25,13 @@ body {
     @apply text-base lg:text-xl font-medium font-sans text-[#9EBBFF] mb-3 capitalize;
   }
   .body_text {
-    @apply text-base lg:text-lg !leading-[160%] text-[#838CA3] capitalize;
+    @apply text-base lg:text-[18px] !leading-[160%] text-[#838CA3] capitalize;
   }
   .title_text {
-    @apply text-[32px] leading-[40px] lg:text-[64px] lg:leading-[120%] text-white text-center font-spaced;
+    @apply text-[32px] leading-[40px] lg:text-[64px] ipad:text-[40px] ipad:leading-[120%] text-white text-center font-spaced;
+  }
+  .form_grid_2 {
+    @apply grid grid-cols-1 lg:grid-cols-2 gap-6;
   }
 }
 
@@ -41,7 +44,7 @@ body {
     @apply mx-auto px-5 2xl:max-w-[1450px];
   }
   .landing_page_container {
-    @apply mx-auto max-w-full px-[30px] md:px-6 xl:max-w-[1380px];
+    @apply mx-auto max-w-full px-[30px] ipad:px-8 lg:px-6 xl:max-w-[1380px];
   }
   .bg-size-full {
     background-size: 100%;
@@ -54,7 +57,7 @@ body {
     background-size: 110%;
   }
   .btn_gradient {
-    @apply from-blue-500 to-cyan-500 bg-gradient-to-r text-sm sm:text-base px-10 py-2.5 rounded-full hover:from-blue-600 hover:to-cyan-600;
+    @apply from-blue-500 to-cyan-500 bg-gradient-to-r text-sm sm:text-base px-10 py-2.5 lg:py-[17px] rounded-full hover:from-blue-600 hover:to-cyan-600;
   }
   .bg-size-120 {
     background-size: 120%;

@@ -166,7 +166,7 @@ const ThreeJsAnimation = () => {
             v.y + time * 0.0003,
             v.z + time * 0.0008,
           ) *
-          blobScale;
+            blobScale;
         v.multiplyScalar(distance);
       });
       nucleus.geometry.verticesNeedUpdate = true;
@@ -186,7 +186,6 @@ const ThreeJsAnimation = () => {
       requestAnimationFrame(animate);
     }
 
-
     init();
     animate();
 
@@ -194,16 +193,14 @@ const ThreeJsAnimation = () => {
     const windowOnResize = () => {
       clearTimeout(timeout_Debounce);
       timeout_Debounce = setTimeout(onWindowResize, 80);
-    }
+    };
     function onWindowResize() {
       camera.aspect = container.clientWidth / container.clientHeight;
       camera.updateProjectionMatrix();
       renderer.setSize(container.clientWidth, container.clientHeight);
     }
 
-
-    return () => window.removeEventListener('resize', windowOnResize)
-
+    return () => window.removeEventListener("resize", windowOnResize);
   }, []);
 
   return (
@@ -217,13 +214,16 @@ const ThreeJsAnimation = () => {
         // }}
         className="h-screen overflow-hidden m-0 relative"
       >
-        <div id="canvas_container" className="w-full h-screen pointer-events-none"></div>
+        <div
+          id="canvas_container"
+          className="w-full h-screen pointer-events-none"
+        ></div>
 
         <div className="min-h-screen absolute top-0 left-0 w-full h-full flex flex-col justify-center z-[5]">
           <div className="container">
             <h1 className="text-white font-spaced text-center text-[50px] leading-[45px] md:text-[110px] md:leading-[115px]">
-              <p>Built for</p>
-              <p>your journey</p>
+              <p>The TacVue</p>
+              <p>Blueprint</p>
             </h1>
           </div>
 

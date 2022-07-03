@@ -1,11 +1,9 @@
-import { TextField } from "@mui/material";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import Checkbox from "../../Checkbox";
 import Input from "../../Input";
 import { RegisterModalFooter } from "../../RegisterModalLayout";
-import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
-import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
-import { DateTimePicker } from "@mui/x-date-pickers";
+import Select from "../../Select";
 
 type HourlyConsultingModalProps = {
   onClose: () => void;
@@ -13,23 +11,15 @@ type HourlyConsultingModalProps = {
 const HourlyConsultingModal = ({ onClose }: HourlyConsultingModalProps) => {
   const [isSubmiting, setIsSubmiting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [selectValue, setsSlectValue] = useState<any>(null);
 
   const {
     register,
     handleSubmit,
     setError,
-    setValue,
-    watch,
     reset,
     formState: { errors },
   } = useForm();
-
-  const handleChange = (newValue: Date | null) => {
-    setValue("time_and_date", newValue);
-    if (newValue) {
-      setError("time_and_date", null);
-    }
-  };
 
   const onSubmit = (data) => {
     setIsSubmiting(true);
@@ -92,93 +82,117 @@ const HourlyConsultingModal = ({ onClose }: HourlyConsultingModalProps) => {
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div className="mt-10 grid  grid-cols-1 gap-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="form_grid_2">
           <div>
             <Input
-              {...register("firstName", {
+              {...register("name", {
                 required: {
                   value: true,
-                  message: "First name is required",
+                  message: "Name is required",
                 },
               })}
-              label="First Name"
-              placeholder="Your first name here"
+              label="Name*"
+              placeholder="Your name here"
             />
-            <ErrorMessage name="firstName" />
+            <ErrorMessage name="name" />
           </div>
           <div>
             <Input
-              {...register("lastName", {
-                required: {
-                  value: true,
-                  message: "Last name is required",
-                },
-              })}
-              label="Last Name"
-              placeholder="Your last name here"
+              {...register("companyOrBrand")}
+              label="Company/Brand"
+              placeholder="Your Company/Brand name here"
             />
-            <ErrorMessage name="lastName" />
+            <ErrorMessage name="companyOrBrand" />
           </div>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div>
+          <Input
+            {...register("email", {
+              required: {
+                value: true,
+                message: "Email is required",
+              },
+            })}
+            label="Email*"
+            type={"email"}
+            placeholder="Your email here"
+          />
+          <ErrorMessage name="email" />
+        </div>
+        <div>
+          <p className="text-base lg:text-xl font-semibold text-[#9EBBFF] mb-4">
+            I’m interested in:
+          </p>
+          <div className="space-y-2">
+            <Checkbox label="Getting connected with a marketing agency in your network" />
+            <Checkbox label="Getting connected with a creator" />
+            <Checkbox label="Getting influencer pricing" />
+            <Checkbox label="General consulting" />
+            <Checkbox label="Brand consulting" />
+            <Checkbox label="Project redlining and suggestions (offline)" />
+          </div>
+        </div>
+
+        <div className="form_grid_2">
           <div>
             <Input
-              {...register("email", {
+              {...register("country", {
                 required: {
                   value: true,
-                  message: "Email is required",
+                  message: "Country is required",
                 },
               })}
-              label="Email"
-              type={"email"}
-              placeholder="Your email here"
+              label="Country*"
+              type={"country"}
+              placeholder="Your Country here"
             />
-            <ErrorMessage name="email" />
+            <ErrorMessage name="country" />
           </div>
           <div>
-            <LocalizationProvider dateAdapter={AdapterDateFns}>
-              <DateTimePicker
-                {...register("time_and_date", {
-                  required: {
-                    value: true,
-                    message: "Date and Time is required",
-                  },
-                })}
-                value={watch("time_and_date")}
-                onChange={handleChange}
-                renderInput={(params) => {
-                  params.inputProps.placeholder = "Select Time And Date";
-                  params.inputProps.readOnly = true;
-                  return (
-                    <div className="custom_date_input_wrapper translate-y-0.5">
-                      <p className="__label">Time and date</p>
-                      <TextField {...params} />
-                    </div>
-                  );
-                }}
-              />
-            </LocalizationProvider>
-            <ErrorMessage name="time_and_date" />
+            <Input
+              {...register("telegramDiscordPhone", {
+                required: {
+                  value: true,
+                  message: "Telegram/Discord/Phone is required",
+                },
+              })}
+              label="Telegram/Discord/Phone*"
+              type={"telegramDiscordPhone"}
+              placeholder="Your Telegram/Discord/Phone here"
+            />
+            <ErrorMessage name="telegramDiscordPhone" />
           </div>
+        </div>
+        <div>
+          <Select
+            label="Availability"
+            value={selectValue}
+            onChange={(opt) => setsSlectValue(opt)}
+            options={[
+              {
+                value: "days_of_the_week",
+                label: "Days of the week",
+              },
+              {
+                value: "time_slots",
+                label: "Time slots",
+              },
+            ]}
+          />
         </div>
         <div>
           <label className="w-full">
             <p className="text-base lg:text-xl font-semibold text-[#9EBBFF] mb-5">
-              Message
+              Please tell us more about the project and/or community you are
+              building.
             </p>
             <textarea
-              {...register("message", {
-                required: {
-                  value: true,
-                  message: "Message is required",
-                },
-              })}
+              {...register("message")}
               placeholder="Type your message here"
               className="__input resize-none"
               rows={4}
             ></textarea>
           </label>
-          <ErrorMessage name="message" />
         </div>
       </div>
       <div>

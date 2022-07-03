@@ -5,42 +5,50 @@ type ServiceCard = {
 export const serviceCards: ServiceCard[] = [
   {
     imgSrc: "/images/tokenize_your_social_profile.jpg",
-    title: "Tokenize your social profile",
+    title: "On-Chain & Non-Fungible Accounts",
   },
   {
     imgSrc: "/images/recharge-your-wallet-while-you-sleep.jpg",
-    title: "Recharge your wallet while you sleep",
+    title: "Generative NFT Project Assembler",
   },
   {
     imgSrc: "/images/promote-your-upcoming-events.jpg",
-    title: "Promote your upcoming Events",
+    title: "Own a piece of TacVue & govern us to the top",
   },
   {
     imgSrc: "/images/analyze-member-behavior.jpg",
-    title: "Analyze member behavior",
+    title: "No-Code NFT Launchpad",
   },
   {
     imgSrc: "/images/stay-updated-on-the-latest-in-crypto.jpg",
-    title: "Stay updated on the latest in crypto",
+    title: "Tokenize your social entity",
   },
   {
     imgSrc: "/images/real-time-project-tracking.jpg",
-    title: "Real-time project tracking",
+    title: "Entity Rankings & Competitions",
   },
   {
     imgSrc: "/images/buy-&-sell-with-one-account.jpg",
-    title: "Buy & Sell with one account",
+    title: "Recharge your wallet while you sleep",
   },
   {
     imgSrc: "/images/assemble-generative-nft-projects.jpg",
-    title: "Assemble generative NFT projects",
+    title: "Promote your favorite events & projects",
   },
   {
     imgSrc: "/images/launch-your-own-collection.jpg",
-    title: "Launch your own collection ",
+    title: "Do some recon on the community",
   },
   {
     imgSrc: "/images/launch-your-project-in-seconds.jpg",
-    title: "Launch your project in seconds!",
+    title: "All your crypto news in one place",
+  },
+  {
+    imgSrc: "/images/buy-&-sell-with-one-account.jpg",
+    title: "Data-driven marketplace ",
+  },
+  {
+    imgSrc: "/images/launch-your-own-collection.jpg",
+    title: "We’re just getting started!",
   },
 ];
