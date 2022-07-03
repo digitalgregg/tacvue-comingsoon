@@ -50,7 +50,7 @@ const BuildForYourJourney = () => {
                 rel="noreferrer"
                 className="font-semibold box_gradient_text"
               >
-                View our Gitbook
+                Documentation
               </a>
             </button>
             <button
@@ -61,7 +61,7 @@ const BuildForYourJourney = () => {
               className="py-[12px] px-[13px] lg:px-10 rounded-full text-base lg:text-xl capitalize border-[3px] border-transparent"
             >
               <span className="font-semibold box_gradient_text">
-                Contact Support
+                Customer Support
               </span>
             </button>
           </div>

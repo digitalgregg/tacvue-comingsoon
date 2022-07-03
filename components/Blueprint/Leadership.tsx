@@ -6,7 +6,7 @@ const Leadership = () => {
   const leadershipData = [
     {
       id: 1,
-      title: "Customer Obsessed",
+      title: "Community Obsessed",
       description:
         "Every business commitment our members make is in our community's best interest. Every decision that impacts the community should be visualized from the community's point of view before any action is taken.",
       img: "/images/customer-centric.svg",
