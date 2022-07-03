@@ -8,7 +8,7 @@ const TeamSection = () => {
     {
       id: 1,
       title: "Sebastian Lueders",
-      position: "CEO",
+      position: "Chief Information Officer",
       linkedIn: "",
       twitter: "",
       profile: "/images/Sebastian_Lueders.webp",
@@ -16,7 +16,7 @@ const TeamSection = () => {
     {
       id: 2,
       title: "Rob Goldsborough III",
-      position: "Head of operation",
+      position: "Head of Operations",
       linkedIn: "",
       twitter: "https://twitter.com/GoldsboroughIii",
       profile: "/images/Robert_Goldsborough_III.webp",
@@ -24,7 +24,7 @@ const TeamSection = () => {
     {
       id: 3,
       title: "Anoop Nannra",
-      position: "Assistant Manager",
+      position: "Lead Advisor",
       linkedIn: "",
       twitter: "",
       profile: "/images/Anoop_Nannra.webp",
@@ -32,7 +32,7 @@ const TeamSection = () => {
     {
       id: 4,
       title: "Brad Myrick",
-      position: "Vice Presi",
+      position: "Chief Technology Officer",
       linkedIn: "",
       twitter: "https://twitter.com/terran_nft",
       profile: "/images/Brad_Myrick.webp",
