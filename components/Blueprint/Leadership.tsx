@@ -1,6 +1,7 @@
 import React from "react";
 import { subtitle_sm, text_gradient, title_sm } from "../../pages/blueprint";
 import cx from "classnames";
+import { GradientText } from "../Marketplace/Components/CommonStyles";
 
 const Leadership = () => {
   const leadershipData = [
@@ -78,7 +79,7 @@ const Leadership = () => {
 
     {
       id: 11,
-      title: "Transparency builds Trust",
+      title: "Transparency Builds Trust",
       description:
         "Trust is essential to a community's success. We encourage our members to be transparent because we believe it's essential to sustainable collaboration.",
       img: "/images/GroupVectorScall.svg",
@@ -92,47 +93,58 @@ const Leadership = () => {
     },
   ];
   return (
-    <section>
-      <div className="w-[100%] mx-auto px-4 md:px-8 3xl:px-40">
+    <section className="mt-[150px]">
+      <div className="landing_page_container">
         <h2
           className={cx(
             text_gradient,
-            "pt-[80px] sm:pt-[150px] md:pt-[200px] lg:pt-[294px] mb-[40px] sm:mb-[90px] md:mb-[150px] lg:mb-[171px] uppercase text-center   text-[30px] sm:text-[40px] leading-[35px] md:text-[65px] md:leading-[60px] font-spaced"
+            "uppercase text-center  text-[30px] sm:text-[40px] leading-[35px] md:text-[65px] md:leading-[60px] font-spaced",
           )}
         >
           Our leadership pillars
         </h2>
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-[60px]  place-items-center w-[94%] mx-auto px-4">
+        <div className="grid grid-cols-1 minixl:grid-cols-2 gap-y-[30px] gap-x-[30px] mt-20">
           {leadershipData.map((item: any) => {
             return (
-              <div key={item.id} className="">
-                <div className="bg-[#0d1329] text-center md:text-left px-4 lg:px-8 xl:w-[100%] 2xl:w-[100%]  h-[390px] md:h-[327px] flex flex-col md:flex-row md:p-[40px] 2xL:p-[69px] rounded-[20px] items-center justify-center mb-2 gap-[30px] md:gap-[40px] 2xl:gap-[54px] ">
-                  {/* img */}
-                  <div className="md:w-[110px]  2xl:w-[144px] md:h-[110px] h-[110px] w-[110px] 2xl:h-[144px] bg-[#142037] rounded-[82.5px] flex justify-center items-center">
-                    <img
-                      src={item.img}
-                      alt=""
-                      className="md:w-[45px] md:h-[45px] 2xl:w-[66px] 2xl:h-[66px]"
-                    />
-                  </div>
-                  {/* content */}
-                  <div className="flex flex-col">
-                    <p
-                      className={cx(
-                        "font-bold md:-mb-2 h-[40px] text-sm md:text-base text-[18px] md:!text-[25px] 2xl:!text-[32px]  text-transparent bg-clip-text bg-gradient-to-r from-[#6396F9] to-[#00D1FF]"
-                      )}
-                    >
-                      {item.title}
-                    </p>
-                    <p
-                      className={cx(
-                        subtitle_sm,
-                        "md:w-[350px] 2xl:w-[442px] mt-8 !leading-0 !text-[16px] md:!text-[20px]"
-                      )}
-                    >
-                      {item.description}
-                    </p>
-                  </div>
+              <div
+                key={item.id}
+                style={{
+                  background: "rgba(13, 19, 41, 0.75)",
+                }}
+                className="text-center border border-white/20 md:text-left flex flex-col md:flex-row md:p-[40px] rounded-[20px] items-center justify-center px-10 py-[30px] gap-6 lg:h-[260px]"
+              >
+                {/* img */}
+                <div
+                  style={{
+                    background:
+                      "linear-gradient(91.52deg, rgba(99, 150, 249, 0.1) 40.77%, rgba(0, 209, 255, 0.1) 115.11%)",
+                  }}
+                  className="flex justify-center shrink-0 items-center w-[110px] aspect-square rounded-full"
+                >
+                  <img
+                    src={item.img}
+                    alt=""
+                    className="md:w-[45px] md:h-[45px] 2xl:w-[66px] 2xl:h-[66px]"
+                  />
+                </div>
+                {/* content */}
+                <div className="flex flex-col">
+                  <p
+                    className={cx(
+                      GradientText,
+                      "text-[24px] font-bold leading-[140%]",
+                    )}
+                  >
+                    {item.title}
+                  </p>
+                  <p
+                    className={cx(
+                      subtitle_sm,
+                      "text-lg text-[#9EBBFF] leading-[145%] mt-4",
+                    )}
+                  >
+                    {item.description}
+                  </p>
                 </div>
               </div>
             );

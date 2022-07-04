@@ -71,12 +71,12 @@ const TeamSection = () => {
     // },
   ];
   return (
-    <section className="mt-[120px]">
+    <section className="mt-[150px]">
       <h2 className={classNames(text_gradient, title_sm, "text-center")}>
         Meet the team
       </h2>
 
-      <div className="container grid gap-[26px] grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 place-content-center	 lg:gap-[30px] mt-[110px]">
+      <div className="container grid gap-[26px] grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 place-content-center	 lg:gap-[30px] mt-[110px]">
         {teamInfo.map((e) => (
           <TeamMemberCard
             key={e.id}

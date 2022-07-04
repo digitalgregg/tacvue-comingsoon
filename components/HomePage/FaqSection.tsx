@@ -10,14 +10,11 @@ const FaqSection = () => {
   return (
     <section className="mt-0 py-10 lg:py-[75px] faq_section">
       <div className="landing_page_container">
-        <h2
-          className={`${headingClasses} text-center mb-12`}
-          data-aos="fade-up"
-        >
+        <h2 className={`title_text ipad:mb-[60px] mb-12`} data-aos="fade-up">
           FAQ
         </h2>
 
-        <div className="relative z-10 space-y-3.5 lg:space-y-8 text-white">
+        <div className="relative z-10 space-y-3.5 ipad:space-y-5 lg:space-y-8 text-white">
           {/* <BluryCircle className='top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 !h-[420px] !blur-[180px]' /> */}
           <FaqAccordion
             data-aos="fade-up"
@@ -81,7 +78,7 @@ const FaqAccordion = ({ title, description, ...rest }: FaqAccordionProps) => {
         openedClassName="currently_open"
         trigger={
           <div className="flex items-center justify-between px-6 pr-7 lg:px-10 py-5 font-sans">
-            <p className="lg:text-xl md:text-2xl">{title}</p>
+            <p className="text-base ipad:text-lg">{title}</p>
             <div className="text-[#6396F9]">
               {isOpen ? (
                 <AiOutlineMinus size={25} />

@@ -54,7 +54,7 @@ const Blueprint = () => {
         <OurVision />
         <Leadership />
         <TeamMembers />
-        <SubscribeSection />
+        <SubscribeSection title="Please subscribe to receive the latest updates on emerging Avalanche projects and the TacVue community" />
         {/* <HeroSection /> */}
         {/* <StorySection />
       <ServicesSection />

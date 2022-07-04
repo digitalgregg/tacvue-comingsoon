@@ -3,7 +3,11 @@ import { useForm } from "react-hook-form";
 import classNames from "classnames";
 import { CircularProgress } from "@mui/material";
 
-const SubscribeSection = () => {
+const SubscribeSection = ({
+  title = "For the latest web2 FUD…",
+}: {
+  title?: string;
+}) => {
   const [isSubmiting, setIsSubmiting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const {
@@ -67,14 +71,14 @@ const SubscribeSection = () => {
             backgroundRepeat: "no-repeat",
             backgroundPosition: "bottom center",
           }}
-          className="py-[30px] lg:py-[96px] rounded-[20px] overflow-hidden px-5"
+          className="py-[30px] ipad:py-[60px] lg:py-[96px] rounded-[20px] overflow-hidden px-5"
         >
-          <h2 className="text-center font-spaced text-[24px] leading-[22px] lg:text-[36px] lg:leading-[43px] mx-auto">
-            Don’t be like the guy that missed out Apple…
+          <h2 className="text-center font-spaced text-[24px] leading-[120%] w-[70%] ipad:w-auto ipad:text-[32px] ipad:leading-[120%] lg:text-[36px] lg:leading-[120%] mx-auto">
+            {title}
           </h2>
-          <p className="body_text mt-5 text-center capitalize">
+          {/* <p className="body_text mt-5 text-center capitalize">
             Don’t miss out on the tips and strategies we offer to community.
-          </p>
+          </p> */}
 
           <form
             onSubmit={handleSubmit(onSubmit)}
@@ -92,11 +96,11 @@ const SubscribeSection = () => {
                     message: "Email is required",
                   },
                 })}
-                className="w-full block rounded-full text-xl px-9 py-[26px] lg:pr-[230px] border-none outline-none placeholder:text-[#576993]"
+                className="w-full block rounded-full text-xl px-9 py-[26px] ipad:pr-[230px] border-none outline-none placeholder:text-[#576993]"
                 placeholder="Enter Your Email"
               />
 
-              <div className="lg:absolute lg:top-0 lg:h-full lg:right-0 lg:p-2.5 lg:pl-0">
+              <div className="ipad:absolute ipad:top-0 ipad:h-full ipad:right-0 ipad:p-2.5 ipad:pl-0">
                 <button
                   type="submit"
                   disabled={isSubmiting}
@@ -104,7 +108,7 @@ const SubscribeSection = () => {
                     background:
                       "linear-gradient(91.52deg, #6396F9 40.77%, #00D1FF 115.11%), #576993",
                   }}
-                  className="text-xl font-medium py-5 w-full lg:w-auto lg:py-0 mt-4 lg:mt-0 px-[30px] h-full rounded-full relative"
+                  className="text-xl font-medium py-5 w-full ipad:w-auto ipad:py-0 mt-4 ipad:mt-0 px-[30px] h-full rounded-full relative"
                 >
                   {isSubmiting && (
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[46%]">

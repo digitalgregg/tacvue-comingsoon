@@ -91,79 +91,120 @@ const LaunchDaySupportModal = ({ onClose }: LaunchDaySupportModalProps) => {
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div className="mt-10 grid  grid-cols-1 gap-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="form_grid_2">
           <div>
             <Input
-              {...register("firstName", {
+              {...register("name", {
                 required: {
                   value: true,
-                  message: "First name is required",
+                  message: "Name is required",
                 },
               })}
-              label="First Name"
-              placeholder="Your first name here"
+              label="Name*"
+              placeholder="Your name here"
             />
-            <ErrorMessage name="firstName" />
+            <ErrorMessage name="name" />
           </div>
           <div>
             <Input
-              {...register("lastName", {
-                required: {
-                  value: true,
-                  message: "Last name is required",
-                },
-              })}
-              label="Last Name"
-              placeholder="Your last name here"
+              {...register("brandOrProject")}
+              label="Brand/Project"
+              placeholder="Your Brand/Project name here"
             />
-            <ErrorMessage name="lastName" />
+            <ErrorMessage name="brandOrProject" />
           </div>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div>
+          <Input
+            {...register("email", {
+              required: {
+                value: true,
+                message: "Email is required",
+              },
+            })}
+            label="Email"
+            type={"email"}
+            placeholder="Your email here"
+          />
+          <ErrorMessage name="email" />
+        </div>
+        <div>
+          <Input
+            {...register("most_help_with")}
+            label="What do you think you’ll need the most help with? (short answer)"
+            type={"text"}
+            placeholder="Type here"
+          />
+        </div>
+        <div className="form_grid_2">
           <div>
             <Input
-              {...register("email", {
+              {...register("country", {
                 required: {
                   value: true,
-                  message: "Email is required",
+                  message: "Country is required",
                 },
               })}
-              label="Email"
-              type={"email"}
-              placeholder="Your email here"
+              label="Country*"
+              type={"country"}
+              placeholder="Your Country here"
             />
-            <ErrorMessage name="email" />
+            <ErrorMessage name="country" />
           </div>
           <div>
-            <LocalizationProvider dateAdapter={AdapterDateFns}>
-              <DatePicker
-                {...register("launch_date", {
-                  required: {
-                    value: true,
-                    message: "Expected launch date is required",
-                  },
-                })}
-                value={watch("launch_date")}
-                onChange={handleChange}
-                renderInput={(params) => {
-                  params.inputProps.placeholder = "Expected Launch Date";
-                  params.inputProps.readOnly = true;
-                  return (
-                    <div className="custom_date_input_wrapper translate-y-0.5">
-                      <p className="__label">Expected Launch Date</p>
-                      <TextField {...params} />
-                    </div>
-                  );
-                }}
-              />
-            </LocalizationProvider>
-            <ErrorMessage name="launch_date" />
+            <Input
+              {...register("telegramDiscordPhone", {
+                required: {
+                  value: true,
+                  message: "Telegram/Discord/Phone is required",
+                },
+              })}
+              label="Telegram/Discord/Phone*"
+              type={"telegramDiscordPhone"}
+              placeholder="Your Telegram/Discord/Phone here"
+            />
+            <ErrorMessage name="telegramDiscordPhone" />
           </div>
         </div>
         <div>
           <label className="w-full">
+            <div>
+              <LocalizationProvider dateAdapter={AdapterDateFns}>
+                <DatePicker
+                  {...register("launch_date", {
+                    required: {
+                      value: true,
+                      message: "Expected launch date is required",
+                    },
+                  })}
+                  value={watch("launch_date") || null}
+                  onChange={handleChange}
+                  renderInput={(params) => {
+                    params.inputProps.placeholder = "Expected Launch Date";
+                    params.inputProps.readOnly = true;
+                    return (
+                      <div className="custom_date_input_wrapper translate-y-0.5">
+                        <p className="__label">
+                          Select Launch Date:{" "}
+                          <span className="font-normal italic text-[#838CA3]">
+                            (please be aware that your requested launch date
+                            will only be guaranteed after our team reaches out)
+                          </span>
+                        </p>
+                        <TextField {...params} />
+                      </div>
+                    );
+                  }}
+                />
+              </LocalizationProvider>
+              <ErrorMessage name="launch_date" />
+            </div>
+          </label>
+        </div>
+        <div>
+          <label className="w-full">
             <p className="text-base lg:text-xl font-semibold text-[#9EBBFF] mb-5">
-              Message
+              Please tell us more about the project you’re launching
             </p>
             <textarea
               {...register("message", {

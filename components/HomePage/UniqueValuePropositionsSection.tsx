@@ -9,27 +9,27 @@ import ProjectEvents from "../Icons/ProjectEvents";
 const cards = [
   {
     icon: <CollectNFTs />,
-    desc: "The most entertaining way to collect NFTs",
+    desc: "We make the NFT experience funner than anyone else.",
   },
   {
     icon: <ProjectEvents />,
-    desc: "Post & Boost your tweets & Project events.",
+    desc: "No engagement on CT? Post your best one-liner to the community board.",
   },
   {
     icon: <LaunchAnNFT />,
-    desc: "The fastest way to launch an NFT project on the market.",
+    desc: "No more shared storefronts, no more hassle. Get your project launched in seconds.",
   },
   {
     icon: <OneStepShop />,
-    desc: "One-stop shop for all your web3 needs!",
+    desc: "Board on a Saturday night? Find the right party or event with our community calendar.",
   },
   {
     icon: <DiscoverTheBest />,
-    desc: "Discover the best projects in web3",
+    desc: "Want to own a piece of an NFT marketplace? Just DAO It.",
   },
   {
     icon: <OwnYourNft />,
-    desc: "Own your NFT experience",
+    desc: "Your web3 headquarters may just win over your celebrity crush.",
   },
 ];
 
@@ -39,7 +39,7 @@ const UniqueValuePropositionsSection = () => {
       <div className="landing_page_container">
         <h2 className="title_text">Tacvue Alpha</h2>
 
-        <div className="mt-10 lg:mt-[100px] grid grid-cols-1 gap-y-5 md:gap-x-7 md:gap-y-5 md:grid-cols-2 xl:gap-y-[60px] xl:gap-x-[30px] xl:grid-cols-3">
+        <div className="mt-10 lg:mt-[100px] grid grid-cols-1 gap-y-5 ipad:gap-y-[30px] md:gap-x-7 md:gap-y-5 md:grid-cols-2 xl:gap-y-[60px] xl:gap-x-[30px] xl:grid-cols-3">
           {cards.map(({ icon, desc }, i) => (
             <div
               style={{
