@@ -1,7 +1,9 @@
 import Link from "next/link";
-import React from "react";
+import React, { ComponentProps, useState } from "react";
+import MessageUsModal from "../MessageUsModal";
 
 const BuildForYourJourney = () => {
+  const [isOpenMessageUsModal, setIsOpenMessageUsModal] = useState(false);
   return (
     <>
       <section
@@ -38,49 +40,34 @@ const BuildForYourJourney = () => {
             More info:
           </h6>
           <div className="flex items-center flex-wrap gap-4 lg:gap-[30px] grow">
-            <button
-              style={{
-                background:
-                  "linear-gradient(180deg, #000715 0%, #000715 100%) padding-box padding-box, linear-gradient(91.52deg, #6396F9 40.77%, #00D1FF 115.11%) border-box border-box",
-              }}
-              className="py-[12px] ipad:py-[17px] w-[247px] shrink-0 grow text-center px-[13px] ipad:px-10 rounded-full text-base lg:text-xl capitalize border-[3px] border-transparent"
-            >
-              <a
-                href="https://tacvue.gitbook.io/tacvue/"
-                target="_blank"
-                rel="noreferrer"
-                className="font-semibold box_gradient_text"
-              >
-                View our Gitbook
-              </a>
-            </button>
-            <button
-              style={{
-                background:
-                  "linear-gradient(180deg, #000715 0%, #000715 100%) padding-box padding-box, linear-gradient(91.52deg, #6396F9 40.77%, #00D1FF 115.11%) border-box border-box",
-              }}
-              className="py-[12px] ipad:py-[17px] w-[247px] shrink-0 grow text-center px-[13px] ipad:px-10 rounded-full text-base lg:text-xl capitalize border-[3px] border-transparent"
-            >
-              <span className="font-semibold box_gradient_text">
-                Contact Support
-              </span>
-            </button>
-            <button
-              style={{
-                background:
-                  "linear-gradient(180deg, #000715 0%, #000715 100%) padding-box padding-box, linear-gradient(91.52deg, #6396F9 40.77%, #00D1FF 115.11%) border-box border-box",
-              }}
-              className="py-[12px] ipad:py-[17px] w-[247px] shrink-0 grow text-center px-[13px] ipad:px-10 rounded-full text-base lg:text-xl capitalize border-[3px] border-transparent"
-            >
-              <span className="font-semibold box_gradient_text">
-                Message Us
-              </span>
-            </button>
+            <Button>View our Gitbook</Button>
+            <Button>Contact Support</Button>
+            <Button onClick={() => setIsOpenMessageUsModal(true)}>Message Us</Button>
           </div>
         </div>
       </div>
+
+      <MessageUsModal
+        onClose={() => setIsOpenMessageUsModal(false)}
+        open={isOpenMessageUsModal}
+      />
     </>
   );
 };
 
 export default BuildForYourJourney;
+
+const Button = ({ children, ...props }: ComponentProps<"button">) => {
+  return (
+    <button
+      {...props}
+      style={{
+        background:
+          "linear-gradient(180deg, #000715 0%, #000715 100%) padding-box padding-box, linear-gradient(91.52deg, #6396F9 40.77%, #00D1FF 115.11%) border-box border-box",
+      }}
+      className="py-[12px] ipad:py-[17px] w-[247px] shrink-0 grow text-center px-[13px] ipad:px-10 rounded-full text-base lg:text-xl capitalize border-[3px] border-transparent"
+    >
+      <span className="font-semibold box_gradient_text">{children}</span>
+    </button>
+  );
+};

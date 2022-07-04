@@ -5,7 +5,7 @@ type ServiceCard = {
 export const serviceCards: ServiceCard[] = [
   {
     imgSrc: "/images/tokenize_your_social_profile.jpg",
-    title: "On-Chain & Non-Fungible <br/> Accounts",
+    title: "On-Chain & Non-<br/>Fungible Accounts",
   },
   {
     imgSrc: "/images/recharge-your-wallet-while-you-sleep.jpg",
@@ -13,7 +13,7 @@ export const serviceCards: ServiceCard[] = [
   },
   {
     imgSrc: "/images/promote-your-upcoming-events.jpg",
-    title: "Own a piece of TacVue & <br/> govern us to the top",
+    title: "Own a piece of TacVue<br/> & govern us to the top",
   },
   {
     imgSrc: "/images/analyze-member-behavior.jpg",

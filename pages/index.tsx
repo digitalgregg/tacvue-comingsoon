@@ -13,6 +13,7 @@ import HeroSection from "../components/HomePage/HeroSection";
 import ProductAndServicesSection from "../components/HomePage/ProductAndServicesSection";
 import { SiDiscord } from "react-icons/si";
 import UniqueValuePropositionsSection from "../components/HomePage/UniqueValuePropositionsSection";
+import BuiltForThePeopelSection from "../components/HomePage/BuiltForThePeopelSection";
 
 export const modalStyle = {
   position: "absolute",
@@ -145,6 +146,7 @@ function LandingPage() {
           className="py-10 lg:py-[75px] space-y-20 lg:space-y-[150px]"
         >
           <UniqueValuePropositionsSection />
+          <BuiltForThePeopelSection />
           {/* <TacVueAlphaSection /> */}
           <ProductAndServicesSection />
         </div>

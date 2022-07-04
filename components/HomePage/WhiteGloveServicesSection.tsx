@@ -58,7 +58,7 @@ const WhiteGloveServicesSection = () => {
     <section className="py-10 lg:py-[75px]">
       <div className="landing_page_container">
         <h2 className="title_text">
-          We’ve got custom solutions for your moonshot project.
+          We’ve got custom solutions for your moonshot project
         </h2>
 
         <div className="mt-14 lg:mt-[120px] space-y-[60px] xl:space-y-[150px]">
@@ -98,7 +98,7 @@ const Card = ({ isRtl, imgSrc, title, desc, Modal, buttonText }: CardProps) => {
           isRtl ? "ipad:flex-row-reverse" : "ipad:flex-row",
         )}
       >
-        <div className="shrink-0 max-w-[50%]">
+        <div className="shrink-0 ipad:max-w-[50%]">
           <div
             style={{
               background:

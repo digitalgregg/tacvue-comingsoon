@@ -20,6 +20,7 @@ module.exports = {
       md: "768px",
       ipad: "830px",
       lg: "1024px",
+      minixl: "1200px",
       xl: "1280px",
       "2xl": "1536px",
     },

@@ -66,7 +66,7 @@ const ProductAndServicesSection = () => {
                     className="w-full"
                   />
                 </div>
-                <div className="mt-4 text-xl text-center text-[#9EBBFF] capitalize pb-5 px-5">
+                <div className="mt-[18px] text-xl text-center text-[#9EBBFF] capitalize pb-3.5 px-4">
                   {serviceCard.title.split("<br/>").map((e, i) => (
                     <p key={i}>{e}</p>
                   ))}

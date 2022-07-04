@@ -22,7 +22,7 @@ body {
     @apply input_border focus:input_gradient_border border border-transparent w-full block outline-none py-4 px-6 rounded-[10px] text-base lg:text-lg placeholder:text-[#576993] placeholder:capitalize text-white;
   }
   .__label {
-    @apply text-base lg:text-xl font-medium font-sans text-[#9EBBFF] mb-3 capitalize;
+    @apply text-base lg:text-xl font-medium font-sans text-[#9EBBFF] mb-3;
   }
   .body_text {
     @apply text-base lg:text-[18px] !leading-[160%] text-[#838CA3] capitalize;
