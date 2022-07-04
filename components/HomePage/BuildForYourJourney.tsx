@@ -35,15 +35,15 @@ const BuildForYourJourney = () => {
       </section>
 
       <div className="landing_page_container">
-        <div className="mt-10 lg:mt-[150px] flex flex-col lg:flex-row  justify-center lg:items-center gap-7 lg:gap-[185px]">
+        <div className="mt-10 lg:mt-[150px] flex flex-col xl:flex-row  justify-center xl:items-center gap-7 xl:gap-[185px]">
           <h6 className="title_text text-left -translate-y-2">More info:</h6>
-          <div className="flex items-center gap-4 lg:gap-[30px]">
+          <div className="grid ipad:flex ipad:items-center gap-4 lg:gap-[30px]">
             <button
               style={{
                 background:
                   "linear-gradient(180deg, #000715 0%, #000715 100%) padding-box padding-box, linear-gradient(91.52deg, #6396F9 40.77%, #00D1FF 115.11%) border-box border-box",
               }}
-              className="py-[12px] ipad:py-[17px] w-[247px] shrink-0 grow text-center px-[13px] ipad:px-10 rounded-full text-base lg:text-xl capitalize border-[3px] border-transparent"
+              className="py-[12px] ipad:py-[17px] ipad:w-[247px] shrink-0 grow text-center px-[13px] ipad:px-10 rounded-full text-base lg:text-xl capitalize border-[3px] border-transparent"
             >
               <a
                 href="https://tacvue.gitbook.io/tacvue/"
@@ -59,7 +59,7 @@ const BuildForYourJourney = () => {
                 background:
                   "linear-gradient(180deg, #000715 0%, #000715 100%) padding-box padding-box, linear-gradient(91.52deg, #6396F9 40.77%, #00D1FF 115.11%) border-box border-box",
               }}
-              className="py-[12px] ipad:py-[17px] w-[247px] shrink-0 grow text-center px-[13px] ipad:px-10 rounded-full text-base lg:text-xl capitalize border-[3px] border-transparent"
+              className="py-[12px] ipad:py-[17px] ipad:w-[247px] shrink-0 grow text-center px-[13px] ipad:px-10 rounded-full text-base lg:text-xl capitalize border-[3px] border-transparent"
             >
               <span className="font-semibold box_gradient_text">
                 Support Channel
@@ -90,7 +90,7 @@ const Button = ({ children, ...props }: ComponentProps<"button">) => {
         background:
           "linear-gradient(180deg, #000715 0%, #000715 100%) padding-box padding-box, linear-gradient(91.52deg, #6396F9 40.77%, #00D1FF 115.11%) border-box border-box",
       }}
-      className="py-[12px] ipad:py-[17px] w-[247px] shrink-0 grow text-center px-[13px] ipad:px-10 rounded-full text-base lg:text-xl capitalize border-[3px] border-transparent"
+      className="py-[12px] ipad:py-[17px] ipad:w-[247px] shrink-0 grow text-center px-[13px] ipad:px-10 rounded-full text-base lg:text-xl capitalize border-[3px] border-transparent"
     >
       <span className="font-semibold box_gradient_text">{children}</span>
     </button>
