@@ -13,20 +13,19 @@ const BuildForYourJourney = () => {
       >
         <div className="container">
           <h2 data-aos="fade-up" className={`title_text text-center`}>
-            Building for your journey
+            UNLEASHING THE POWER OF COMMUNITY
             {/* <span className='gradient_text'>your journey</span> */}
           </h2>
           <p
             data-aos="fade-up"
             className="lg:w-[520px] mx-auto text-white text-center !leading-[30px] mt-10 text-lg font-light"
           >
-            Our blueprint maps out the future tools and features that will be
-            offered and available on the TacVue system.
+            Our vision and principles are an essential foundation for the TacVue brand and community.
           </p>
           <div className="flex justify-center mt-10">
             <Link href="/blueprint">
               <a data-aos="fade-up" className="btn_gradient">
-                VIEW OUR BLUEPRINT
+                LEARN MORE
               </a>
             </Link>
           </div>
@@ -61,7 +60,7 @@ const BuildForYourJourney = () => {
               className="py-[12px] px-[13px] lg:px-10 rounded-full text-base lg:text-xl capitalize border-[3px] border-transparent"
             >
               <span className="font-semibold box_gradient_text">
-                Customer Support
+                Support Channel
               </span>
             </button>
           </div>
