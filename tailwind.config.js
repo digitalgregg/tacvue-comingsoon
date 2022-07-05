@@ -12,6 +12,7 @@ module.exports = {
       fontFamily: {
         sans: ["Helvetica Neue", ...defaultTheme.fontFamily.sans],
         spaced: ["Spaced", "sans-serif"],
+        "hypers-techno": ["Hypers-Techno", "sans-serif"],
       },
     },
     screens: {

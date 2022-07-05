@@ -2,6 +2,10 @@
   font-family: "Spaced";
   src: url("../public/fonts/Spaced_OTF.otf");
 }
+@font-face {
+  font-family: "Hypers-Techno";
+  src: url("../public/fonts/Hypers_Techno.ttf");
+}
 
 html {
   scroll-behavior: smooth;
@@ -28,7 +32,7 @@ body {
     @apply text-base lg:text-[18px] !leading-[160%] text-[#838CA3] capitalize;
   }
   .title_text {
-    @apply text-[32px] leading-[40px] lg:text-[64px] ipad:text-[40px] ipad:leading-[120%] text-white text-center font-spaced;
+    @apply text-[32px] leading-[40px] lg:text-[64px] ipad:text-[40px] ipad:leading-[120%] text-white text-center font-hypers-techno;
   }
   .form_grid_2 {
     @apply grid grid-cols-1 lg:grid-cols-2 gap-6;

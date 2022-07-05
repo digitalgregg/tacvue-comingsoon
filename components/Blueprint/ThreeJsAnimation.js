@@ -221,7 +221,7 @@ const ThreeJsAnimation = () => {
 
         <div className="min-h-screen absolute top-0 left-0 w-full h-full flex flex-col justify-center z-[5]">
           <div className="container">
-            <h1 className="text-white font-spaced text-center text-[50px] leading-[45px] md:text-[110px] md:leading-[115px]">
+            <h1 className="text-white font-hypers-techno text-center text-[50px] leading-[45px] md:text-[110px] md:leading-[115px]">
               <p>The TacVue</p>
               <p>Blueprint</p>
             </h1>

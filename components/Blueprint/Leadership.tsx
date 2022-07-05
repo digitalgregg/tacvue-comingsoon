@@ -98,7 +98,7 @@ const Leadership = () => {
         <h2
           className={cx(
             text_gradient,
-            "uppercase text-center  text-[30px] sm:text-[40px] leading-[35px] md:text-[65px] md:leading-[60px] font-spaced",
+            "uppercase text-center  text-[30px] sm:text-[40px] leading-[35px] md:text-[65px] md:leading-[60px] font-hypers-techno",
           )}
         >
           Our leadership pillars

@@ -110,7 +110,7 @@ const Card = ({ isRtl, imgSrc, title, desc, Modal, buttonText }: CardProps) => {
           </div>
         </div>
         <div>
-          <h4 className="text-white text-2xl lg:text-[48px] lg:leading-[45px] font-spaced ">
+          <h4 className="text-white text-2xl lg:text-[48px] lg:leading-[45px] font-hypers-techno ">
             {title}
           </h4>
           <p

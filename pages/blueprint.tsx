@@ -24,7 +24,7 @@ export const subtitle_sm =
 export const text_gradient =
   "text-transparent bg-clip-text bg-gradient-to-r from-[#6396F9] to-[#00D1FF]";
 export const title_sm =
-  "text-[40px] leading-[35px] md:text-[65px] md:leading-[60px] font-spaced uppercase -mb-2";
+  "text-[40px] leading-[35px] md:text-[65px] md:leading-[60px] font-hypers-techno uppercase -mb-2";
 
 const Blueprint = () => {
   return (
