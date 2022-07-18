@@ -7,6 +7,7 @@ import MintingWebsiteModal from "./Modals/MintingWebsiteModal";
 import HourlyConsultingModal from "./Modals/HourlyConsultingModal";
 import LaunchDaySupportModal from "./Modals/LaunchDaySupportModal";
 import { GradientText } from "../Marketplace/Components/CommonStyles";
+import WhiteGloveSolutionsModal from "../WhiteGloveSolutionsModal";
 
 const cards: CardProps[] = [
   {
@@ -85,13 +86,17 @@ const Card = ({ isRtl, imgSrc, title, desc, Modal, buttonText }: CardProps) => {
   const [isOpenModal, setIsOpenModal] = useState(false);
   return (
     <>
-      <RegisterModalLayout
+      {/* <RegisterModalLayout
         open={isOpenModal}
         onClose={() => setIsOpenModal(false)}
         title={title}
       >
         <Modal onClose={() => setIsOpenModal(false)} />
-      </RegisterModalLayout>
+      </RegisterModalLayout> */}
+      <WhiteGloveSolutionsModal
+        open={isOpenModal}
+        onClose={() => setIsOpenModal(false)}
+      />
       <div
         className={cx(
           "flex flex-col gap-5 lg:items-center ipad:gap-10 lg:!gap-[90px]",
@@ -110,7 +115,7 @@ const Card = ({ isRtl, imgSrc, title, desc, Modal, buttonText }: CardProps) => {
           </div>
         </div>
         <div>
-          <h4 className="text-white text-2xl lg:text-[48px] lg:leading-[45px] font-hypers-techno ">
+          <h4 className="text-white text-2xl lg:text-[48px] lg:leading-[45px] font-spaced ">
             {title}
           </h4>
           <p

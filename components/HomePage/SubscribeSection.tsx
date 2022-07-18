@@ -73,7 +73,7 @@ const SubscribeSection = ({
           }}
           className="py-[30px] ipad:py-[60px] lg:py-[96px] rounded-[20px] overflow-hidden px-5"
         >
-          <h2 className="text-center font-hypers-techno text-[24px] leading-[120%] w-[70%] ipad:w-auto ipad:text-[32px] ipad:leading-[120%] lg:text-[36px] lg:leading-[120%] mx-auto">
+          <h2 className="text-center font-spaced text-[24px] leading-[120%] w-[70%] ipad:w-auto ipad:text-[32px] ipad:leading-[120%] lg:text-[36px] lg:leading-[120%] mx-auto">
             {title}
           </h2>
           {/* <p className="body_text mt-5 text-center capitalize">

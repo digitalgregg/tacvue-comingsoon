@@ -14,6 +14,7 @@ import ProductAndServicesSection from "../components/HomePage/ProductAndServices
 import { SiDiscord } from "react-icons/si";
 import UniqueValuePropositionsSection from "../components/HomePage/UniqueValuePropositionsSection";
 import BuiltForThePeopelSection from "../components/HomePage/BuiltForThePeopelSection";
+import WhiteGloveSolutionsModal from "../components/WhiteGloveSolutionsModal";
 
 export const modalStyle = {
   position: "absolute",
@@ -134,6 +135,7 @@ function LandingPage() {
         }}
         className="max-w-[100vw]"
       >
+        {/* <WhiteGloveSolutionsModal open onClose={() => {}} /> */}
         <Header />
         <HeroSection />
         <SubscribeSection />

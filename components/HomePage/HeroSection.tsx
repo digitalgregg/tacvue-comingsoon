@@ -29,7 +29,7 @@ const HeroSection = () => {
         {/* Background Video --End-- */}
 
         <div className="landing_page_container flex flex-col items-center justify-center h-full w-full relative z-10">
-          <h1 className="text-5xl xs:text-6xl md:!text-[64px] md:!leading-[110%] lg:!text-[110px] lg:!leading-[1] text-center uppercase font-hypers-techno mb-3">
+          <h1 className="text-5xl xs:text-6xl md:!text-[64px] md:!leading-[110%] lg:!text-[110px] lg:!leading-[1] text-center uppercase font-spaced mb-3">
             <p data-aos="fade-up">Media</p>
             Reimagined
           </h1>
