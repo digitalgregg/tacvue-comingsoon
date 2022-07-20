@@ -14,14 +14,14 @@ function MyApp({ Component, pageProps }) {
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
       />
 
-      <Script strategy="lazyOnload">
+      <Script strategy="lazyOnload" id="dataLayer">
         {`window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
     gtag('config', 'G-SKMJ4HQPR9');`}
       </Script>
-      <Script strategy="lazyOnload">
+      <Script strategy="lazyOnload" id="_vbset">
         {`var _vbset = _vbset || [];
           _vbset.push(['_account', 'VBT-81870-7905']);
           _vbset.push(['_domain', 'https://tacvue.io']);
