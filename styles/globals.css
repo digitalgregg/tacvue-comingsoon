@@ -257,3 +257,31 @@ canvas {
 .custom_date_input_wrapper .MuiInputAdornment-root {
   @apply absolute top-1/2 -translate-y-1/2 right-6;
 }
+
+.scrollbar_thin::-webkit-scrollbar {
+  width: 10px;
+}
+
+.scrollbar_thin::-webkit-scrollbar-track {
+  background: #262d47;
+  border-radius: 100px;
+  margin-block: 10px;
+  margin-right: 10px;
+}
+
+.scrollbar_thin::-webkit-scrollbar-thumb {
+  background-color: #576993;
+  border-radius: 100px;
+}
+
+.white_glove_card_gradient_border {
+  background: linear-gradient(#1c233d, #1c233d) padding-box padding-box,
+    linear-gradient(91.52deg, #6396f9 40.77%, #00d1ff 115.11%) border-box
+      border-box;
+}
+
+.white_glove_card_solid_border {
+  background: linear-gradient(#1c233d, #1c233d) padding-box padding-box,
+    linear-gradient(91.52deg, #1c233d 40.77%, #1c233d 115.11%) border-box
+      border-box;
+}

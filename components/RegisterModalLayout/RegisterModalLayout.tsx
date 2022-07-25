@@ -18,7 +18,7 @@ const RegisterModalLayout = ({
 }: RegisterModalLayoutProps) => {
   return (
     <Modal onClose={onClose} open={open}>
-      <div className="px-5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-h-[95vh] overflow-y-auto">
+      <div className="px-5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-h-[95vh] overflow-y-auto scrollbar_thin">
         <div className="w-[88vw] max-w-[900px] bg-[#15192B] rounded-[20px] px-5 lg:px-14 pb-14">
           <div className="flex items-center justify-between py-[30px] border-b border-[#2E3C5E]">
             <h4
@@ -49,16 +49,28 @@ export default RegisterModalLayout;
 export const RegisterModalFooter = ({
   onClose,
   isSubmiting,
+  className = "",
+  btnClassName = "",
 }: {
   onClose: () => void;
   isSubmiting: boolean;
+  className?: string;
+  btnClassName?: string;
 }) => {
   return (
-    <div className="mt-8 flex flex-col md:flex-row w-full justify-center gap-5 lg:gap-7">
+    <div
+      className={classNames(
+        "mt-8 flex flex-col md:flex-row w-full justify-center gap-5 lg:gap-7",
+        className,
+      )}
+    >
       <button
         type="button"
         onClick={onClose}
-        className="text-base lg:text-xl font-medium  py-4 shrink-0 px-[80px] rounded-full text-[#576993] hover:text-[#6679a5] border-[3px] border-[#576993] hover:border-[#6679a5]"
+        className={classNames(
+          "text-base lg:text-xl font-medium  py-4 shrink-0 px-[80px] rounded-full text-[#576993] hover:text-[#6679a5] border-[3px] border-[#576993] hover:border-[#6679a5]",
+          btnClassName,
+        )}
       >
         Cancel
       </button>
@@ -69,7 +81,10 @@ export const RegisterModalFooter = ({
             "linear-gradient(91.52deg, #6396F9 40.77%, #00D1FF 115.11%), #576993",
         }}
         type="submit"
-        className="text-base lg:text-xl font-medium py-4 shrink-0 px-[80px] rounded-full relative"
+        className={classNames(
+          "text-base lg:text-xl font-medium py-4 shrink-0 px-[80px] rounded-full relative",
+          btnClassName,
+        )}
       >
         {isSubmiting && (
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[46%]">

@@ -1,3 +1,10 @@
+import AgencyReferrals from "../components/Icons/AgencyReferrals";
+import DiscordSetup from "../components/Icons/DiscordSetup";
+import HourlyConsulting from "../components/Icons/HourlyConsulting";
+import LaunchDaySupport from "../components/Icons/LaunchDaySupport";
+import MintingWebsite from "../components/Icons/MintingWebsite";
+import SmartContract from "../components/Icons/SmartContract";
+
 type ServiceCard = {
   imgSrc: string;
   title: string;
@@ -50,5 +57,38 @@ export const serviceCards: ServiceCard[] = [
   {
     imgSrc: "/images/launch-your-own-collection.jpg",
     title: "We’re just <br/> getting started!",
+  },
+];
+
+export const whiteGlovesServices = [
+  {
+    icon: <MintingWebsite />,
+    label: "Minting Website",
+    value: "Minting Website",
+  },
+  {
+    icon: <SmartContract />,
+    label: "Smart Contracts",
+    value: "Smart Contracts",
+  },
+  {
+    icon: <DiscordSetup />,
+    label: "Discord Setup",
+    value: "Discord Setup",
+  },
+  {
+    icon: <HourlyConsulting />,
+    label: "Hourly consulting",
+    value: "Hourly consulting",
+  },
+  {
+    icon: <AgencyReferrals />,
+    label: "Agency Referrals",
+    value: "Agency Referrals",
+  },
+  {
+    icon: <LaunchDaySupport />,
+    label: "Launch Day Support",
+    value: "Launch Day Support",
   },
 ];

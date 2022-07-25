@@ -14,12 +14,22 @@ function MyApp({ Component, pageProps }) {
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
       />
 
-      <Script strategy="lazyOnload" id="">
+      <Script strategy="lazyOnload" id="dataLayer">
         {`window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
     gtag('config', 'G-SKMJ4HQPR9');`}
+      </Script>
+      <Script strategy="lazyOnload" id="_vbset">
+        {`var _vbset = _vbset || [];
+          _vbset.push(['_account', 'VBT-81870-7905']);
+          _vbset.push(['_domain', 'https://tacvue.io']);
+
+          (function() {
+            var vbt = document.createElement('script'); vbt.type = 'text/javascript'; vbt.async = true; 
+            vbt.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'www.vbt.io/tracker?_account='+_vbset[0][1]+'&_domain='+_vbset[1][1];var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(vbt, s);
+          })();`}
       </Script>
 
       <Script
@@ -59,6 +69,13 @@ function MyApp({ Component, pageProps }) {
         async
         type="text/javascript"
         src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=YtBdg6"
+        defer
+      />
+      <Script
+        strategy="beforeInteractive"
+        async
+        type="text/javascript"
+        src="https://www.vbt.io/ext/vbtforms.js?lang=en"
         defer
       />
       <ThemeProvider theme={MUI_DARK_THEME}>
