@@ -71,6 +71,13 @@ function MyApp({ Component, pageProps }) {
         src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=YtBdg6"
         defer
       />
+      <Script
+        strategy="beforeInteractive"
+        async
+        type="text/javascript"
+        src="https://www.vbt.io/ext/vbtforms.js?lang=en"
+        defer
+      />
       <ThemeProvider theme={MUI_DARK_THEME}>
         <Component {...pageProps} />
       </ThemeProvider>

@@ -30,8 +30,8 @@ const WhiteGloveSolutionsModal = ({
   return (
     <Modal onClose={onClose} open={open}>
       <div className="px-5 lg:px-0 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-h-[95vh] overflow-y-auto scrollbar_thin">
-        <div className="w-[100vw] lg:max-w-[1040px] bg-[#15192B] rounded-[20px] px-5 py-8 lg:px-[30px] lg:py-10">
-          <div className="flex items-center justify-between pb-[30px] lg:pb-[60px] border-b border-[#2E3C5E]">
+        <div className="w-[100vw] lg:max-w-[750px] bg-[#15192B] rounded-[20px] px-5 py-8 lg:px-[30px] lg:py-10">
+          <div className="items-center justify-between pb-[30px] lg:pb-[60px] border-b border-[#2E3C5E] hidden">
             <h4
               className={cx(
                 GradientText,
@@ -49,7 +49,15 @@ const WhiteGloveSolutionsModal = ({
             </div>
           </div>
 
-          <div className="mt-[30px] lg:mt-[60px]">
+          <div id="vbtEFWrapper-75225">
+            <div
+              className="vboutEmbedFormBox"
+              id="vboutEmbedFormBox-75225"
+              data-vbtfc="1cef4fe90ca8e69b2913a37ab23a79cf"
+            ></div>
+          </div>
+
+          <div className="mt-[30px] lg:mt-[60px] hidden">
             <form>
               <div className="space-y-[30px]">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-[30px]">
