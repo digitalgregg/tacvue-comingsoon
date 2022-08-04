@@ -21,7 +21,7 @@ const cards = [
   },
   {
     icon: <OneStepShop />,
-    desc: "Board on a Saturday night? Find the right party or event with our community calendar.",
+    desc: "Bored on a Saturday night? Find the right party or event with our community calendar.",
   },
   {
     icon: <DiscoverTheBest />,
