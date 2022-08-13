@@ -584,6 +584,7 @@ const BorderedTextArea: React.FC<{
   label: string;
   placeholder: string;
   className?: string;
+  children?: any;
 }> = ({ label, placeholder, children, className }) => (
   <div className={classNames("pt-2", className)}>
     <p
@@ -608,13 +609,13 @@ const BorderedTextArea: React.FC<{
 );
 
 type TProject = {
-  id: string;
+  id?: string;
   name: string;
   link: string;
 };
 
 type TTeammate = {
-  id: string;
+  id?: string;
   name: string;
   position: string;
   twitter: string;

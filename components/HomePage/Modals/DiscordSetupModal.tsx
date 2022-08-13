@@ -69,7 +69,7 @@ const DiscordSetupModal = ({ onClose }: DiscordSetupModalProps) => {
       <>
         {!isSuccess && errors.email && (
           <p className="text-red-600 mt-2.5 text-base">
-            {errors[name].message}
+            {(errors as any)[name].message}
           </p>
         )}
       </>

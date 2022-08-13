@@ -4,7 +4,10 @@ const nextConfig = {
   i18n: {
     locales: ["en"],
     defaultLocale: "en",
-  }, 
-}
+  },
+  typescript: {
+    ignoreBuildErrors: false,
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
