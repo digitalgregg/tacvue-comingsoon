@@ -1,20 +1,8 @@
 import Head from "next/head";
 import { FaInstagram, FaMediumM, FaTwitter } from "react-icons/fa";
 import Script from "next/script";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import SubscribeSection from "../components/HomePage/SubscribeSection";
-import TacVueAlphaSection from "../components/HomePage/TacVueAlphaSection";
-import WhiteGloveServicesSection from "../components/HomePage/WhiteGloveServicesSection";
-import RXGAirdropsSection from "../components/HomePage/RXGAirdropsSection";
-import BuildForYourJourney from "../components/HomePage/BuildForYourJourney";
-import FaqSection from "../components/HomePage/FaqSection";
-import HeroSection from "../components/HomePage/HeroSection";
-import ProductAndServicesSection from "../components/HomePage/ProductAndServicesSection";
 import { SiDiscord } from "react-icons/si";
-import UniqueValuePropositionsSection from "../components/HomePage/UniqueValuePropositionsSection";
-import BuiltForThePeopelSection from "../components/HomePage/BuiltForThePeopelSection";
-import WhiteGloveSolutionsModal from "../components/WhiteGloveSolutionsModal";
+import Home from "../views/Home";
 
 export const modalStyle = {
   position: "absolute",
@@ -66,43 +54,8 @@ export const SocialIcons = () => {
 };
 
 function LandingPage() {
-  // const router = useRouter();
-
-  // const [modalIsOpen, setModalIsOpen] = useState(false);
-  // const modalHandleOpen = () => setModalIsOpen(true);
-  // const modalHandleClose = () => setModalIsOpen(false);
-
-  // useEffect(() => {
-  //   AOS.init({ disable: 'mobile' });
-  // }, []);
-
   return (
     <>
-      <Script
-        src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=XtYuXA"
-        async
-        type="text/javascript"
-        defer
-      />
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=UA-205037825-1"
-        async
-        type="text/javascript"
-        defer
-      />
-      <Script
-        id="google_analytics_script"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-205037825-1');
-  `,
-        }}
-      />
-
       <Head>
         <title>TacVue - The Multiverse Portal</title>
         <meta
@@ -127,64 +80,7 @@ function LandingPage() {
         />
         <meta name="twitter:card" content="Built for Your Journey" />
       </Head>
-
-      <div
-        style={{
-          background:
-            "linear-gradient(237.69deg, #121831 2.21%, #000715 87.3%)",
-        }}
-        className="max-w-[100vw]"
-      >
-        {/* <WhiteGloveSolutionsModal open onClose={() => {}} /> */}
-        <Header />
-        <HeroSection />
-        <SubscribeSection />
-        <div
-          style={{
-            backgroundImage: 'url("/images/products_and_services_bg.png")',
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-          }}
-          className="py-10 lg:py-[75px] space-y-20 lg:space-y-[150px]"
-        >
-          <UniqueValuePropositionsSection />
-          <BuiltForThePeopelSection />
-          {/* <TacVueAlphaSection /> */}
-          <ProductAndServicesSection />
-        </div>
-        <WhiteGloveServicesSection />
-
-        <div
-          style={{
-            backgroundImage: 'url("/images/products_and_services_bg.png")',
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-          }}
-        >
-          <RXGAirdropsSection />
-          {/* <EcoFriendlyBlockchainSection />
-        <TechnologySection />
-        <FutureOfNFTSection />
-        <WhyJoinTacVueSection /> */}
-
-          <FaqSection />
-        </div>
-        <BuildForYourJourney />
-
-        {/* klaviyo Section --Start-- */}
-        {/* <section className="pb-14 md:pb-28 mt-[50px]">
-          <div className="landing_page_container">
-            <div data-aos="fade-up">
-              <div className='md:w-[80%] bg-cover md:bg-110 mx-auto flex flex-col justify-center items-center py-14 md:py-0 md:px-14 text-center md:bg-size-full'>
-                <div className='klaviyo-form-XGdvPD'></div>
-              </div>
-            </div>
-          </div>
-        </section> */}
-        {/* klaviyo Section --End-- */}
-
-        <Footer />
-      </div>
+      <Home />
     </>
   );
 }

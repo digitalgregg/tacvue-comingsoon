@@ -22,6 +22,7 @@ export const GradientBorderContainer: React.FC<{
   borderRadius?: string; // In terms of Tailwinds Padding
   activeBackgroundColor?: string;
   passiveBackgroundColor?: string;
+  children: any;
 }> = ({
   children,
   active = true,
@@ -35,7 +36,7 @@ export const GradientBorderContainer: React.FC<{
       active ? activeBackgroundColor : passiveBackgroundColor,
       // "transition-all duration-300 ease-in-out",
       className,
-      borderRadius
+      borderRadius,
       // activeBackgroundColor
     )}
   >

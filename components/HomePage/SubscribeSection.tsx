@@ -127,7 +127,7 @@ const SubscribeSection = ({
             </div>
             {!isSuccess && errors.email && (
               <p className="text-red-600 mt-3 ml-6 text-xl">
-                {errors.email.message}
+                {(errors as any).email.message}
               </p>
             )}
             {!errors.email && isSuccess && (

@@ -15,8 +15,8 @@ import Link from "next/link";
 import FounderSection from "../components/Blueprint/FounderSection";
 import OurVision from "../components/Blueprint/OurVision";
 import Leadership from "../components/Blueprint/Leadership";
-import TeamMembers from "./../components/Blueprint/TeamMembers";
-import NewsLetter from "./../components/Blueprint/NewsLetter";
+import TeamMembers from "../components/Blueprint/TeamMembers";
+import NewsLetter from "../components/Blueprint/NewsLetter";
 import SubscribeSection from "../components/HomePage/SubscribeSection";
 
 export const subtitle_sm =
