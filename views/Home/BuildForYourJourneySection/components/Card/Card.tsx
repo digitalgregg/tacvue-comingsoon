@@ -11,18 +11,17 @@ type CardProps = {
 };
 const Card = ({ imgSrc, title, url = "#", className = "" }: CardProps) => {
   return (
-    <Link href={url}>
-      <a
-        className={cx(
-          "w-full xl:w-[300px] h-[240px] xl:h-[420px] overflow-hidden rounded-[20px] relative block",
-          className
-        )}
-      >
-        <Image src={imgSrc} layout="fill" alt={title} />
+    <div
+      className={cx(
+        "w-full xl:w-[300px] h-[240px] xl:h-[420px] overflow-hidden rounded-[20px] relative block",
+        className,
+      )}
+    >
+      <Image src={imgSrc} layout="fill" alt={title} />
 
-        <div className="absolute bottom-4 xl:bottom-[30px] left-0 px-3 xl:px-[26px] w-full flex items-center justify-between gap-5">
-          <p className="xl:text-[30px] shrink-0">{title}</p>
-          {/* <svg
+      <div className="absolute bottom-4 xl:bottom-[30px] left-0 px-3 xl:px-[26px] w-full flex items-center justify-between gap-5">
+        <p className="xl:text-[30px] shrink-0">{title}</p>
+        {/* <svg
             width="30"
             height="30"
             viewBox="0 0 30 30"
@@ -36,9 +35,8 @@ const Card = ({ imgSrc, title, url = "#", className = "" }: CardProps) => {
               fill="white"
             />
           </svg> */}
-        </div>
-      </a>
-    </Link>
+      </div>
+    </div>
   );
 };
 
