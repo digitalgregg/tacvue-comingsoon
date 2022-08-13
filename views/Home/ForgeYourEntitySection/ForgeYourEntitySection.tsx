@@ -57,7 +57,7 @@ const ForgeYourEntitySection = () => {
           </div>
 
           <div className="xl:ml-[26px] mt-[30px] xl:mt-[82px] flex flex-col xl:flex-row gap-4 xl:gap-[30px]">
-            <button className="inline-block py-[17px] text-center px-9 rounded-full border-2 border-transparent home_learn_more_btn hover:enter_multiverse_btn_hover group">
+            {/* <button className="inline-block py-[17px] text-center px-9 rounded-full border-2 border-transparent home_learn_more_btn hover:enter_multiverse_btn_hover group">
               <span
                 className={cx(
                   GradientText,
@@ -66,7 +66,7 @@ const ForgeYourEntitySection = () => {
               >
                 Mint Genesis Entity
               </span>
-            </button>
+            </button> */}
             <Link href="/blueprint">
               <a className="inline-block py-[17px] text-center px-9 rounded-full border-2 border-transparent home_learn_more_btn hover:enter_multiverse_btn_hover group">
                 <span
