@@ -30,6 +30,11 @@ class MyDocument extends Document {
             defer
           ></script>
           <script
+            async
+            src="https://www.vbt.io/ext/vbtforms.js?lang=en"
+            charSet="utf-8"
+          ></script>
+          <script
             src="https://www.googletagmanager.com/gtag/js?id=UA-205037825-1"
             async
             type="text/javascript"
